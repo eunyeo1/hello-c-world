@@ -1,4 +1,19 @@
 
+//exercse 3-4
+#include <stdio.h>
+int main(void)
+
+{
+    int a;
+    int b;
+
+    printf("%d \n",a);
+    printf("%d \n",b);
+
+    return 0;
+}
+
+/*
 //exercise 3-3
 #include <stdio.h>
 int main(void)
@@ -9,7 +24,6 @@ int main(void)
     return 0;
 }
 
-/*
 //exercise 3-2
 #include <stdio.h>
 int main(void)
