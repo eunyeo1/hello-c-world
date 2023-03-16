@@ -1,4 +1,15 @@
 
+//exercise 3-3
+#include <stdio.h>
+int main(void)
+{
+    int a,b;
+    float c,d;
+
+    return 0;
+}
+
+/*
 //exercise 3-2
 #include <stdio.h>
 int main(void)
@@ -8,8 +19,8 @@ int main(void)
 
     return 0;
 }
-/*
-/exercise 3-1
+
+//exercise 3-1
 #include <stdio.h>
 int main(void)
 {
