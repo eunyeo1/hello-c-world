@@ -1,4 +1,14 @@
 
+//exercise 3-1
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    int b;
+    return 0;
+}
+
+/*
 //exercise 2-13
 #include <stdio.h>
 int main(void)
@@ -17,7 +27,6 @@ int main(void)
     return 0;
 }
 
- /*
  //exercise 2-12
 #include <stdio.h>
 int main(void)
