@@ -1,4 +1,17 @@
 
+
+//exercise 2-7
+#include <stdio.h>
+int main(void)
+{
+    printf("a를 대문자로 표현하면 %c입니다.\n",'A');
+    printf("%s %c입니다. \n", "a를 대문자로 표현하면", 'A');
+    printf("%s %s\n","2 곱하기 3은",2*3,"입니다.");
+
+    return 0;
+}
+
+/*
 // exercise 2-6
 
 #include <stdio.h>
@@ -15,7 +28,6 @@ int main(void)
 }
 
 
-/*
 // exercise 2-5
 #include <stdio.h>
 int main()
