@@ -1,4 +1,19 @@
 
+ 
+//exercisen2-10
+#include <stdio.h>
+int main(void)
+{
+    printf("%03d,%03d,%03d \n", 1,20,300);
+    printf("%-3d,%-3d,%-3d \n", 1,20,300);
+    printf("%+3d,%+3d,%+3d \n", 1,20,300);
+
+    printf("%+3d, %+3d, %+3d \n",1,20,-300);
+
+    return 0; 
+} 
+
+/*
 //exercise 2-9
 #include<stdio.h>
 int main(void)
@@ -17,8 +32,6 @@ int main(void)
     return 0;
 }
 
-
-/*
 //#exercise 2-8
 #include<stdio.h>
 int main(void)
