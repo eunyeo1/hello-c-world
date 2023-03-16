@@ -1,7 +1,10 @@
+//exercise2-1
 #include <stdio.h>
 
-int main(int argc, char* argv[]) {
-	printf("Hello, goorm!\n");
-	
-	return 0;
+int main()
+{
+
+    printf("Hello World!");
+    return 0;
+  
 }
