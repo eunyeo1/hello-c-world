@@ -1,15 +1,15 @@
 //exercise 4-8
 #include <stdio.h>
 
-#define RI 3.14
+#define PI 3.14
 #define NUM 100
 #define BUFFER_SIZE 200
 
 int main()
 {
-    printf("%lf \n", PI);
+    printf("%lf \n",PI);
     printf("%d \n",NUM);
-    pirntf("%d \n", BUFFER_SIZE);
+    printf("%d \n", BUFFER_SIZE);
 
     return 0;
 
