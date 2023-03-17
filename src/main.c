@@ -1,4 +1,20 @@
+ //exercise 5-2
+#include <stdio.h>
+int main(void)
+{
+    int i=0, j=0, k=0;
+    printf("i=%d, j=%d,k=%d \n",i,j,k);
 
+    i=1;
+    j=5;
+    k=7;
+
+    printf("i=%d,j=%d,k=%d \n",i,j,k);
+
+    return 0;
+}
+
+/*
 //exercise 5-1
 #include <stdio.h>
 int main(void)
@@ -18,7 +34,7 @@ int main(void)
     return 0;
 
 }
-/*
+
 //exercise 4-8
 #include <stdio.h>
 
