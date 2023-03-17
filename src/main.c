@@ -1,3 +1,20 @@
+//exercise 5-9
+#include <stdio.h>
+int main(void)
+{
+    int num1=10,num2=10;
+
+    printf("%d \n",++num1);
+    printf("%d \n", num1);
+    
+    printf("%d \n",num2++);
+    printf("%d \n",num2);
+
+    return 0;
+}
+
+
+/*
 //exercise 5-8
 #include <stdio.h>
 int main(void)
@@ -14,10 +31,8 @@ int main(void)
     printf("%d,%d \n",b,num2);
 
     return 0;
-
 }
 
-/*
 //exercise 5-7
 #include <stdio.h>
 int main(void)
