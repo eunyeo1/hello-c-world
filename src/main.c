@@ -1,4 +1,21 @@
 
+//exercise 3-8
+#include <stdio.h>
+int main(void)
+
+{
+    int appleBox=30;
+    int grapeBox=20;
+    int total;
+
+    total=appleBox + grapeBox;
+    printf("총 %d박스가 있습니다. \n", total);
+
+    return 0;
+}  
+
+
+/* 
 //exercise 3-7
 #include <stdio.h>
 int main(void)
@@ -20,7 +37,6 @@ int main(void)
 }
 
 
-/*
 //exercise 3-6
 #include <stdio.h>
 int main(void)
