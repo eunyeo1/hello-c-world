@@ -1,4 +1,19 @@
- 
+//exercise 4-6
+#include <stdio.h>
+int main(void)
+{
+    const int NUM=100;
+    const double PI=3.14;
+
+    //NUM=200;
+    //PI=4.14;
+
+    return 0;
+
+}
+
+
+/* 
 //exercise 4-5
 #include <stdio.h>
 int main(void)
@@ -10,7 +25,7 @@ int main(void)
     return 0;   
     
 }
-/*
+
 //exercise 4-4
 #include <stdio.h>
 int main(void)
