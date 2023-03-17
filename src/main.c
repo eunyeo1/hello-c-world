@@ -1,3 +1,23 @@
+//exercise 5-8
+#include <stdio.h>
+int main(void)
+{
+    int num1=10,num2=10;
+    int a,b;
+
+    num1=num1+1;
+    a=num1;
+    printf("%d,%d \n",a,num1);
+
+    b=num2;
+    num2=num2+1;
+    printf("%d,%d \n",b,num2);
+
+    return 0;
+
+}
+
+/*
 //exercise 5-7
 #include <stdio.h>
 int main(void)
@@ -13,8 +33,6 @@ int main(void)
 
     return 0;
 }
-
-/*
 //exercise 5-6
 #include <stdio.h>
 int main(void)
