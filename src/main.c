@@ -1,4 +1,44 @@
 
+//exercise 3-7
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    int b;
+
+    a=1;
+    b=2;
+
+    int c;
+    c=3; 
+    
+    printf("aì˜ ê°’ : %d \n", a);
+    printf("bì˜ ê°’ : %d \n", b);
+    printf("cì˜ ê°’ : %d \n", c);
+
+    return 0;
+}
+
+
+/*
+//exercise 3-6
+#include <stdio.h>
+int main(void)
+{
+    int a=0;
+    int b=1;
+
+    printf("aì˜ ê°’ì€ %dì…ë‹ˆë‹¤.\n",a);
+    printf("bì˜ ê°’ì€ %dì…ë‹ˆë‹¤.\n",b);
+
+    a=a+10;
+    b=b+10;
+
+    printf("ë³€ê²½ëœ aì˜ ê°’ì€ %dì…ë‹ˆë‹¤. \n",a);
+    printf("ë³€ê²½ëœ bì˜ ê°’ì€ %dì…ë‹ˆë‹¤.\n",b);
+
+    return 0;
+}
 
 //exercise 3-5
 #include <stdio.h>
@@ -7,13 +47,12 @@ int main(void)
     int a=0;
     int b=1;
 
-    printf("aÀÇ °ªÀº %dÀÔ´Ï´Ù. \n",a);
-    printf("bÀÇ °ªÀº %dÀÔ´Ï´Ù. \n",b);
+    printf("aì˜ ê°’ì€ %dì…ë‹ˆë‹¤. \n",a);
+    printf("bì˜ ê°’ì€ %dì…ë‹ˆë‹¤. \n",b);
 
     return 0;
 }
 
-/*
 //exercse 3-4
 #include <stdio.h>
 int main(void)
@@ -64,13 +103,13 @@ int main(void)
     float f1,f2;
     double d1,d2;
 
-    printf("floatÇü ½Ç¼ö µÎ °³ ÀÔ·Â: ");
+    printf("floatí˜• ì‹¤ìˆ˜ ë‘ ê°œ ì…ë ¥: ");
     scanf("%f %e", &f1, &f2);
-    printf("floatÇü ½Ç¼ö Ãâ·Â : f1=%f, f2=%e \n", f1,f2);
+    printf("floatí˜• ì‹¤ìˆ˜ ì¶œë ¥ : f1=%f, f2=%e \n", f1,f2);
 
-    printf("doubleÇü ½Ç¼ö µÎ °³ ÀÔ·Â : ");
+    printf("doubleí˜• ì‹¤ìˆ˜ ë‘ ê°œ ì…ë ¥ : ");
     scanf("%1f %1e", &d1, &d2);
-    printf("doubleÇü ½Ç¼ö Ãâ·Â : d1=%1f, d2=%1e \n", d1, d2);
+    printf("doubleí˜• ì‹¤ìˆ˜ ì¶œë ¥ : d1=%1f, d2=%1e \n", d1, d2);
 
     return 0;
 }
@@ -81,17 +120,17 @@ int main(void)
 {
     int a,b,c;
 
-    printf("10Áø¼ö Á¤¼ö 1°³ ÀÔ·Â : ");
+    printf("10ì§„ìˆ˜ ì •ìˆ˜ 1ê°œ ì…ë ¥ : ");
     scanf("&d",&a);
-    printf("10Áø¼ö : %d,16Áø¼ö : %x,8Áø¼ö : %o \n",a,a,a);
+    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",a,a,a);
 
-    printf("16Áø¼ö Á¤¼ö 1°³ ÀÔ·Â : ");
+    printf("16ì§„ìˆ˜ ì •ìˆ˜ 1ê°œ ì…ë ¥ : ");
     scanf("&x",&b);
-    printf("10Áø¼ö : %d,16Áø¼ö : %x,8Áø¼ö : %o \n",b,b,b);
+    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",b,b,b);
 
-    printf("8Áø¼ö Á¤¼ö 1°³ ÀÔ·Â : ");
+    printf("8ì§„ìˆ˜ ì •ìˆ˜ 1ê°œ ì…ë ¥ : ");
     scanf("&o",&c);
-    printf("10Áø¼ö : %d,16Áø¼ö : %x,8Áø¼ö : %o \n",c,c,c);
+    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",c,c,c);
 
     return 0;
 
@@ -137,7 +176,7 @@ int main(void)
     printf("%g \n", 0.000123);
     printf("%G \n", 0.0000123456);
 
-    printf("¿ÃÇØ ¿ì¸®³ª¶ó °æÁ¦ ¼ºÀå·üÀº 5%%ÀÔ´Ï´Ù.\n");
+    printf("ì˜¬í•´ ìš°ë¦¬ë‚˜ë¼ ê²½ì œ ì„±ì¥ë¥ ì€ 5%%ì…ë‹ˆë‹¤.\n");
 
     return 0;
 }
@@ -157,9 +196,9 @@ int main(void)
 #include <stdio.h>
 int main(void)
 {
-    printf("a¸¦ ´ë¹®ÀÚ·Î Ç¥ÇöÇÏ¸é %cÀÔ´Ï´Ù.\n",'A');
-    printf("%s %cÀÔ´Ï´Ù. \n", "a¸¦ ´ë¹®ÀÚ·Î Ç¥ÇöÇÏ¸é", 'A');
-    printf("%s %s\n","2 °öÇÏ±â 3Àº",2*3,"ÀÔ´Ï´Ù.");
+    printf("aë¥¼ ëŒ€ë¬¸ìë¡œ í‘œí˜„í•˜ë©´ %cì…ë‹ˆë‹¤.\n",'A');
+    printf("%s %cì…ë‹ˆë‹¤. \n", "aë¥¼ ëŒ€ë¬¸ìë¡œ í‘œí˜„í•˜ë©´", 'A');
+    printf("%s %s\n","2 ê³±í•˜ê¸° 3ì€",2*3,"ì…ë‹ˆë‹¤.");
 
     return 0;
 }
@@ -171,11 +210,11 @@ int main(void)
 #include <stdio.h>
 int main(void)
 {  
-   printf("10Áø¼ö Á¤¼ö: %d \n",0.5);
-   printf("10Áø¼ö ½Ç¼ö: %f \n",0.5);
-   printf("10Áø¼ö ½Ç¼ö: %1f \n",0.5);
+   printf("10ì§„ìˆ˜ ì •ìˆ˜: %d \n",0.5);
+   printf("10ì§„ìˆ˜ ì‹¤ìˆ˜: %f \n",0.5);
+   printf("10ì§„ìˆ˜ ì‹¤ìˆ˜: %1f \n",0.5);
 
-   printf("¼Ò¼öÁ¡ ÀÌÇÏ 6ÀÚ¸® ÀÌ»ó : %f \n");
+   printf("ì†Œìˆ˜ì  ì´í•˜ 6ìë¦¬ ì´ìƒ : %f \n");
        
    return 0;
     
@@ -187,9 +226,9 @@ int main(void)
 #include <stdio.h>
 int main()
 {
-   printf("10Áø¼ö : %d´Â 16Áø¼ö : %x, 8Áø¼ö : %oÀÔ´Ï´Ù. /n" , 50,50,50);
-   printf("10Áø¼ö : %d´Â 16Áø¼ö : %x, 8Áø¼ö : %oÀÔ´Ï´Ù. /n" , -50,-50,-50);    
-    // 16Áø¼ö¿Í 8Áø¼ö´Â À½¼ö Ç¥Çö ºÒ°¡
+   printf("10ì§„ìˆ˜ : %dëŠ” 16ì§„ìˆ˜ : %x, 8ì§„ìˆ˜ : %oì…ë‹ˆë‹¤. /n" , 50,50,50);
+   printf("10ì§„ìˆ˜ : %dëŠ” 16ì§„ìˆ˜ : %x, 8ì§„ìˆ˜ : %oì…ë‹ˆë‹¤. /n" , -50,-50,-50);    
+    // 16ì§„ìˆ˜ì™€ 8ì§„ìˆ˜ëŠ” ìŒìˆ˜ í‘œí˜„ ë¶ˆê°€
     
    return 0;
 }
@@ -200,10 +239,10 @@ int main()
 
 int main()
 {
-    printf("%d ´õÇÏ±â %d´Â %dÀÔ´Ï´Ù.\n",3,5,3+5);
-    printf("%i ´õÇÏ±â %i´Â %iÀÔ´Ï´Ù.\n",3,5,3+5);
-    printf("%d-%d = %dÀÔ´Ï´Ù.\n",3,5,3-5);
-    printf("%i-%i = %iÀÔ´Ï´Ù.\n",3,5,3-5);
+    printf("%d ë”í•˜ê¸° %dëŠ” %dì…ë‹ˆë‹¤.\n",3,5,3+5);
+    printf("%i ë”í•˜ê¸° %iëŠ” %iì…ë‹ˆë‹¤.\n",3,5,3+5);
+    printf("%d-%d = %dì…ë‹ˆë‹¤.\n",3,5,3-5);
+    printf("%i-%i = %iì…ë‹ˆë‹¤.\n",3,5,3-5);
     
     return 0;
 }
@@ -214,9 +253,9 @@ int main(void)
 
 {  
     printf("\t Hello C! \n Hello world! \n");
-    printf("Å«µû¿ÈÇ¥ : \" \" \n");
-    printf("ÀÛÀºµû¿ÈÇ¥ : \' \' \n");
-    printf("¿ª½½·¡½Ã : \\ \n");
+    printf("í°ë”°ì˜´í‘œ : \" \" \n");
+    printf("ì‘ì€ë”°ì˜´í‘œ : \' \' \n");
+    printf("ì—­ìŠ¬ë˜ì‹œ : \\ \n");
 
     return 0;
 }
