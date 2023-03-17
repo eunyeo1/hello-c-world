@@ -1,3 +1,21 @@
+//exercise 4-8
+#include <stdio.h>
+
+#define PI 3.14
+#define NUM 100
+#define BUFFER_SIZE 200
+
+int main()
+{
+    printf("%lf \n",PI);
+    printf("%d \n",NUM);
+    printf("%d \n", BUFFER_SIZE);
+
+    return 0;
+
+}
+
+/*
 //exercise 4-7
 #include <stdio.h>
 int main(void)
@@ -8,9 +26,6 @@ int main(void)
     return 0;
 }
 
-
-
-/*
 //exercise 4-6
 #include <stdio.h>
 int main(void)
