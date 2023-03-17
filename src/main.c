@@ -1,4 +1,25 @@
 
+
+//exercise 4-4
+#include <stdio.h>
+int main(void)
+{
+    printf("문자 상수 %c %c %c는 \n",'a','b','c');
+    printf("ASCII 코드 10진수로 %d %d %d는 \n",'a','b','c');
+    printf("ASCII 코드 16진수로 %x %x %x는 \n",'a','b','c');
+
+    printf("\n--------------------\n");
+
+    printf("문자 상수 %c %c %c는 \n",'!','@','#');
+    printf("ASCII 코드 10진수로 %d %d %d는 \n",'!','@','#');
+    printf("ASCII 코드 16진수로 %x %x %x는 \n",'!','@','#');
+
+    return 0;
+
+
+}
+
+/*
 //exercise 4-3
 #include <stdio.h>
 int main(void)
@@ -9,7 +30,7 @@ int main(void)
     return 0;
 }
 
-/*
+
 //exercise 4-2
 #include <stdio.h>
 int main(void)
