@@ -1,3 +1,25 @@
+
+//exercise 4-3
+#include <stdio.h>
+int main(void)
+{
+    printf("문자 상수 %c %c %c입니다. \n",'a','b','c');
+    printf("문자 상수 %c %c %c입니다. \n", '!','@','#');
+
+    return 0;
+}
+
+/*
+//exercise 4-2
+#include <stdio.h>
+int main(void)
+{
+    printf("실수혈 상수 %1f + %1f = %1f =입니다. \n", 3.1, 4.1, 3.1+4.1);
+
+    return 0;
+}
+
+
 //exercise 4-1
 #include <stdio.h>
 int main(void)
@@ -10,7 +32,6 @@ int main(void)
 
 }
 
-/*
 //exercise 3-9
 #include <stdio.h>
 int main(void)
