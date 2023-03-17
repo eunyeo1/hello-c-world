@@ -1,3 +1,27 @@
+//exercise 5-6
+#include <stdio.h>
+int main(void)
+{
+    int num1=10;
+    printf("%d \n", num1);
+
+    num1++;
+    printf("%d \n", num1);
+
+    ++num1;
+    printf("%d \n", num1);
+
+    --num1;
+    printf("%d \n", num1);
+
+    num1--;
+    printf("%d \n", num1);
+
+    return 0;
+
+}
+
+/*
 //exercise 5-5
 #include <stdio.h>
 int main(void)
@@ -23,8 +47,6 @@ int main(void)
 
 }
 
-
-/*
 //exercise 5-4
 #include <stdio.h>
 int main(void)
