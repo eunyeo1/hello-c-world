@@ -1,3 +1,21 @@
+//exercise 5-4
+#include <stdio.h>
+int main(void)
+{
+    int num1, num2;
+
+    num1=10/3;
+    num2=10%3;
+
+    printf("몫 : %d \n",num1);
+    printf("나머지 : %d \n",num2);
+
+    return 0;
+}
+
+
+
+/*
 //exercise 5-3
 #include <stdio.h>
 int main(void)
@@ -16,8 +34,6 @@ int main(void)
 }
 
 
-
-/*
 //exercise 5-2
 #include <stdio.h>
 int main(void)
