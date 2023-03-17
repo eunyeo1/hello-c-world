@@ -1,3 +1,16 @@
+//exercise 4-7
+#include <stdio.h>
+int main(void)
+{
+    const int NUM;
+    NUM=100;
+
+    return 0;
+}
+
+
+
+/*
 //exercise 4-6
 #include <stdio.h>
 int main(void)
@@ -13,7 +26,6 @@ int main(void)
 }
 
 
-/* 
 //exercise 4-5
 #include <stdio.h>
 int main(void)
