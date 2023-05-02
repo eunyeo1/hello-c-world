@@ -8,6 +8,16 @@
 #define CODE 
 int num;
 
+void ex5_17()
+{
+    int num1=10;
+    int result1;
+    
+    result1 = num1 << 2;
+    printf("비트 단위 << 연산의 결과 %d \n",result1);
+}
+
+
 void ex5_16()
 {
     int num1=20;
