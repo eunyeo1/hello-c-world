@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex6_10()
+{
+    char val1;
+    int val2;
+
+    printf("문자 입력 : ");
+    printf("%c",&val1);
+    printf("ASCII 코드 값 %d입니다. \n",val1);
+    
+    printf("ASCII 코드 값 입력 : ");
+    scanf("%d",&val2);
+    printf("문자로 %c입니다. \n", val2);
+
+}
+
+
 void ex6_9()
 {
     char vall;
