@@ -9,6 +9,20 @@
 int num;
 
 
+void ex7_2()
+{
+    int i=0, sum=0;
+    while (i<=10)
+    {
+        sum=sum+i;
+        printf("i=%d,sum=%d \n",i,sum);
+
+    }
+    primtf("-----반복문 종료-----\n");
+
+}
+
+
 void ex7_1()
 {
     int num=0;
