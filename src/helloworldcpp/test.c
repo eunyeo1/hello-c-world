@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+
+
+void ex7_9()
+{
+    int i;
+    for(i=0; 1; i++)
+    {
+        printf("반복 횟수 : %d \n",i);
+
+    }
+   
+}
+
+
 void ex7_8()
 {
     int num=0, i, result=0;
