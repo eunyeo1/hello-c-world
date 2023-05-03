@@ -9,6 +9,17 @@
 int num;
 
 
+void ex8_2()
+{
+    printf("5의 배수 : ");
+    for(num=1; num<=100; num++)
+    {
+        if(num%5==0)
+           printf("%3d",num);
+    }
+}
+
+
 void ex8_1()
 {
     printf("숫자를 입력하세요 : *");
