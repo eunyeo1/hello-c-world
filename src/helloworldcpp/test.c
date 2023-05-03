@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex7_12()
+{
+    int i;
+    int factorial=1;
+
+    for(i=1; i<=10; i++)
+
+    {
+        factorial=factorial+i;
+    }
+    printf("1부터 10까지의 곱: %d \n",factorial);
+ 
+}
+
+
+
 void ex7_11()
 {
     int num,j=9,result=0;
@@ -26,6 +43,7 @@ void ex7_11()
         printf("-------\n");
     }
 }
+
 
 void ex7_10()
 {
