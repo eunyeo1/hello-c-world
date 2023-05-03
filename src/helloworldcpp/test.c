@@ -9,6 +9,19 @@
 int num;
 
 
+
+
+void ex6_11()
+{
+    int num1=100;
+    double num2=3.14;
+
+    printf("%lf \n",num1+num2);
+
+
+}
+
+
 void ex6_10()
 {
     char val1;
