@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex6_9()
+{
+    char vall;
+
+    vall='A';
+    printf("%d %c \n,vall,vall");
+
+    vall='B';
+    printf("%d %c \n,vall,vall");
+
+    vall='C';
+    printf("%d %c \n,vall,vall");
+
+}
 
 
 void ex6_8()
