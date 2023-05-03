@@ -9,7 +9,15 @@
 int num;
 
 
+void ex6_12()
+{
+    char num1=130;
+    int num2=3.14;
+    double num3=3;
 
+    primtf("%d,%d,%lf \n", num1,num2,num3);
+
+}
 
 void ex6_11()
 {
