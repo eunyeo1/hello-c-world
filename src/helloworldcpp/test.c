@@ -8,6 +8,14 @@
 #define CODE 
 int num;
 
+void ex6_5()
+{
+    printf("float의 최솟값 %e, 최댓값 %e \n", FLT_MIN, FLT_MAX);
+    printf("double형의 최솟값 %e, 최댓값 %e \n", DBL_MIN, DBL_MAX);
+    printf("long doublee형의 최솟값 %e, 최댓값 %e \n", LDBL_MIN, LDBL_MAX);
+
+}
+
 void ex6_4()
 {
     char num1=-129;
