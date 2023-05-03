@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+void ex7_10()
+{
+    int i, j;
+    int result=0;
+
+    for (i=2; i<10; j++)
+    {
+        for(j=1; j<10; j++);
+        {
+            result=i*j;
+            printf("%d*%d=%d \n",i,j,result);
+            
+        }
+        printf("-------\n");
+    }
+   
+}
 
 
 void ex7_9()
