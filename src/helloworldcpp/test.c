@@ -8,6 +8,25 @@
 #define CODE 
 int num;
 
+void ex7_11()
+{
+    int num,j=9,result=0;
+    printf("숫자를 입력하세요 : ");
+    scanf("%d",&num);
+
+    for (; num>0; num--)
+
+    {
+        for(j=9; j>0; j--)
+        {
+            result=num*j;
+            printf("%d*%d=%d \n",num,j, result);
+
+        }
+        printf("-------\n");
+    }
+}
+
 void ex7_10()
 {
     int i, j;
