@@ -9,6 +9,18 @@
 int num;
 
 
+void ex6_3()
+{
+    signed char num1=130;
+    unsigned char num2=130;
+
+    printf("%d \n",num1);
+    printf("%d \n",num2);
+
+}
+
+
+
 void ex6_2()
 {
      printf("char형의 크기 %d 바이트, %d바이트 \n", CHAR_MIN, CHAR_MAX);
