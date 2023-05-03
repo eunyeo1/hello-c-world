@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+
+void ex6_2()
+{
+     printf("char형의 크기 %d 바이트, %d바이트 \n", CHAR_MIN, CHAR_MAX);
+     printf("short의 크기 %d 바이트, %d바이트 \n", SHRT_MIN, SHRT_MAX);
+     printf("int형의 크기 %d 바이트, %d바이트 \n", INT_MIN, INT_MAX);
+     printf("long형의 크기 %d 바이트, %d바이트 \n", LONG_MIN, LONG_MAX);
+
+} 
+
+
+
 void ex6_1() 
 {
     //정수형
