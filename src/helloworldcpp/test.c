@@ -9,6 +9,20 @@
 int num;
 
 
+void ex7_1()
+{
+    int num=0;
+    while(num<5)
+    {
+        printf("반복 내용: %d \n",num);
+        num++;
+    }
+
+    printf("반복문 종류한 후 : %d \n",num);
+
+}
+
+
 void ex6_14()
 {
     money num1=3000;
