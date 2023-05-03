@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+
+void ex8_1()
+{
+    printf("숫자를 입력하세요 : *");
+    scanf("%d",&num);
+
+    if(num>=0)
+        printf("양수입니다. \n");
+    
+    if(num<0)
+        printf("음수입니다. \n");
+
+}
+
+
 void ex7_16()
 {
     int num=10;
