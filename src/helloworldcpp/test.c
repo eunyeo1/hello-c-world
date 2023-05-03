@@ -8,7 +8,21 @@
 #define CODE 
 int num;
 
+void ex7_16()
+{
+    int num=10;
+    do
+    { 
+        printf("%d",num);
+        num++;
+        
+    } while (num<10);
 
+    printf("\n **while 문을 종료합니다.** \n");
+        
+}
+    
+    
 void ex7_15()
 {
     int i,factorial=1;
