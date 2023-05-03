@@ -9,6 +9,25 @@
 int num;
 
 
+void ex7_4()
+{
+    int i=2;
+    int j=1;
+    int result=0;
+  {
+    while(i<10)
+    {
+        result=i*j;
+        printf("%d*%d \n",i,j,result);
+        
+    }
+    i++;
+    j=1;
+    printf("--------------\n");
+  }
+
+}
+
 void ex7_3()
 {
     int i=0;
