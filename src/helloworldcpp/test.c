@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex6_7()
+{
+    float num1=0.123456789012345;
+    float num2=0.123456789012345;
+
+    printf ("float형 : %f \n", num1);
+    printf ("double형 : %f \n", num2);
+
+    printf ("float형 : %.15f \n", num1);
+    printf ("double형 : %.15lf \n", num2);
+
+}
+
+
 void ex6_6()
 {
     float num1=3.4e+30;
