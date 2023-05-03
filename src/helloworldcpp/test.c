@@ -9,6 +9,23 @@
 int num;
 
 
+void ex7_3()
+{
+    int i=0;
+    while(1)
+    {
+        printf("반복 횟수 : %d \n", i);
+        i++;
+
+        //if 
+        //break;
+
+    }
+
+}
+
+
+
 void ex7_2()
 {
     int i=0, sum=0;
