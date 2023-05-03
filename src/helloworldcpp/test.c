@@ -8,6 +8,17 @@
 #define CODE 
 int num;
 
+void ex6_6()
+{
+    float num1=3.4e+30;
+    double num2=3.4e+30;
+
+    printf("%f,%e \n", num1,num1);
+    printf("%if,%le \n",num2,num2);
+
+}
+
+
 void ex6_5()
 {
     printf("float의 최솟값 %e, 최댓값 %e \n", FLT_MIN, FLT_MAX);
