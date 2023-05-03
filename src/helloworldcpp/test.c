@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+
+
+void ex6_8()
+{
+    float num1=0.123456;
+    printf("float형: %f \n",num1);
+    printf("float형: %.2f",num1);
+
+}
+
+
+
 void ex6_7()
 {
     float num1=0.123456789012345;
