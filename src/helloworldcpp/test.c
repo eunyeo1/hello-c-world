@@ -9,6 +9,28 @@
 int num;
 
 
+void ex6_13()
+{
+    int num1=10;
+    int num2=3;
+
+    double result;
+
+    result=num1/num2;
+    printf("결과 : %lf \n",result);
+    
+    result=(double)num1/num2;
+    printf("결과 : %lf \n",result);
+
+    result=num1/(double)num2;
+    printf("결과 : %lf \n",result);
+
+    result=(double)num1/(double)num2;
+    printf("결과 : %lf \n",result);
+
+}
+
+
 void ex6_12()
 {
     char num1=130;
