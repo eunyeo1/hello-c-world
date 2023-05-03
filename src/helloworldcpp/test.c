@@ -9,6 +9,29 @@
 int num;
 
 
+
+void ex7_5()
+{
+    int num=0, j=9, result=0;
+    printf("숫자를 입력하세요 : ");
+    scanf("%d", &num);
+
+    while (num>0)
+    {
+        while (j>0)
+        {
+            result=num*j;
+            printf("%d*%d=%d \n", num,j,result);
+            j--;           
+        }
+        num--;
+        j=9;
+        printf("--------\n");
+    }
+    
+
+}
+
 void ex7_4()
 {
     int i=2;
