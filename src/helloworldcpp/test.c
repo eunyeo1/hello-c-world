@@ -8,6 +8,34 @@
 #define CODE 
 int num;
 
+void ex6_1() 
+{
+    //정수형
+    char num1=10;
+    short num2=20;
+    int num3=30;
+    long num4=40;
+
+    //실수형 
+    float num5=3.14;
+    double num6=3.15;
+    long double num7=3.17;
+
+    printf("\n------정수형 자료형과 변수의 메모리 크기------\n");
+    printf("char형의 크기 %d 바이트, %d바이트 \n", sizeof(char), sizeof(num1));
+    printf("short의 크기 %d 바이트, %d바이트 \n", sizeof(short), sizeof(num1));
+    printf("int형의 크기 %d 바이트, %d바이트 \n", sizeof(int), sizeof(num1));
+    printf("long형의 크기 %d 바이트, %d바이트 \n", sizeof(long), sizeof(num1));
+
+    printf("\n------실수형 자료형과 변수의 메모리 크기------\n");
+    printf("float의 크기 %d 바이트, %d바이트 \n", sizeof(float), sizeof(num1));
+    printf("double형의 크기 %d 바이트, %d바이트 \n", sizeof(double), sizeof(num1));
+    printf("long double형의 크기 %d 바이트, %d바이트 \n", sizeof(long double), sizeof(num1));
+}
+
+
+
+
 void ex5_18()
 {
     int num1=10;
