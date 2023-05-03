@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+
+void ex7_7()
+{
+    int i, sum=0;
+    for (i=0; i<=10; i++)
+    {
+        sum+sum+i;
+        printf("i=%d,sum=%d \n", i, sum);
+
+    }
+    printf("-------반복문 종료------\n");
+
+}
+
+
+
 void ex7_6()
 {
     for(num=0; num<5; num++)
