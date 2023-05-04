@@ -8,7 +8,24 @@
 #define CODE 
 int num;
 
+void ex8_8()
+{
+    printf("C 언어 성적 입력 : ");
+    scanf("%d,&num");
 
+    if(num>=95)
+        printf("A+입니다. \n");
+    else if(num>=90)
+        printf("A입니다. \n");
+    
+    else if(num>=85)
+        printf("B+입니다. \n");
+    else if(num>=80)
+        print("B입니다. \n");
+    else
+        printf("F입니다.\n");
+ 
+} 
 
 void ex8_7()
 {
