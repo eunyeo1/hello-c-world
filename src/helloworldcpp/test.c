@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex9_12()
+{
+    _B();
+ 
+}
+void _B(void)
+{
+    static int i=1;
+    if (i>5)
+    printf("셀프 서비스 %d회 \n",i);
+    i=i+1;
+    _B();
+}
+
+
+
 void ex9_11()
 {
     _A();
