@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+
+void ex9_8()
+{
+    printf("함수 호출 전 num : %d \n", num);
+    grow();
+    printf("함수 호출 후 num : %d \n", num);
+}
+
+void grow(void)
+{
+    num=60;
+}
+
+
 void ex9_7()
 { 
     int a = 5, b = 3;
