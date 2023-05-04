@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+
+void ex8_4()
+{
+  
+    printf("숫자 입력 : ");
+    scanf("%d",&num);
+
+    if(num>0)
+        printf("0보다 큰 수가 num에 저장 \n");
+    
+    else
+        printf("0 또는 0보다 작은 수가 num에 저장 \n");
+
+}
+
 void ex8_3()
 {
     int age;
