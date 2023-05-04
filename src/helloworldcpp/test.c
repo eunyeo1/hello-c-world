@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+void ex8_13()
+{
+    int num;
+
+    for(num=0; num<101; num++)
+    {
+        if(num%2==1)
+            continue;
+
+        printf("%d \n", num);    
+    }
+}
+
 void ex8_12()
 {
     char ch;
