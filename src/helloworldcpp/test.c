@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+void ex9_11()
+{
+    _A();
+ 
+}
+
+void _A(void)
+{
+    printf("셀프 서비스 \n");
+    _A();
+}
+
 
 void ex9_10()
 {
