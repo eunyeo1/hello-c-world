@@ -8,6 +8,26 @@
 #define CODE 
 int num;
 
+
+void ex9_10()
+{
+    register int i;
+    clock_t startTime, endTime, result;
+    
+    startTime=clock();
+    for (i=0; i<=MAX; i++)
+    {
+        printf("%d \n", i);
+    } 
+    endTime=clock();
+
+    result=endTime-startTime;
+    printf("레지스터의 변수 속도 : %lf초 \n", (double)result/1000);
+ 
+    
+}
+
+
 void ex9_9()
 {
     count();
