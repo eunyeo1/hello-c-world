@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex9_7()
+{ 
+    int a = 5, b = 3;
+    int result = 0;
+
+    result = subtract(a, b);
+    printf("뺄셈 결과 : %d \n", result);
+    
+    return 0;
+}
+int subtract(int x, int y)
+{
+    return x-y;
+}
+
 
 void ex9_5()
 {
