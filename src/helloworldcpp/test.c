@@ -8,6 +8,24 @@
 #define CODE 
 int num;
 
+void ex9_9()
+{
+    count();
+    count();
+    count();
+  
+}
+
+void count(void)
+{
+    static int x = 0;
+    int y = 0;
+
+    x = x + 1;
+    y = y + 1;
+
+    printf("x의 값: %d, y의 값: %d\n", x, y);
+}
 
 void ex9_8()
 {
