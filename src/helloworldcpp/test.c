@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex1__4()
+{
+    int array[3]={87,65,78};
+    int i, total=0;
+
+    for (i=0; i<3; i++)
+    {
+        total=total + array[i];
+        printf("배열의 요소 array[%d]의 값 : %d \n",i,array[i]);
+    }
+
+    printf("총점이 %d이고", total);
+    printf("평균은 %.21f입니다. \n",(double)total/3);
+ 
+}
+
 void ex1__3()
 {
     int array[3]={87,99,80};
