@@ -8,6 +8,14 @@
 #define CODE 
 int num;
 
+
+void ex1__7()
+{
+    char array[3]={'A','B','C'};
+    printf("%x %x %x \n", array+0,array+1,array+2);
+ 
+}
+
 void ex1__6()
 {
     int array[3]={1,2,3};
