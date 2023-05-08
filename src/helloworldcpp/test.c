@@ -8,6 +8,27 @@
 #define CODE 
 int num;
 
+void ex9_14()
+{
+    int a;
+    int result;
+
+    printf("정수 입력 : ");
+    scanf ("%d",&a);
+
+    result=factorial(a);
+    printf("%d 펙토리얼은 %d 입니다 : \n",a,result);
+  
+}
+int factorial(int n)
+{
+    if(n<=1)
+        return 1;
+
+    else
+        return n * factorial(n-1);
+}
+
 void ex9_13()
 {
     _C();
