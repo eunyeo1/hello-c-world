@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex9_13()
+{
+    _C();
+ 
+}
+
+void _C(void)
+{
+    int n = 1;
+    while(n <= 5)
+    {
+        printf("셀프 서비스 %d회 \n", n);
+        n++;
+    }
+}
 
 void ex9_12()
 {
