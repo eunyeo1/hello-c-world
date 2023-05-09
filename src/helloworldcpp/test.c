@@ -8,6 +8,27 @@
 #define CODE 
 int num;
 
+void ex2__1()
+{
+    //2차원 배열 선언 
+    int array[4][3];
+
+    array[0][0]=1; array[0][1]=2; array[0][2]=3; 
+    array[1][0]=4; array[1][1]=5; array[1][2]=6;
+    array[2][0]=7; array[2][1]=8; array[2][2]=9;
+    array[3][0]=10; array[3][1]=11; array[3][2]=12;
+
+    printf("숫자를 입력하세요: ");
+    scanf("%d", &num);
+    printf("입력한 숫자는 %d입니다.\n", num);
+
+    printf("%d %d %d \n",array[0][0],array[0][1],array[0][2] );  
+    printf("%d %d %d \n",array[1][0],array[1][1],array[1][2] );    
+    printf("%d %d %d \n",array[2][0],array[2][1],array[2][2] );    
+    printf("%d %d %d \n",array[3][0],array[3][1],array[3][2] );
+ 
+}
+
 
 void ex1__9()
 {
