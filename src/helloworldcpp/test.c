@@ -8,6 +8,26 @@
 #define CODE 
 int num;
 
+void ex3__4()
+{
+    int a=0, b=0, c=0;
+    int * ip=NULL;
+
+    ip=&a;
+    *ip=10;
+    printf("%d %d %d %d \n",a,b,c,*ip);
+
+    ip=&b;
+    *ip=20;
+    printf("%d %d %d %d \n",a,b,c,*ip);
+
+    ip=&c;
+    *ip=30;
+    printf("%d %d %d %d \n",a,b,c, *ip);
+
+}
+
+
 void ex3__3()
 {
     char c='A';
