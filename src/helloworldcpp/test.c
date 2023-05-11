@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+void ex3__6()
+{
+    int num1=10;
+    int num2=0;
+    int*ip=NULL;
+
+    ip=&num1;
+
+    num2=*ip+num1;
+    printf("%x %x %d \n",*ip,num1,num2);
+
+}
+
 void ex3__5()
 {
     int num=10;
