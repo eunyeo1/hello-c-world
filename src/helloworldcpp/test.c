@@ -8,6 +8,12 @@
 #define CODE 
 int num;
 
+void ex3__14()
+{
+    printf("%x %x %x \n", main, printf, scanf);
+
+}
+
 void ex3__13()
 {
     int array[3]={10,20,30};
