@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex3__3()
+{
+    char c='A';
+    char *cp =NULL;
+
+    cp=&c;
+
+    printf("%x %c %c \n",&c,c,&c);
+    printf("%x %x %x \n",&cp,cp,&cp);
+
+    printf("%c \n",c);
+    printf("%c \n",*cp);
+}
+
+
 void ex3__2()
 {
     // 포인터 변수 선언 
