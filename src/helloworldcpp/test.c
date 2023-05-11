@@ -8,6 +8,15 @@
 #define CODE 
 int num;
 
+void ex2__8()
+{
+    int array[2][2]={10,20,30,40};
+
+    printf("%x %x \n",array[0],&array[0][0]);
+    printf("%x %x \n",array[1],&array[1][0]);
+ 
+}
+
 void ex2__7()
 {
     int array[2][2]={10,20,30,40};
