@@ -8,6 +8,30 @@
 #define CODE 
 int num;
 
+void ex4__9()
+{
+    int array[3]={10,20,30};
+    int* p=NULL;
+   
+    p=array;
+    printf("&d %d %d \n",p[0],p[1],p[2]);
+    printf("&d %d %d \n",*(p+0),*(p+1),*(p+2));
+    printf("-----------\n");
+
+    p=array+1;
+    printf("&d %d %d \n",p[-1],p[0],p[1]);
+    printf("&d %d %d \n",*(p-1),*p,*(p+1));
+    printf("-----------\n");   
+
+    p=array+2;
+    printf("&d %d %d \n",p[-2],p[-1],p[0]);
+    printf("&d %d %d \n",*(p-2),*(p-1),*p);
+    printf("-----------\n");
+
+
+}
+
+
 void ex4__8()
 {
     int array[3]={10,20,30};
