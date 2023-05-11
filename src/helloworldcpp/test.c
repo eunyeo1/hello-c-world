@@ -8,6 +8,29 @@
 #define CODE 
 int num;
 
+void ex3__15()
+{
+    double x=3.1, y=5.1;
+    void (*pointer)(double, double);
+
+    printf("add 함수의 주소 : %p \n", add);
+    printf("함수 포인터의 주소 : %p \n",&pointer);
+
+    pointer=add;
+    pointer(x,y);
+
+    return 0;
+    
+}
+
+void add(double num1, double num2)
+{
+    double result;
+    result=num1 + num2;
+    printf("%.1f + %.1f = %.1f입니다. \n ", num1, num2, result);
+}
+
+
 void ex3__14()
 {
     printf("%x %x %x \n", main, printf, scanf);
