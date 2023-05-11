@@ -8,6 +8,17 @@
 #define CODE 
 int num;
 
+void ex4__2()
+{
+    int array[3] = {10, 20, 30};
+
+    printf("%d %d %d \n", *array, *(array+0), *&array[0]);
+    printf("%d %d \n", *(array+1), *&array[1]);
+    printf("%d %d \n", *(array+2), *&array[2]);
+
+    printf("%d %d %d \n", sizeof(*array), sizeof(*(array+0)), sizeof(array));
+}
+
 void ex4__1()
 {
     int array[3]={10,20,30};
