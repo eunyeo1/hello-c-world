@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex4_23()
+{
+    char array1[]={'A','B','C','D'};
+    char* p=NULL;
+
+    p=array1;
+
+    printf("%c %c %c %c \n",p[0],p[1],p[2],p[3]);
+    printf("%d %d %d %d \n",p[0],p[1],p[2],p[3]);
+
+    printf("%c %c %c %c \n",*(p+0),*(p+1),*(p+2),*(p+3));
+    printf("%d %d %d %d \n",*(p+0),*(p+1),*(p+2),*(p+3));
+
+}
+
 void ex4_22()
 {
     char array[]={'A','B','C','D'};
