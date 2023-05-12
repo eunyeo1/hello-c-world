@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex4__15()
+{
+    int array1[2][3]={10,20,30,40,50,60};
+    int(*p1)[3]=NULL;   
+    
+    double array2[2][4];
+    double (*p2)[4]=NULL;
+
+    p1=array1;
+    p2=array2;
+
+}
+ 
+
 void ex4__14()
 {
     int array[3][3]={10,20,30,40,50,60};
