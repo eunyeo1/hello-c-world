@@ -8,6 +8,26 @@
 #define CODE 
 int num;
 
+void ex4_19()
+{
+    int a=10, b=20, c=30;
+    int* ap=NULL;
+    int* bp=NULL;
+    int* cp=NULL;
+
+    ap=&a;
+    bp=&b;
+    cp=&c;
+
+    printf("%d %d %d \n",a,b,c);
+    printf("%d %d %d \n",*ap,*bp,*cp);
+
+    printf("%x %x %x \n",&a,&b,&c);
+    printf("%x %x %x \n",ap,bp,cp);
+    printf("%x %x %x \n",&ap,&bp,&cp);
+
+}
+
 void ex4_18()
 {
     int array[2][3] = { {10, 20, 30}, {40, 50, 60} };
