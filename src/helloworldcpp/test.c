@@ -8,6 +8,24 @@
 #define CODE 
 int num;
 
+void ex1___11() 
+{
+    int i = 0;
+    struct student stu[3] = {
+        {"20101323", "park", 80, 80, 0},
+        {"20101324", "kim", 95, 85, 0},
+        {"20101325", "lee", 100, 90, 0}
+    };
+
+    for (i = 0; i < 3; i++) {
+        stu[i].total = stu[i].math + stu[i].english;
+        printf("학번 : %s, 이름 : %s \n", stu[i].no, stu[i].name);
+        printf("총점 : %d \n", stu[i].total);
+        printf("\n");
+    }
+}
+
+
 void ex1___10()
 
   {
