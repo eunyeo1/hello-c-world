@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex5___3()
+{
+    int array[]={10,20,30,40,50,60,70,80};
+    func(array,sizeof(array)/sizeof(int));
+}
+void func(int* p,int num)
+{
+    int i;
+    for(i=0; i<num; i++)
+    {
+        printf("%d %d \n",p[i],*(p+i));
+    }
+}
+
+
 void ex5___2()
 {
     int a=10;
