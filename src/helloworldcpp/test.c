@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+
+void ex1___15()
+{
+    int num1=4;
+    int num2=5;
+    struct point p1;
+
+    p1.x=&num1;
+    p1.y=&num2;
+    printf("%d %d \n",num1,num2);
+    printf("%d %d \n",*p1.x, *p1.y);
+
+    return 0;
+}
+
 void ex1___14()
 {
     int i=0;\
@@ -19,6 +34,7 @@ j
 
     return 0;
 }
+
 
 void ex1___12()
 {
