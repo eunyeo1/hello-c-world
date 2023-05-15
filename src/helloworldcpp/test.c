@@ -8,6 +8,22 @@
 #define CODE 
 int num;
 
+void ex5___1()
+{
+    int a =10;
+    int result=0;
+
+    result=func(a);
+    printf("%d \n",result);
+    printf("%d \n",a);
+}
+
+int funx(int i)
+{
+    i=i+1;
+    return i;
+}
+
 void ex4_32()
 {
     char*p="good morning";
