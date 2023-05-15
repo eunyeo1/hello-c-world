@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+void ex5___11()
+{
+    int i=0;
+    printf("ë¬¸ìì—´ì˜ ìˆ˜ : %d \n",argc);
+
+    for(i=0; i<argc; i++)
+    {
+        printf("%dë°˜ì§¸ ë¬¸ìì—´ : %s \n",i,argc[i]);
+    }
+    return 0;
+}
+
 
 void ex5___10()
 {
@@ -285,17 +297,17 @@ void ex4_22()
 {
     char array[]={'A','B','C','D'};
 
-    printf("ë¬¸ì ?ƒ?ˆ˜ : %c %c %c %c \n",'A','B','C','D');
-    printf("ë¬¸ì ë°°ì—´ ë³?ê²? ? „ : %c %c %c %c \n",array[0],array[1],array[2],array[3]);
+    printf("è‡¾ëª„ì˜„ ?ê¸½?ë‹” : %c %c %c %c \n",'A','B','C','D');
+    printf("è‡¾ëª„ì˜„ è«›ê³—ë¿´ è¹‚?å¯ƒ? ?ìŸ¾ : %c %c %c %c \n",array[0],array[1],array[2],array[3]);
 
     array[0]='D';
     array[1]='C';
     array[2]='B';   
     array[3]='A';
 
-    printf("ë¬¸ì ë°°ì—´ ë³?ê²? ?›„ : %c %c %c %c \n",array[1],array[2],array[3]);
+    printf("è‡¾ëª„ì˜„ è«›ê³—ë¿´ è¹‚?å¯ƒ? ?ì‘ : %c %c %c %c \n",array[1],array[2],array[3]);
     
-    printf("ë¬¸ì ë°°ì—´ array?˜ ?¬ê¸? : %d \n",sizeof(array));
+    printf("è‡¾ëª„ì˜„ è«›ê³—ë¿´ array?ì“½ ?ê²•æ¹²? : %d \n",sizeof(array));
 }
 
 void ex4_21()
@@ -616,7 +628,7 @@ void ex4__7()
     printf("&d %d %d \n",p[0],p[1],p[2]);
     printf("&d %d %d \n",*(p+0),*(p+1),*(p+2));
 
-    printf("ë°°ì—´?˜ ?¬ê¸? : %d ?¬?¸?„°?˜ ?¬ê¸? : %d \n", sizeof(array),sizeof(p));
+    printf("è«›ê³—ë¿´?ì“½ ?ê²•æ¹²? : %d ?ë£·?ì”¤?ê½£?ì“½ ?ê²•æ¹²? : %d \n", sizeof(array),sizeof(p));
 }
 
 void ex4__6()
@@ -702,8 +714,8 @@ void ex3__15()
     double x=3.1, y=5.1;
     void (*pointer)(double, double);
 
-    printf("add ?•¨?ˆ˜?˜ ì£¼ì†Œ : %p \n", add);
-    printf("?•¨?ˆ˜ ?¬?¸?„°?˜ ì£¼ì†Œ : %p \n",&pointer);
+    printf("add ?ë¸¿?ë‹”?ì“½ äºŒì‡±ëƒ¼ : %p \n", add);
+    printf("?ë¸¿?ë‹” ?ë£·?ì”¤?ê½£?ì“½ äºŒì‡±ëƒ¼ : %p \n",&pointer);
 
     pointer=add;
     pointer(x,y);
@@ -716,7 +728,7 @@ void add(double num1, double num2)
 {
     double result;
     result=num1 + num2;
-    printf("%.1f + %.1f = %.1f?…?‹ˆ?‹¤. \n ", num1, num2, result);
+    printf("%.1f + %.1f = %.1f?ì—¯?ë•²?ë–. \n ", num1, num2, result);
 }
 
 
@@ -902,7 +914,7 @@ void ex3__3()
 
 void ex3__2()
 {
-    // ?¬?¸?„° ë³??ˆ˜ ?„ ?–¸ 
+    // ?ë£·?ì”¤?ê½£ è¹‚??ë‹” ?ê½‘?ë¼µ 
     char*cp=NULL;
     int*ip=NULL;
 
@@ -919,8 +931,8 @@ void ex3__1()
     int num1=3;
     char num2='A';
 
-    printf("ì£¼ì†Œ : %x, ê°? : %d, ê°?: %d \n",&num1,num1,*&num1);
-    printf("ì£¼ì†Œ : %x, ê°? : %d, ê°?: %d \n",&num2,num2,*&num2);
+    printf("äºŒì‡±ëƒ¼ : %x, åª›? : %d, åª›?: %d \n",&num1,num1,*&num1);
+    printf("äºŒì‡±ëƒ¼ : %x, åª›? : %d, åª›?: %d \n",&num2,num2,*&num2);
 
     printf("%d %d \n",sizeof(int), sizeof(char));
     printf("%d %d \n",sizeof(num1), sizeof(num2));
@@ -1045,7 +1057,7 @@ void ex2__4()
     {
         for(j=0; j<2; j++)
         {
-           printf("? •?ˆ˜ë¥? ?…? ¥?•˜?„¸?š” : ");
+           printf("?ì ™?ë‹”ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : ");
            scanf("%d, &array[i][j]");
         }
     }
@@ -1106,7 +1118,7 @@ void ex2__2()
 
 void ex2__1()
 {
-    //2ì°¨ì› ë°°ì—´ ?„ ?–¸ 
+    //2ï§¡â‘¥ì è«›ê³—ë¿´ ?ê½‘?ë¼µ 
     int array[4][3];
 
     array[0][0]=1; array[0][1]=2; array[0][2]=3; 
@@ -1114,9 +1126,9 @@ void ex2__1()
     array[2][0]=7; array[2][1]=8; array[2][2]=9;
     array[3][0]=10; array[3][1]=11; array[3][2]=12;
 
-    printf("?ˆ«?ë¥? ?…? ¥?•˜?„¸?š”: ");
+    printf("?ë‹½?ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚: ");
     scanf("%d", &num);
-    printf("?…? ¥?•œ ?ˆ«??Š” %d?…?‹ˆ?‹¤.\n", num);
+    printf("?ì—¯?ì °?ë¸³ ?ë‹½?ì˜„?ë’— %d?ì—¯?ë•²?ë–.\n", num);
 
     printf("%d %d %d \n",array[0][0],array[0][1],array[0][2] );  
     printf("%d %d %d \n",array[1][0],array[1][1],array[1][2] );    
@@ -1182,11 +1194,11 @@ void ex1__4()
     for (i=0; i<3; i++)
     {
         total=total + array[i];
-        printf("ë°°ì—´?˜ ?š”?†Œ array[%d]?˜ ê°? : %d \n",i,array[i]);
+        printf("è«›ê³—ë¿´?ì“½ ?ìŠ‚?ëƒ¼ array[%d]?ì“½ åª›? : %d \n",i,array[i]);
     }
 
-    printf("ì´ì ?´ %d?´ê³?", total);
-    printf("?‰ê· ì?? %.21f?…?‹ˆ?‹¤. \n",(double)total/3);
+    printf("ç¥ì•¹ì ?ì”  %d?ì” æ€¨?", total);
+    printf("?ë£Šæ´¹ì¢?? %.21f?ì—¯?ë•²?ë–. \n",(double)total/3);
  
 }
 
@@ -1196,8 +1208,8 @@ void ex1__3()
     int total=0;
 
     total=array[0]+array[1]+array[2];
-    printf("ì´ì ??? %d?´ê³?", total);
-    printf("?‰ê· ì?? %.21f?…?‹ˆ?‹¤. \n",(double)total/3);
+    printf("ç¥ì•¹ì ??? %d?ì” æ€¨?", total);
+    printf("?ë£Šæ´¹ì¢?? %.21f?ì—¯?ë•²?ë–. \n",(double)total/3);
  
 
 }
@@ -1223,11 +1235,11 @@ void ex1__1()
     student[1]=80;
     student[2]=70;
 
-    printf("ì²? ë²ˆì?? ?•™?ƒ?˜ ? ?ˆ˜ : %d \n", student[0]);
-    printf("?‘ ë²ˆì?? ?•™?ƒ?˜ ? ?ˆ˜ : %d \n", student[1]);
-    printf("?„¸ ë²ˆì?? ?•™?ƒ?˜ ? ?ˆ˜ : %d \n", student[2]);
-    printf("?„¤ ë²ˆì?? ?•™?ƒ?˜ ? ?ˆ˜ : %d \n", student[3]);
-    printf("?‹¤?„¯ ë²ˆì?? ?•™?ƒ?˜ ? ?ˆ˜ : %d \n", student[4]);
+    printf("ï§£? è¸°ë‰?? ?ë¸°?ê¹®?ì“½ ?ì ?ë‹” : %d \n", student[0]);
+    printf("?ëª¢ è¸°ë‰?? ?ë¸°?ê¹®?ì“½ ?ì ?ë‹” : %d \n", student[1]);
+    printf("?ê½­ è¸°ë‰?? ?ë¸°?ê¹®?ì“½ ?ì ?ë‹” : %d \n", student[2]);
+    printf("?ê½• è¸°ë‰?? ?ë¸°?ê¹®?ì“½ ?ì ?ë‹” : %d \n", student[3]);
+    printf("?ë–?ê½¢ è¸°ë‰?? ?ë¸°?ê¹®?ì“½ ?ì ?ë‹” : %d \n", student[4]);
  
 
 }
@@ -1241,11 +1253,11 @@ void ex9_14()
     int a;
     int result;
 
-    printf("? •?ˆ˜ ?…? ¥ : ");
+    printf("?ì ™?ë‹” ?ì—¯?ì ° : ");
     scanf ("%d",&a);
 
     result=factorial(a);
-    printf("%d ?™?† ë¦¬ì–¼??? %d ?…?‹ˆ?‹¤ : \n",a,result);
+    printf("%d ?ëŸº?ë„—ç”±ÑŠë¼¹??? %d ?ì—¯?ë•²?ë– : \n",a,result);
   
 }
 int factorial(int n)
@@ -1268,7 +1280,7 @@ void _C(void)
     int n = 1;
     while(n <= 5)
     {
-        printf("????”„ ?„œë¹„ìŠ¤ %d?šŒ \n", n);
+        printf("????ë´½ ?ê½Œé®ê¾©ë’ª %d?ì‰¶ \n", n);
         n++;
     }
 }
@@ -1282,7 +1294,7 @@ void _B(void)
 {
     static int i=1;
     if (i>5)
-    printf("????”„ ?„œë¹„ìŠ¤ %d?šŒ \n",i);
+    printf("????ë´½ ?ê½Œé®ê¾©ë’ª %d?ì‰¶ \n",i);
     i=i+1;
     _B();
 }
@@ -1297,7 +1309,7 @@ void ex9_11()
 
 void _A(void)
 {
-    printf("????”„ ?„œë¹„ìŠ¤ \n");
+    printf("????ë´½ ?ê½Œé®ê¾©ë’ª \n");
     _A();
 }
 
@@ -1315,7 +1327,7 @@ void ex9_10()
     endTime=clock();
 
     result=endTime-startTime;
-    printf("? ˆì§??Š¤?„°?˜ ë³??ˆ˜ ?†?„ : %lfì´? \n", (double)result/1000);
+    printf("?ì …ï§??ë’ª?ê½£?ì“½ è¹‚??ë‹” ?ëƒ½?ë£„ : %lfç¥? \n", (double)result/1000);
  
     
 }
@@ -1337,14 +1349,14 @@ void count(void)
     x = x + 1;
     y = y + 1;
 
-    printf("x?˜ ê°?: %d, y?˜ ê°?: %d\n", x, y);
+    printf("x?ì“½ åª›?: %d, y?ì“½ åª›?: %d\n", x, y);
 }
 
 void ex9_8()
 {
-    printf("?•¨?ˆ˜ ?˜¸ì¶? ? „ num : %d \n", num);
+    printf("?ë¸¿?ë‹” ?ìƒ‡ç•°? ?ìŸ¾ num : %d \n", num);
     grow();
-    printf("?•¨?ˆ˜ ?˜¸ì¶? ?›„ num : %d \n", num);
+    printf("?ë¸¿?ë‹” ?ìƒ‡ç•°? ?ì‘ num : %d \n", num);
 }
 
 void grow(void)
@@ -1359,7 +1371,7 @@ void ex9_7()
     int result = 0;
 
     result = subtract(a, b);
-    printf("ëº„ì…ˆ ê²°ê³¼ : %d \n", result);
+    printf("ï§ê¾©ë€ å¯ƒê³Œë‚µ : %d \n", result);
     
     return 0;
 }
@@ -1372,7 +1384,7 @@ int subtract(int x, int y)
 void ex9_5()
 {
     int aaa = 10;
-    printf("func_A() ?•¨?ˆ˜?˜ aaa ê°?: %d \n", aaa);
+    printf("func_A() ?ë¸¿?ë‹”?ì“½ aaa åª›?: %d \n", aaa);
 
     func_A();
 
@@ -1383,16 +1395,16 @@ void func_A(void)
     int aaa = 20;
     int bbb = 30;
 
-    printf("func_A() ?•¨?ˆ˜?˜ aaa ê°?: %d \n", aaa);
-    printf("func_A() ?•¨?ˆ˜?˜ bbb ê°?: %d \n", bbb); 
+    printf("func_A() ?ë¸¿?ë‹”?ì“½ aaa åª›?: %d \n", aaa);
+    printf("func_A() ?ë¸¿?ë‹”?ì“½ bbb åª›?: %d \n", bbb); 
 }
 
 
 void ex9_4()
 {
     int result;
-    printf("---?”„ë¡œê·¸?¨ ?‹œ?‘---\n");
-    printf("? •?ˆ˜ ?•œ ê°œë?? ?…? ¥?•˜?„¸?š” : ");
+    printf("---?ë´½æ¿¡ì’“ë ‡?ì˜© ?ë–†?ì˜‰---\n");
+    printf("?ì ™?ë‹” ?ë¸³ åª›ì’•?? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : ");
 
     result=sum();
     output(result);
@@ -1419,7 +1431,7 @@ int input(void)
 }
 void output(int x)
 {
-    printf("ê²°ê³¼ : %d \n", x);
+    printf("å¯ƒê³Œë‚µ : %d \n", x);
  
 }
 
@@ -1429,11 +1441,11 @@ void ex9_2()
     int k;
     
 
-    printf("?ˆ«? ?‘ê°œë?? ?…? ¥?•˜?„¸?š” : ");
+    printf("?ë‹½?ì˜„ ?ëª¢åª›ì’•?? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : ");
     scanf("%d %d", &i, &j);
 
     k = max(i, j);
-    printf("%d??? %d ì¤? ?° ?ˆ˜?Š” %d?…?‹ˆ?‹¤.\n", i, j, k);
+    printf("%d??? %d ä»¥? ?ê²™ ?ë‹”?ë’— %d?ì—¯?ë•²?ë–.\n", i, j, k);
 }
 
 
@@ -1454,14 +1466,14 @@ void ex8_12()
 {
     char ch;
 
-    printf("ë¬¸ìë¥? ?…? ¥?•˜?„¸?š”(që¥? ?…? ¥?•˜ë©? ì¢…ë£Œ) : ");
+    printf("è‡¾ëª„ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚(qç‘œ? ?ì—¯?ì °?ë¸¯ï§? é†«ë‚…ì¦º) : ");
     for( ;  ; )
     {
         scanf("%c",&ch);
         if(ch=='q')
             break;
     }
-    printf("ë°˜ë³µë¬¸ì„ ì¢…ë£Œ?•©?‹ˆ?‹¤. \n");
+    printf("è«›ì„ë‚¬è‡¾ëª„ì“£ é†«ë‚…ì¦º?ë¹€?ë•²?ë–. \n");
 
 }
 
@@ -1470,7 +1482,7 @@ void ex8_11()
     char ch;
 
     printf("(T)hursday,(F)riday,(S)aturday \n");
-    printf("ë¬¸ì ?…? ¥(T,F,S) : ");
+    printf("è‡¾ëª„ì˜„ ?ì—¯?ì °(T,F,S) : ");
 
     scanf("%c", &ch);
 
@@ -1491,7 +1503,7 @@ void ex8_11()
             break;
 
         default:
-            printf("?˜ëª? ?…? ¥?˜?—ˆ?Šµ?‹ˆ?‹¤. \n");
+            printf("?ì˜’ï§? ?ì—¯?ì °?ë¦º?ë¿€?ë’¿?ë•²?ë–. \n");
     }
 }
 
@@ -1499,25 +1511,25 @@ void ex8_11()
 void ex8_10()
 { 
     
-    printf("ëª‡ë²ˆ?˜ ?Š¤?œ„ì¹˜ë?? ?ˆ„ë¥´ì‹œê² ìŠµ?‹ˆê¹??");
+    printf("ï§ë‰–ì¾²?ì“½ ?ë’ª?ìç§»ì„?? ?ëŠ»ç‘œëŒë–†å¯ƒì¢ë’¿?ë•²æº??");
     scanf("%d",&num);
 
     switch (num)
     {
         case 1:
-            printf("? „?“±?´ ì¼œì§ \n");
+            printf("?ìŸ¾?ë²‘?ì”  è€³ì’–ì­š \n");
             break;
 
         case 2:
-            printf("? „?“±?´ êº¼ì§ \n");
+            printf("?ìŸ¾?ë²‘?ì”  çˆ°ì‡±ì­š \n");
             break;
 
         case 3:
-            printf("ê³ ì¥ \n");
+            printf("æ€¨ì¢ì˜£ \n");
             break; 
 
         default:
-            printf("?Š¤?œ„ì¹? ?˜¤ë¥? : ?š°ë¦¬ì§‘ ?Š¤?œ„ì¹˜ëŠ” 1ë²? ~ 3ë²ˆê¹Œì§?ë§? ?ˆ?Šµ?‹ˆ?‹¤. \n");       
+            printf("?ë’ª?ìç§»? ?ì‚¤ç‘œ? : ?ìŠ¦ç”±ÑŠì­› ?ë’ª?ìç§»ì„ë’— 1è¸°? ~ 3è¸°ë‡í‰´ï§?ï§? ?ì—³?ë’¿?ë•²?ë–. \n");       
     }
 }
 
@@ -1525,68 +1537,68 @@ void ex8_10()
 
 void ex8_8()
 {
-    printf("C ?–¸?–´ ?„±?  ?…? ¥ : ");
+    printf("C ?ë¼µ?ë¼± ?ê½¦?ìŸ» ?ì—¯?ì ° : ");
     scanf("%d,&num");
 
     if(num>=95)
-        printf("A+?…?‹ˆ?‹¤. \n");
+        printf("A+?ì—¯?ë•²?ë–. \n");
     else if(num>=90)
-        printf("A?…?‹ˆ?‹¤. \n");
+        printf("A?ì—¯?ë•²?ë–. \n");
     
     else if(num>=85)
-        printf("B+?…?‹ˆ?‹¤. \n");
+        printf("B+?ì—¯?ë•²?ë–. \n");
     else if(num>=80)
-        print("B?…?‹ˆ?‹¤. \n");
+        print("B?ì—¯?ë•²?ë–. \n");
     else
-        printf("F?…?‹ˆ?‹¤.\n");
+        printf("F?ì—¯?ë•²?ë–.\n");
  
 } 
 
 void ex8_7()
 {
-    printf("c?–¸?–´ ?„±?  ?…? ¥ : ");
+    printf("c?ë¼µ?ë¼± ?ê½¦?ìŸ» ?ì—¯?ì ° : ");
     scanf("%d",&num);
 
     if(num>=95)
-        printf("A+?…?‹ˆ?‹¤. \n");
+        printf("A+?ì—¯?ë•²?ë–. \n");
     else if(num>=90)
-        printf("A?…?‹ˆ?‹¤. \n");
+        printf("A?ì—¯?ë•²?ë–. \n");
     else if(num>=85)
-        printf("B+?…?‹ˆ?‹¤. \n");
+        printf("B+?ì—¯?ë•²?ë–. \n");
     else if(num>=80)
-        printf("B?…?‹ˆ?‹¤. \n");
+        printf("B?ì—¯?ë•²?ë–. \n");
     else
-        printf("F?…?‹ˆ?‹¤.\n");
+        printf("F?ì—¯?ë•²?ë–.\n");
  
 }
 
 void ex8_6()
 {
-    printf("?ˆ«? ?…? ¥: ");
+    printf("?ë‹½?ì˜„ ?ì—¯?ì °: ");
     scanf("%d", &num);
 
     if (num > 0) {
-        printf("0ë³´ë‹¤ ?° ?ˆ˜ê°? num?— ????¥\n");
+        printf("0è¹‚ëŒ€ë– ?ê²™ ?ë‹”åª›? num?ë¿‰ ????ì˜£\n");
     } else if (num == 0) {
-        printf("0?„ num?— ????¥\n");
+        printf("0?ì“£ num?ë¿‰ ????ì˜£\n");
     } else {
-        printf("0ë³´ë‹¤ ?‘??? ?ˆ˜ê°? num?— ????¥\n");
+        printf("0è¹‚ëŒ€ë– ?ì˜‰??? ?ë‹”åª›? num?ë¿‰ ????ì˜£\n");
     }
 }
 
 void ex8_5()
 {
-    printf("?ˆ«? ?…? ¥ : ");
+    printf("?ë‹½?ì˜„ ?ì—¯?ì ° : ");
     scanf("%d,&num");
 
     if(num>0)
-        printf("0ë³´ë‹¤ ?° ?ˆ˜ê°? num?— ????¥ \n");
+        printf("0è¹‚ëŒ€ë– ?ê²™ ?ë‹”åª›? num?ë¿‰ ????ì˜£ \n");
     else
     {
         if(num==0)
-            printf("0?´ num?— ????¥ \n");
+            printf("0?ì”  num?ë¿‰ ????ì˜£ \n");
         else
-            printf("0ë³´ë‹¤ ?‘??? ?ˆ˜ê°? num?— ????¥ \n");
+            printf("0è¹‚ëŒ€ë– ?ì˜‰??? ?ë‹”åª›? num?ë¿‰ ????ì˜£ \n");
 
     }
 
@@ -1595,14 +1607,14 @@ void ex8_5()
 void ex8_4()
 {
   
-    printf("?ˆ«? ?…? ¥ : ");
+    printf("?ë‹½?ì˜„ ?ì—¯?ì ° : ");
     scanf("%d",&num);
 
     if(num>0)
-        printf("0ë³´ë‹¤ ?° ?ˆ˜ê°? num?— ????¥ \n");
+        printf("0è¹‚ëŒ€ë– ?ê²™ ?ë‹”åª›? num?ë¿‰ ????ì˜£ \n");
     
     else
-        printf("0 ?˜?Š” 0ë³´ë‹¤ ?‘??? ?ˆ˜ê°? num?— ????¥ \n");
+        printf("0 ?ì‚‰?ë’— 0è¹‚ëŒ€ë– ?ì˜‰??? ?ë‹”åª›? num?ë¿‰ ????ì˜£ \n");
 
 }
 
@@ -1610,20 +1622,20 @@ void ex8_3()
 {
     int age;
 
-    printf("?‚˜?´ ?…? ¥ : ");
+    printf("?êµ¹?ì”  ?ì—¯?ì ° : ");
     scanf("$d",&age);
 
     if(age>=15 && age<=100)
-        printf("?šŒ?› ê°??…?´ ê°??Š¥?•©?‹ˆ?‹¤ \n");
+        printf("?ì‰¶?ì åª›??ì—¯?ì”  åª›??ë’«?ë¹€?ë•²?ë– \n");
 
     else 
-        printf("?šŒ?› ê°??…?´ ê°??Š¥?•©?‹ˆ?‹¤ \n ");
+        printf("?ì‰¶?ì åª›??ì—¯?ì”  åª›??ë’«?ë¹€?ë•²?ë– \n ");
 }
 
 
 void ex8_2()
 {
-    printf("5?˜ ë°°ìˆ˜ : ");
+    printf("5?ì“½ è«›ê³—ë‹” : ");
     for(num=1; num<=100; num++)
     {
         if(num%5==0)
@@ -1634,14 +1646,14 @@ void ex8_2()
 
 void ex8_1()
 {
-    printf("?ˆ«?ë¥? ?…? ¥?•˜?„¸?š” : *");
+    printf("?ë‹½?ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : *");
     scanf("%d",&num);
 
     if(num>=0)
-        printf("?–‘?ˆ˜?…?‹ˆ?‹¤. \n");
+        printf("?ë¼‡?ë‹”?ì—¯?ë•²?ë–. \n");
     
     if(num<0)
-        printf("?Œ?ˆ˜?…?‹ˆ?‹¤. \n");
+        printf("?ì“¬?ë‹”?ì—¯?ë•²?ë–. \n");
 
 }
 
@@ -1656,7 +1668,7 @@ void ex7_16()
         
     } while (num<10);
 
-    printf("\n **while ë¬¸ì„ ì¢…ë£Œ?•©?‹ˆ?‹¤.** \n");
+    printf("\n **while è‡¾ëª„ì“£ é†«ë‚…ì¦º?ë¹€?ë•²?ë–.** \n");
         
 }
     
@@ -1670,7 +1682,7 @@ void ex7_15()
         i++;
 
     }
-    printf("1ë¶??„° 10ê¹Œì???˜ ê³? :  %d \n", factorial);
+    printf("1éº??ê½£ 10æºëš¯???ì“½ æ€¨? :  %d \n", factorial);
 
 }
 
@@ -1682,7 +1694,7 @@ void ex7_14()
     {
         factorial *= i;
     }
-    printf("1ë¶??„° 10ê¹Œì???˜ ê³? : %d\n", factorial);
+    printf("1éº??ê½£ 10æºëš¯???ì“½ æ€¨? : %d\n", factorial);
 }
 
 void ex7_13()
@@ -1692,7 +1704,7 @@ void ex7_13()
     {
         factorial=factorial+i;
     }
-    printf("1ë¶??„° 10ê¹Œì???˜ ê³? : %d \n",factorial);
+    printf("1éº??ê½£ 10æºëš¯???ì“½ æ€¨? : %d \n",factorial);
  
 }
 
@@ -1706,7 +1718,7 @@ void ex7_12()
     {
         factorial=factorial+i;
     }
-    printf("1ë¶??„° 10ê¹Œì???˜ ê³?: %d \n",factorial);
+    printf("1éº??ê½£ 10æºëš¯???ì“½ æ€¨?: %d \n",factorial);
  
 }
 
@@ -1715,7 +1727,7 @@ void ex7_12()
 void ex7_11()
 {
     int num,j=9,result=0;
-    printf("?ˆ«?ë¥? ?…? ¥?•˜?„¸?š” : ");
+    printf("?ë‹½?ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : ");
     scanf("%d",&num);
 
     for (; num>0; num--)
@@ -1756,7 +1768,7 @@ void ex7_9()
     int i;
     for(i=0; 1; i++)
     {
-        printf("ë°˜ë³µ ?šŸ?ˆ˜ : %d \n",i);
+        printf("è«›ì„ë‚¬ ?ìŠ?ë‹” : %d \n",i);
 
     }
    
@@ -1767,13 +1779,13 @@ void ex7_8()
 {
     int num=0, i, result=0;
 
-    printf("?ˆ«?ë¥? ?…? ¥?•˜?„¸?š” :");
+    printf("?ë‹½?ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ :");
     scanf("%d",&num);
 
     for(i=1; i<10; i=i+2)
     {
         result=num*1;
-        printf("%d*%d=%d?…?‹ˆ?‹¤. \n",num,i,result);
+        printf("%d*%d=%d?ì—¯?ë•²?ë–. \n",num,i,result);
 
     }
 
@@ -1788,7 +1800,7 @@ void ex7_7()
         printf("i=%d,sum=%d \n", i, sum);
 
     }
-    printf("-------ë°˜ë³µë¬? ì¢…ë£Œ------\n");
+    printf("-------è«›ì„ë‚¬è‡¾? é†«ë‚…ì¦º------\n");
 
 }
 
@@ -1798,10 +1810,10 @@ void ex7_6()
 {
     for(num=0; num<5; num++)
     {
-        printf("ë°˜ë³µ ?‚´?š© : %d \n",num);
+        printf("è«›ì„ë‚¬ ?ê¶¡?ìŠœ : %d \n",num);
 
     }
-    printf("ë°˜ë³µë¬¸ì„ ì¢…ë£Œ?•œ ?›„ : %d \n",num);
+    printf("è«›ì„ë‚¬è‡¾ëª„ì“£ é†«ë‚…ì¦º?ë¸³ ?ì‘ : %d \n",num);
 
  
 }
@@ -1809,7 +1821,7 @@ void ex7_6()
 void ex7_5()
 {
     int num=0, j=9, result=0;
-    printf("?ˆ«?ë¥? ?…? ¥?•˜?„¸?š” : ");
+    printf("?ë‹½?ì˜„ç‘œ? ?ì—¯?ì °?ë¸¯?ê½­?ìŠ‚ : ");
     scanf("%d", &num);
 
     while (num>0)
@@ -1852,7 +1864,7 @@ void ex7_3()
     int i=0;
     while(1)
     {
-        printf("ë°˜ë³µ ?šŸ?ˆ˜ : %d \n", i);
+        printf("è«›ì„ë‚¬ ?ìŠ?ë‹” : %d \n", i);
         i++;
 
         //if 
@@ -1873,7 +1885,7 @@ void ex7_2()
         printf("i=%d,sum=%d \n",i,sum);
 
     }
-    primtf("-----ë°˜ë³µë¬? ì¢…ë£Œ-----\n");
+    primtf("-----è«›ì„ë‚¬è‡¾? é†«ë‚…ì¦º-----\n");
 
 }
 
@@ -1883,11 +1895,11 @@ void ex7_1()
     int num=0;
     while(num<5)
     {
-        printf("ë°˜ë³µ ?‚´?š©: %d \n",num);
+        printf("è«›ì„ë‚¬ ?ê¶¡?ìŠœ: %d \n",num);
         num++;
     }
 
-    printf("ë°˜ë³µë¬? ì¢…ë¥˜?•œ ?›„ : %d \n",num);
+    printf("è«›ì„ë‚¬è‡¾? é†«ë‚…ìªŸ?ë¸³ ?ì‘ : %d \n",num);
 
 }
 
@@ -1916,16 +1928,16 @@ void ex6_13()
     double result;
 
     result=num1/num2;
-    printf("ê²°ê³¼ : %lf \n",result);
+    printf("å¯ƒê³Œë‚µ : %lf \n",result);
     
     result=(double)num1/num2;
-    printf("ê²°ê³¼ : %lf \n",result);
+    printf("å¯ƒê³Œë‚µ : %lf \n",result);
 
     result=num1/(double)num2;
-    printf("ê²°ê³¼ : %lf \n",result);
+    printf("å¯ƒê³Œë‚µ : %lf \n",result);
 
     result=(double)num1/(double)num2;
-    printf("ê²°ê³¼ : %lf \n",result);
+    printf("å¯ƒê³Œë‚µ : %lf \n",result);
 
 }
 
@@ -1956,13 +1968,13 @@ void ex6_10()
     char val1;
     int val2;
 
-    printf("ë¬¸ì ?…? ¥ : ");
+    printf("è‡¾ëª„ì˜„ ?ì—¯?ì ° : ");
     printf("%c",&val1);
-    printf("ASCII ì½”ë“œ ê°? %d?…?‹ˆ?‹¤. \n",val1);
+    printf("ASCII è‚„ë¶¾ë±¶ åª›? %d?ì—¯?ë•²?ë–. \n",val1);
     
-    printf("ASCII ì½”ë“œ ê°? ?…? ¥ : ");
+    printf("ASCII è‚„ë¶¾ë±¶ åª›? ?ì—¯?ì ° : ");
     scanf("%d",&val2);
-    printf("ë¬¸ìë¡? %c?…?‹ˆ?‹¤. \n", val2);
+    printf("è‡¾ëª„ì˜„æ¿¡? %c?ì—¯?ë•²?ë–. \n", val2);
 
 }
 
@@ -1986,8 +1998,8 @@ void ex6_9()
 void ex6_8()
 {
     float num1=0.123456;
-    printf("float?˜•: %f \n",num1);
-    printf("float?˜•: %.2f",num1);
+    printf("float?ì‚: %f \n",num1);
+    printf("float?ì‚: %.2f",num1);
 
 }
 
@@ -1998,11 +2010,11 @@ void ex6_7()
     float num1=0.123456789012345;
     float num2=0.123456789012345;
 
-    printf ("float?˜• : %f \n", num1);
-    printf ("double?˜• : %f \n", num2);
+    printf ("float?ì‚ : %f \n", num1);
+    printf ("double?ì‚ : %f \n", num2);
 
-    printf ("float?˜• : %.15f \n", num1);
-    printf ("double?˜• : %.15lf \n", num2);
+    printf ("float?ì‚ : %.15f \n", num1);
+    printf ("double?ì‚ : %.15lf \n", num2);
 
 }
 
@@ -2020,9 +2032,9 @@ void ex6_6()
 
 void ex6_5()
 {
-    printf("float?˜ ìµœì†Ÿê°? %e, ìµœëŒ“ê°? %e \n", FLT_MIN, FLT_MAX);
-    printf("double?˜•?˜ ìµœì†Ÿê°? %e, ìµœëŒ“ê°? %e \n", DBL_MIN, DBL_MAX);
-    printf("long doublee?˜•?˜ ìµœì†Ÿê°? %e, ìµœëŒ“ê°? %e \n", LDBL_MIN, LDBL_MAX);
+    printf("float?ì“½ ï§¤ì’–ë„–åª›? %e, ï§¤ì’•ë™åª›? %e \n", FLT_MIN, FLT_MAX);
+    printf("double?ì‚?ì“½ ï§¤ì’–ë„–åª›? %e, ï§¤ì’•ë™åª›? %e \n", DBL_MIN, DBL_MAX);
+    printf("long doublee?ì‚?ì“½ ï§¤ì’–ë„–åª›? %e, ï§¤ì’•ë™åª›? %e \n", LDBL_MIN, LDBL_MAX);
 
 }
 
@@ -2059,10 +2071,10 @@ void ex6_3()
 
 void ex6_2()
 {
-     printf("char?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", CHAR_MIN, CHAR_MAX);
-     printf("short?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", SHRT_MIN, SHRT_MAX);
-     printf("int?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", INT_MIN, INT_MAX);
-     printf("long?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", LONG_MIN, LONG_MAX);
+     printf("char?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", CHAR_MIN, CHAR_MAX);
+     printf("short?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", SHRT_MIN, SHRT_MAX);
+     printf("int?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", INT_MIN, INT_MAX);
+     printf("long?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", LONG_MIN, LONG_MAX);
 
 } 
 
@@ -2070,27 +2082,27 @@ void ex6_2()
 
 void ex6_1() 
 {
-    //? •?ˆ˜?˜•
+    //?ì ™?ë‹”?ì‚
     char num1=10;
     short num2=20;
     int num3=30;
     long num4=40;
 
-    //?‹¤?ˆ˜?˜• 
+    //?ë–?ë‹”?ì‚ 
     float num5=3.14;
     double num6=3.15;
     long double num7=3.17;
 
-    printf("\n------? •?ˆ˜?˜• ?ë£Œí˜•ê³? ë³??ˆ˜?˜ ë©”ëª¨ë¦? ?¬ê¸?------\n");
-    printf("char?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(char), sizeof(num1));
-    printf("short?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(short), sizeof(num1));
-    printf("int?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(int), sizeof(num1));
-    printf("long?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(long), sizeof(num1));
+    printf("\n------?ì ™?ë‹”?ì‚ ?ì˜„çŒ·ëš°ì‚æ€¨? è¹‚??ë‹”?ì“½ ï§ë¶¾ãˆç”±? ?ê²•æ¹²?------\n");
+    printf("char?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(char), sizeof(num1));
+    printf("short?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(short), sizeof(num1));
+    printf("int?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(int), sizeof(num1));
+    printf("long?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(long), sizeof(num1));
 
-    printf("\n------?‹¤?ˆ˜?˜• ?ë£Œí˜•ê³? ë³??ˆ˜?˜ ë©”ëª¨ë¦? ?¬ê¸?------\n");
-    printf("float?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(float), sizeof(num1));
-    printf("double?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(double), sizeof(num1));
-    printf("long double?˜•?˜ ?¬ê¸? %d ë°”ì´?Š¸, %dë°”ì´?Š¸ \n", sizeof(long double), sizeof(num1));
+    printf("\n------?ë–?ë‹”?ì‚ ?ì˜„çŒ·ëš°ì‚æ€¨? è¹‚??ë‹”?ì“½ ï§ë¶¾ãˆç”±? ?ê²•æ¹²?------\n");
+    printf("float?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(float), sizeof(num1));
+    printf("double?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(double), sizeof(num1));
+    printf("long double?ì‚?ì“½ ?ê²•æ¹²? %d è«›ë¶¿ì” ?ë“ƒ, %dè«›ë¶¿ì” ?ë“ƒ \n", sizeof(long double), sizeof(num1));
 }
 
 
@@ -2107,8 +2119,8 @@ void ex5_18()
     result1= num1 >> 1;
     result2= num1 >> 1;
 
-    printf("ë¹„íŠ¸ ?‹¨?œ„>> ?—°?‚°?˜ ê²°ê³¼ %d \n",result1);
-    printf("ë¹„íŠ¸ ?‹¨?œ„>> ?—°?‚°?˜ ê²°ê³¼ %d \n",result2);
+    printf("é®ê¾ªë“ƒ ?ë–’?ì>> ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n",result1);
+    printf("é®ê¾ªë“ƒ ?ë–’?ì>> ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n",result2);
 }
 
 
@@ -2119,7 +2131,7 @@ void ex5_17()
     int result1;
     
     result1 = num1 << 2;
-    printf("ë¹„íŠ¸ ?‹¨?œ„ << ?—°?‚°?˜ ê²°ê³¼ %d \n",result1);
+    printf("é®ê¾ªë“ƒ ?ë–’?ì << ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n",result1);
 }
 
 
@@ -2129,7 +2141,7 @@ void ex5_16()
     int result1;
 
     result1 =~num1;
-    printf("ë¹„íŠ¸ ?‹¨?œ„ ~ ?—°?‚°?˜ ê²°ê³¼ %d \n", result1);
+    printf("é®ê¾ªë“ƒ ?ë–’?ì ~ ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n", result1);
 
 }
 
@@ -2139,7 +2151,7 @@ void ex5_15()
     int result1;
 
     result1=num1^num2;
-    printf("ë¹„íŠ¸?‹¨?œ„ ^ ?—°?‚°?˜ ê²°ê³¼ %d \n", result1);
+    printf("é®ê¾ªë“ƒ?ë–’?ì ^ ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n", result1);
 }
 
 
@@ -2149,7 +2161,7 @@ void ex5_14()
     int result1;
 
     result1=num1 | num2;
-    printf("ë¹„íŠ¸ ?‹¨?œ„ | ?—°?‚°?˜ ê²°ê³¼ %d \n", result1);
+    printf("é®ê¾ªë“ƒ ?ë–’?ì | ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n", result1);
 
 }
 
@@ -2159,7 +2171,7 @@ void ex5_13()
     int result1;
 
     result1=num1 & num2;
-    printf("ë¹„íŠ¸?‹¨?œ„ & ?—°?‚°?˜ ê²°ê³¼ %d \n", result1);
+    printf("é®ê¾ªë“ƒ?ë–’?ì & ?ë¿°?ê¶›?ì“½ å¯ƒê³Œë‚µ %d \n", result1);
 }
 
 void ex5_12()
@@ -2168,7 +2180,7 @@ void ex5_12()
     int result1;
 
     result1=(num1>num2) ? num1:num2;
-    printf("result1?— ????¥?œ ê°? %d \n", result1);
+    printf("result1?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result1);
  
 }
 
@@ -2181,9 +2193,9 @@ void ex5_11()
     result2=(num2<=2) || (num3>5);
     result3=!num3;
 
-    printf("result1?— ????¥?œ ê°? %d \n", result1);
-    printf("result2?— ????¥?œ ê°? %d \n", result2);
-    printf("result3?— ????¥?œ ê°? %d \n", result3);
+    printf("result1?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result1);
+    printf("result2?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result2);
+    printf("result3?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result3);
  
 }
 
@@ -2198,10 +2210,10 @@ void ex5_10()
     result3=(num1==num2);
     result4=(num1!=num2);
 
-    printf("result1?— ????¥?œ ê°? %d \n", result1);
-    printf("result2?— ????¥?œ ê°? %d \n", result2);
-    printf("result3?— ????¥?œ ê°? %d \n", result3);
-    printf("result4?— ????¥?œ ê°? %d \n", result4);
+    printf("result1?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result1);
+    printf("result2?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result2);
+    printf("result3?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result3);
+    printf("result4?ë¿‰ ????ì˜£?ë§‚ åª›? %d \n", result4);
  
 }
 
@@ -2270,19 +2282,19 @@ void ex5_5()
     int num1=1, num2=2, num3=3, num4=4, num5=5;
 
     num1=num1 + num2;
-    printf("ë³µí•© ?§?…ˆ ?—°?‚° ê²°ê³¼ : num1?˜ ìµœì¢…ê°? : %d \n", num1);
+    printf("è¹‚ë“¯ë¹€ ?ëœ¤?ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : num1?ì“½ ï§¤ì’–ì¥Œåª›? : %d \n", num1);
 
     num2=num2-2;
-    printf("ë³µí•© ëº„ì…ˆ ?—°?‚° ê²°ê³¼ : num2?˜ ìµœì¢…ê°? : %d \n", num2);
+    printf("è¹‚ë“¯ë¹€ ï§ê¾©ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : num2?ì“½ ï§¤ì’–ì¥Œåª›? : %d \n", num2);
 
     num3=num3*2;
-    printf("ë³µí•© ê³±ì…ˆ ?—°?‚° ê²°ê³¼ : num3?˜ ìµœì¢…ê°? : %d \n", num3);
+    printf("è¹‚ë“¯ë¹€ æ€¨ê¹†ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : num3?ì“½ ï§¤ì’–ì¥Œåª›? : %d \n", num3);
 
     num4=num4/2;
-    printf("ë³µí•© ?‚˜?ˆ—?…ˆ ?—°?‚° ê²°ê³¼ : num4?˜ ìµœì¢…ê°? : %d \n", num4);
+    printf("è¹‚ë“¯ë¹€ ?êµ¹?ë‹“?ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : num4?ì“½ ï§¤ì’–ì¥Œåª›? : %d \n", num4);
 
     num5=num5%2;
-    printf("ë³µí•© ?‚˜ë¨¸ì?? ?—°?‚° ê²°ê³¼ : num5?˜ ìµœì¢…ê°? : %d \n", num5);
+    printf("è¹‚ë“¯ë¹€ ?êµ¹ç™’ëª„?? ?ë¿°?ê¶› å¯ƒê³Œë‚µ : num5?ì“½ ï§¤ì’–ì¥Œåª›? : %d \n", num5);
 
     printf("%d, %d, %d, %d, %d \n", num1, num2, num3, num4, num5);
 
@@ -2295,8 +2307,8 @@ void ex5_4()
     num1=10/3;
     num2=10%3;
 
-    printf("ëª? : %d \n",num1);
-    printf("?‚˜ë¨¸ì?? : %d \n",num2);
+    printf("ï§? : %d \n",num1);
+    printf("?êµ¹ç™’ëª„?? : %d \n",num2);
  
 }
 
@@ -2306,11 +2318,11 @@ void ex5_3()
     a=6;
     b=2;
 
-    printf("?§?…ˆ ?—°?‚° ê²°ê³¼ : %d \n", a+b);
-    printf("ëº„ì…ˆ ?—°?‚° ê²°ê³¼ : %d \n", a-b);
-    printf("ê³±ì…ˆ ?—°?‚° ê²°ê³¼ : %d \n", a*b);
-    printf("?‚˜?ˆ„ê¸? ?—°?‚° ê²°ê³¼ : %d \n", a/b);
-    printf("?‚˜ë¨¸ì?? ?—°?‚° ê²°ê³¼ : %d \n", a%b);
+    printf("?ëœ¤?ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : %d \n", a+b);
+    printf("ï§ê¾©ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : %d \n", a-b);
+    printf("æ€¨ê¹†ë€ ?ë¿°?ê¶› å¯ƒê³Œë‚µ : %d \n", a*b);
+    printf("?êµ¹?ëŠ»æ¹²? ?ë¿°?ê¶› å¯ƒê³Œë‚µ : %d \n", a/b);
+    printf("?êµ¹ç™’ëª„?? ?ë¿°?ê¶› å¯ƒê³Œë‚µ : %d \n", a%b);
 
   
 }
@@ -2338,11 +2350,11 @@ void ex5_1()
     a=3;
     b=a+5;
 
-    printf("a?˜ ê°? : %d \n",a);
-    printf("b?˜ ê°? : %d \n",b);
+    printf("a?ì“½ åª›? : %d \n",a);
+    printf("b?ì“½ åª›? : %d \n",b);
 
-    printf("ë³??ˆ˜ a?˜ ì£¼ì†Œ : %x \n", &a);
-    printf("ë³??ˆ˜ b?˜ ì£¼ì†Œ : %x \n", &b);
+    printf("è¹‚??ë‹” a?ì“½ äºŒì‡±ëƒ¼ : %x \n", &a);
+    printf("è¹‚??ë‹” b?ì“½ äºŒì‡±ëƒ¼ : %x \n", &b);
 
 
 }
@@ -2383,38 +2395,38 @@ void ex4_6()
 
 void ex4_5()
 {
-    printf("ë¬¸ì?—´ ?ƒ?ˆ˜?Š” %s?…?‹ˆ?‹¤. \n","A");
-    printf("ë¬¸ì?—´ ?ƒ?ˆ˜?Š” %s?…?‹ˆ?‹¤. \n","10+10");
-    printf("ë¬¸ì?—´ ?ƒ?ˆ˜?Š” %s?…?‹ˆ?‹¤. \n","Hi, everyone");
+    printf("è‡¾ëª„ì˜„?ë¿´ ?ê¸½?ë‹”?ë’— %s?ì—¯?ë•²?ë–. \n","A");
+    printf("è‡¾ëª„ì˜„?ë¿´ ?ê¸½?ë‹”?ë’— %s?ì—¯?ë•²?ë–. \n","10+10");
+    printf("è‡¾ëª„ì˜„?ë¿´ ?ê¸½?ë‹”?ë’— %s?ì—¯?ë•²?ë–. \n","Hi, everyone");
     
 }
 
 void ex4_4()
 {
-    printf("ë¬¸ì ?ƒ?ˆ˜ %c %c %c?Š” \n",'a','b','c');
-    printf("ASCII ì½”ë“œ 10ì§„ìˆ˜ë¡? %d %d %d \n",'a','b','c');
-    printf("ASCII ì½”ë“œ 16ì§„ìˆ˜ë¡? %x %x %x \n",'a','b','c');
+    printf("è‡¾ëª„ì˜„ ?ê¸½?ë‹” %c %c %c?ë’— \n",'a','b','c');
+    printf("ASCII è‚„ë¶¾ë±¶ 10ï§ê¾©ë‹”æ¿¡? %d %d %d \n",'a','b','c');
+    printf("ASCII è‚„ë¶¾ë±¶ 16ï§ê¾©ë‹”æ¿¡? %x %x %x \n",'a','b','c');
 
     printf("\n--------------------\n");
 
-    printf("ë¬¸ì ?ƒ?ˆ˜ %c %c %c?Š” \n",'!','@','#');
-    printf("ASCII ì½”ë“œ 10ì§„ìˆ˜ë¡? %d %d %d \n",'!','@','#');
-    printf("ASCII ì½”ë“œ 16ì§„ìˆ˜ë¡? %x %x %x \n",'!','@','#');
+    printf("è‡¾ëª„ì˜„ ?ê¸½?ë‹” %c %c %c?ë’— \n",'!','@','#');
+    printf("ASCII è‚„ë¶¾ë±¶ 10ï§ê¾©ë‹”æ¿¡? %d %d %d \n",'!','@','#');
+    printf("ASCII è‚„ë¶¾ë±¶ 16ï§ê¾©ë‹”æ¿¡? %x %x %x \n",'!','@','#');
  
 
 }
 
 void ex4_3()
 {
-    printf("ë¬¸ì ?ƒ?ˆ˜ %c %c %c?…?‹ˆ?‹¤. \n",'a','b','c');
-    printf("ë¬¸ì ?ƒ?ˆ˜ %c %c %c?…?‹ˆ?‹¤. \n", '!','@','#');
+    printf("è‡¾ëª„ì˜„ ?ê¸½?ë‹” %c %c %c?ì—¯?ë•²?ë–. \n",'a','b','c');
+    printf("è‡¾ëª„ì˜„ ?ê¸½?ë‹” %c %c %c?ì—¯?ë•²?ë–. \n", '!','@','#');
  
 }
 
 
 void ex4_2()
 {
-    printf("?‹¤?ˆ˜?˜• ?ƒ?ˆ˜ %1f + %1f = %1f =?…?‹ˆ?‹¤. \n", 3.1, 4.1, 3.1+4.1);
+    printf("?ë–?ë‹”?ì‚ ?ê¸½?ë‹” %1f + %1f = %1f =?ì—¯?ë•²?ë–. \n", 3.1, 4.1, 3.1+4.1);
 
   
 }
@@ -2422,9 +2434,9 @@ void ex4_2()
 
 void ex4_1()
 {
-    printf("10ì§„ìˆ˜ ? •?ˆ˜?˜• ?ƒ?ˆ˜ %d+%d=%d?…?‹ˆ?‹¤. \n",10,20,10+20);
-    printf("16ì§„ìˆ˜ ? •?ˆ˜?˜• ?ƒ?ˆ˜ %x+%x=%x?…?‹ˆ?‹¤. \n",0x10,0x20,0x10+0x20);
-    printf("8ì§„ìˆ˜ ? •?ˆ˜?˜• ?ƒ?ˆ˜ %o+%o=%o?…?‹ˆ?‹¤. \n", 010,020, 010+020);
+    printf("10ï§ê¾©ë‹” ?ì ™?ë‹”?ì‚ ?ê¸½?ë‹” %d+%d=%d?ì—¯?ë•²?ë–. \n",10,20,10+20);
+    printf("16ï§ê¾©ë‹” ?ì ™?ë‹”?ì‚ ?ê¸½?ë‹” %x+%x=%x?ì—¯?ë•²?ë–. \n",0x10,0x20,0x10+0x20);
+    printf("8ï§ê¾©ë‹” ?ì ™?ë‹”?ì‚ ?ê¸½?ë‹” %o+%o=%o?ì—¯?ë•²?ë–. \n", 010,020, 010+020);
 
     
 }
@@ -2434,11 +2446,11 @@ void ex3_9()
     int a=3;
     int b=4;
 
-    printf("a?˜ ê°? : %d \n",a);
-    printf("b?˜ ê°? : %d \n",b);
+    printf("a?ì“½ åª›? : %d \n",a);
+    printf("b?ì“½ åª›? : %d \n",b);
 
-    printf("ë³??ˆ˜ a?˜ ?‹œ?‘ ì£¼ì†Œ : %x \n", &a);
-    printf("ë³??ˆ˜ b?˜ ?‹œ?‘ ì£¼ì†Œ : %x \n", &b);
+    printf("è¹‚??ë‹” a?ì“½ ?ë–†?ì˜‰ äºŒì‡±ëƒ¼ : %x \n", &a);
+    printf("è¹‚??ë‹” b?ì“½ ?ë–†?ì˜‰ äºŒì‡±ëƒ¼ : %x \n", &b);
  
 }
 
@@ -2450,7 +2462,7 @@ void ex3_8()
     int total;
 
     total=appleBox + grapeBox;
-    printf("ì´? %dë°•ìŠ¤ê°? ?ˆ?Šµ?‹ˆ?‹¤. \n", total);
+    printf("ç¥? %dè«›ëº¤ë’ªåª›? ?ì—³?ë’¿?ë•²?ë–. \n", total);
 
      
 }  
@@ -2467,9 +2479,9 @@ void ex3_7()
     int c;
     c=3; 
     
-    printf("a?˜ ê°? : %d \n", a);
-    printf("b?˜ ê°? : %d \n", b);
-    printf("c?˜ ê°? : %d \n", c);
+    printf("a?ì“½ åª›? : %d \n", a);
+    printf("b?ì“½ åª›? : %d \n", b);
+    printf("c?ì“½ åª›? : %d \n", c);
  
 }
 
@@ -2479,14 +2491,14 @@ void ex3_6()
     int a=0;
     int b=1;
 
-    printf("a?˜ ê°’ì?? %d?…?‹ˆ?‹¤.\n",a);
-    printf("b?˜ ê°’ì?? %d?…?‹ˆ?‹¤.\n",b);
+    printf("a?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–.\n",a);
+    printf("b?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–.\n",b);
 
     a=a+10;
     b=b+10;
 
-    printf("ë³?ê²½ëœ a?˜ ê°’ì?? %d?…?‹ˆ?‹¤. \n",a);
-    printf("ë³?ê²½ëœ b?˜ ê°’ì?? %d?…?‹ˆ?‹¤.\n",b);
+    printf("è¹‚?å¯ƒìˆë§‚ a?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–. \n",a);
+    printf("è¹‚?å¯ƒìˆë§‚ b?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–.\n",b);
  
 }
 
@@ -2495,8 +2507,8 @@ void ex3_5()
     int a=0;
     int b=1;
 
-    printf("a?˜ ê°’ì?? %d?…?‹ˆ?‹¤. \n",a);
-    printf("b?˜ ê°’ì?? %d?…?‹ˆ?‹¤. \n",b);
+    printf("a?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–. \n",a);
+    printf("b?ì“½ åª›ë¯ª?? %d?ì—¯?ë•²?ë–. \n",b);
  
 }
 
@@ -2537,13 +2549,13 @@ void ex2_13(){
     float f1,f2;
     double d1,d2;
 
-    printf("float?˜• ?‹¤?ˆ˜ ?‘ ê°? ?…? ¥: ");
+    printf("float?ì‚ ?ë–?ë‹” ?ëª¢ åª›? ?ì—¯?ì °: ");
     scanf("%f %e", &f1, &f2);
-    printf("float?˜• ?‹¤?ˆ˜ ?‘ ê°? ?…? ¥ : f1=%f, f2=%e \n", f1,f2);
+    printf("float?ì‚ ?ë–?ë‹” ?ëª¢ åª›? ?ì—¯?ì ° : f1=%f, f2=%e \n", f1,f2);
 
-    printf("double?˜• ?‹¤?ˆ˜ ?‘ ê°? ?…? ¥ : ");
+    printf("double?ì‚ ?ë–?ë‹” ?ëª¢ åª›? ?ì—¯?ì ° : ");
     scanf("%1f %1e", &d1, &d2);
-    printf("double?˜• ?‹¤?ˆ˜ ì¶œë ¥ : d1=%1f, d2=%1e \n", d1, d2);
+    printf("double?ì‚ ?ë–?ë‹” ç•°ì’•ì ° : d1=%1f, d2=%1e \n", d1, d2);
  
 }
 
@@ -2551,17 +2563,17 @@ void ex2_12()
 {
     int a,b,c;
 
-    printf("10ì§„ìˆ˜ ? •?ˆ˜ 1ê°? ?…? ¥: ");
+    printf("10ï§ê¾©ë‹” ?ì ™?ë‹” 1åª›? ?ì—¯?ì °: ");
     scanf("&d",&a);
-    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",a,a,a);
+    printf("10ï§ê¾©ë‹” : %d,16ï§ê¾©ë‹” : %x,8ï§ê¾©ë‹” : %o \n",a,a,a);
 
-    printf("16ì§„ìˆ˜ ? •?ˆ˜ 1ê°? ?…? ¥ : ");
+    printf("16ï§ê¾©ë‹” ?ì ™?ë‹” 1åª›? ?ì—¯?ì ° : ");
     scanf("&x",&b);
-    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",b,b,b);
+    printf("10ï§ê¾©ë‹” : %d,16ï§ê¾©ë‹” : %x,8ï§ê¾©ë‹” : %o \n",b,b,b);
 
-    printf("8ì§„ìˆ˜ ? •?ˆ˜  1ê°? ?…? ¥ : ");
+    printf("8ï§ê¾©ë‹” ?ì ™?ë‹”  1åª›? ?ì—¯?ì ° : ");
     scanf("&o",&c);
-    printf("10ì§„ìˆ˜ : %d,16ì§„ìˆ˜ : %x,8ì§„ìˆ˜ : %o \n",c,c,c);
+    printf("10ï§ê¾©ë‹” : %d,16ï§ê¾©ë‹” : %x,8ï§ê¾©ë‹” : %o \n",c,c,c);
 
   
 }
@@ -2599,7 +2611,7 @@ void ex2_9()
     printf("%g \n", 0.000123);
     printf("%G \n", 0.0000123456);
 
-    printf("?˜¬?•´ ?š°ë¦¬ë‚˜?¼ ê²½ì œ ?„±?¥ë¥ ì„ 5%% ?…?‹ˆ?‹¤.\n");
+    printf("?ì‚±?ë¹ ?ìŠ¦ç”±Ñ‰êµ¹?ì”ª å¯ƒìŒì £ ?ê½¦?ì˜£ç‘œì¢ì“£ 5%% ?ì—¯?ë•²?ë–.\n");
  
 }
 
@@ -2614,9 +2626,9 @@ void ex2_8()
 
 void ex2_7()
 {
-    printf("aë¥? ???ë¬¸ìë¡? ?‘œ?˜„?•˜ë©? %c?…?‹ˆ?‹¤.\n",'A');
-    printf("%s %c?…?‹ˆ?‹¤. \n", "aë¥? ???ë¬¸ìë¡? ?‘œ?˜„?•˜ë©?", 'A');
-    printf("%s %d \n","2ê³±í•˜ê¸? 3????",2*3);
+    printf("aç‘œ? ???è‡¾ëª„ì˜„æ¿¡? ?ëª´?ì½?ë¸¯ï§? %c?ì—¯?ë•²?ë–.\n",'A');
+    printf("%s %c?ì—¯?ë•²?ë–. \n", "aç‘œ? ???è‡¾ëª„ì˜„æ¿¡? ?ëª´?ì½?ë¸¯ï§?", 'A');
+    printf("%s %d \n","2æ€¨ê¹Šë¸¯æ¹²? 3????",2*3);
  
 }
 
@@ -2624,12 +2636,12 @@ void ex2_7()
 
 void ex2_6()
 {  
-   printf("10ì§„ìˆ˜ ? •?ˆ˜: %d \n",0.5);
-   printf("10ì§„ìˆ˜ ?‹¤?ˆ˜: %f \n",0.5);
-   printf("10ì§„ìˆ˜ ?‹¤?ˆ˜: %1f \n",0.5);
+   printf("10ï§ê¾©ë‹” ?ì ™?ë‹”: %d \n",0.5);
+   printf("10ï§ê¾©ë‹” ?ë–?ë‹”: %f \n",0.5);
+   printf("10ï§ê¾©ë‹” ?ë–?ë‹”: %1f \n",0.5);
 
-   printf("?†Œ?ˆ˜?  ?´?•˜ 6?ë¦? ?´?ƒ : %f \n, 0.5655678");
-   printf("?†Œ?ˆ˜?  ?´?•˜ 6?ë¦? ?´?ƒ : %lf \n, 0.5667784");
+   printf("?ëƒ¼?ë‹”?ì  ?ì” ?ë¸¯ 6?ì˜„ç”±? ?ì” ?ê¸½ : %f \n, 0.5655678");
+   printf("?ëƒ¼?ë‹”?ì  ?ì” ?ë¸¯ 6?ì˜„ç”±? ?ì” ?ê¸½ : %lf \n, 0.5667784");
 
 }
 
@@ -2637,27 +2649,27 @@ void ex2_6()
 
 void ex2_5()
 {
-   printf("10ì§„ìˆ˜ : %d?Š” 16ì§„ìˆ˜ : %x, 8ì§„ìˆ˜ : %o?…?‹ˆ?‹¤. /n" , 50,50,50);
-   printf("10ì§„ìˆ˜ : %d?Š” 16ì§„ìˆ˜ : %x, 8ì§„ìˆ˜ : %o?…?‹ˆ?‹¤. /n" , -50,-50,-50);    
-    // 16ì§„ìˆ˜??? 8ì§„ìˆ˜?Š” ?Œ?ˆ˜ ?‘œ?˜„ ë¶ˆê??
+   printf("10ï§ê¾©ë‹” : %d?ë’— 16ï§ê¾©ë‹” : %x, 8ï§ê¾©ë‹” : %o?ì—¯?ë•²?ë–. /n" , 50,50,50);
+   printf("10ï§ê¾©ë‹” : %d?ë’— 16ï§ê¾©ë‹” : %x, 8ï§ê¾©ë‹” : %o?ì—¯?ë•²?ë–. /n" , -50,-50,-50);    
+    // 16ï§ê¾©ë‹”??? 8ï§ê¾©ë‹”?ë’— ?ì“¬?ë‹” ?ëª´?ì½ éºë‡??
    
 }
 
 void ex2_4()
 {
-    printf("%d ?”?•˜ê¸? %d?Š” %d?…?‹ˆ?‹¤.\n",3,5,3+5);
-    printf("%i ?”?•˜ê¸? %i?Š” %i?…?‹ˆ?‹¤.\n",3,5,3+5);
-    printf("%d-%d = %d?…?‹ˆ?‹¤.\n",3,5,3-5);
-    printf("%i-%i = %i?…?‹ˆ?‹¤.\n",3,5,3-5);
+    printf("%d ?ëœ‘?ë¸¯æ¹²? %d?ë’— %d?ì—¯?ë•²?ë–.\n",3,5,3+5);
+    printf("%i ?ëœ‘?ë¸¯æ¹²? %i?ë’— %i?ì—¯?ë•²?ë–.\n",3,5,3+5);
+    printf("%d-%d = %d?ì—¯?ë•²?ë–.\n",3,5,3-5);
+    printf("%i-%i = %i?ì—¯?ë•²?ë–.\n",3,5,3-5);
    
 }
 
 void ex2_3()
 {  
     printf("\t Hello C! \n Hello world! \n");
-    printf("?°?”°?˜´?‘œ : \" \" \n");
-    printf("?‘????”°?˜´?‘œ : \' \' \n");
-    printf("?—­?Š¬?˜?‹œ : \\ \n");
+    printf("?ê²™?ëµ²?ìƒ‚?ëª´ : \" \" \n");
+    printf("?ì˜‰????ëµ²?ìƒ‚?ëª´ : \' \' \n");
+    printf("?ë¿­?ë’³?ì˜’?ë–† : \\ \n");
  
 }
 
