@@ -8,6 +8,15 @@
 #define CODE 
 int num;
 
+void ex4_28()
+{
+    char array[]="ABCD";
+
+    array[0]='X';
+    printf("%s \n",array);   
+}
+
+
 void ex4_27()
 {
     char array1[]={'A','B','C','D','\0'};
