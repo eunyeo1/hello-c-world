@@ -8,6 +8,29 @@
 #define CODE 
 int num;
 
+
+void ex5___10()
+{
+    char* p1=NULL;
+    char* p2=NULL;
+
+    p1=string1();
+    p2=string2();
+    return 0;
+}
+char* string1(void)
+{
+    static char strp[]="Good";
+    return str;
+}
+
+char* string2(void)
+{
+    static char str[]="morning";
+    return str;
+}
+
+
 void ex5___9()
 {
     int* p=NULL;
