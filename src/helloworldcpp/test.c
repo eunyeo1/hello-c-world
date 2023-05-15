@@ -8,6 +8,28 @@
 #define CODE 
 int num;
 
+void ex1___12()
+{
+  struct student stu[3];
+  int i=0;
+
+  for(i=0; i<3; i++)
+  {
+    printf("학번 이름 총점 순으로 입력하세요 : ");
+    scanf("%s %s %lf",stu[i].no,stu[i].name,&stu[i].total);
+  }
+  printf("\n");
+
+  printf("학생 정보를 출력합니다. \n");
+  for(i=0; i<3; i++)
+  {
+    printf("%s %s %lf",stu[i].no,stu[i].name,stu[i].total);
+    printf("\n");
+  }
+  return 0;
+}
+
+
 void ex1___11() 
 {
     int i = 0;
