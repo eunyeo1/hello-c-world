@@ -8,6 +8,34 @@
 #define CODE 
 int num;
 
+void ex1___7()
+struct score
+{
+    double math;
+    double english;
+    double total;
+};
+struct student
+{
+     int no;
+     struct score s;
+};
+int main(void);
+{
+    struct student stu;
+
+    stu.no=2022088359;
+    stu.s.math=90;
+    stu.s.english=80;
+    stu.s.total=stu.s.math+stu.s.english;
+
+    printf("?? : %d \n",stu.no);
+    printf("?? : lf \n",stu.s.total);
+
+    return 0;
+   
+}
+
 void ex1___5()
 {
     struct point p1={10,20};
