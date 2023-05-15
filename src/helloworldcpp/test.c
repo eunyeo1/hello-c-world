@@ -8,6 +8,16 @@
 #define CODE 
 int num;
 
+void ex1___9()
+{
+    STUDENT stu = {2022088359, {90, 80, 0}};
+    stu.s.average = (stu.s.math + stu.s.english) / 2.0;
+    printf("학번 : %d\n", stu.no);
+    printf("평균 점수 : %lf\n", stu.s.average);
+}
+ 
+
+
 void ex1___7()
 struct score
 {
