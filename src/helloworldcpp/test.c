@@ -8,6 +8,24 @@
 #define CODE 
 int num;
 
+void ex5___14()
+{
+    char c=3;
+    double d=3.1;
+
+    void* vx=NULL;
+    
+    vx=&c;
+    printf("vx의 주소 값 : %x \n", vx);
+
+    vx=&d;
+    printf("vx의 값 : %if \n",vx);
+
+    return 0;
+
+
+}
+
 void ex5___13()
 {
     int i=0;
