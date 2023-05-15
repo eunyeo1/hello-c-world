@@ -8,6 +8,33 @@
 #define CODE 
 int num;
 
+void ex5___16()
+{
+    char c=3;
+    double d=3.1;
+
+    void* vx=NULL;
+
+    vx=&c;
+    printf("vx가 저장한 주소 : %x \n",vx);
+    printf("vx의 값 : %d \n",*(char*)vx);
+    
+    
+    vx=&d;
+    printf("vx기 저장한 주소 : %x \n",vx);
+    printf("vx의 값 : %if \n",*(double*)vx);
+
+    vx=&c;
+    *(char*)vx=5;
+    printf("c가 저장한 값 : %x \n",c);
+    printf("vx의 값 : %d \n",*(char*)vx);
+
+    vx=&d;
+    *(double*)vx=5;
+    printf("d가 저장한 값 : %x \n",d);
+    printf("vx의 값 : %lf \n",*(double*)vx);
+}
+
 void ex5___15()
 {
     char c=3;
