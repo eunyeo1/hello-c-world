@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+void ex1___14()
+{
+    int i=0;\
+    struct student stu;
+j
+    strcpy(stu.no,"20101323");
+    strcpy(stu.name,"park");
+    printf("학번 : %s, 아름 : %s \n",stu.no, stu.name);
+
+    return 0;
+}
+
 void ex1___12()
 {
   struct student stu[3];
