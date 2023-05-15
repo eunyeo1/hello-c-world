@@ -8,6 +8,25 @@
 #define CODE 
 int num;
 
+void ex1___18()
+struct student stu
+{
+    char no[10];
+    char name[20];
+    double total;
+};
+
+int main(void)
+{
+    struct student stu=("201001323","Park",160);
+    struct student* p=NULL;
+
+    p=&stu;
+    printf("%s %s %lf \n",stu.no, stu.name, stu.total);
+    printf("%s %s %lf \n",(*p).no, (*p).name, (*p).total);
+    printf("%s %s %lf \n",p->no, p->name, p->total);
+}
+
 void ex1___17()
 {
     struct point p1=(20,30);
