@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+void ex5___2()
+{
+    int a=10;
+    int result=0;
+
+    result=func(&a);
+    printf("%d \n",result);
+    printf("%d \n",a);
+}
+
+int func(int* i)
+{
+    *i=*i+i;
+    return *i;
+}
+
+
 void ex5___1()
 {
     int a =10;
