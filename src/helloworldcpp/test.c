@@ -8,7 +8,49 @@
 #define CODE 
 int num;
 
+void ex1___10()
+
+  {
+    struct student stu1 = {"20101323", "park", 80, 80, 0};
+    struct student stu2 = {"20101324", "kim", 95, 85, 0};
+    struct student stu3 = {"20101325", "lee", 100, 90, 0};
+
+    stu1.total = stu1.math + stu1.english;
+    printf("학번 : %s, 이름 : %s \n", stu1.no, stu1.name);
+    printf("총점 : %lf\n", stu1.total);
+
+    printf("\n");
+    stu2.total = stu2.math + stu2.english;
+    printf("학번 : %s, 이름 : %s\n", stu2.no, stu2.name);
+    printf("총점 : %lf\n", stu2.total);
+
+    printf("\n");
+    stu3.total = stu3.math + stu3.english;
+    printf("학번 : %s, 이름: %s\n", stu3.no, stu3.name);
+    printf("총점 : %lf\n", stu3.total);
+
+    return 0;
+}
+
+
 void ex1___9()
+typedef struct score
+
+{
+    double math;
+    double english;
+    double average;
+} SCORE;
+
+struct student
+{
+    int no;
+    SCORE s;
+};
+
+typedef struct student STUDENT;
+
+int main(void)
 {
     STUDENT stu = {2022088359, {90, 80, 0}};
     stu.s.average = (stu.s.math + stu.s.english) / 2.0;
@@ -39,10 +81,9 @@ int main(void);
     stu.s.english=80;
     stu.s.total=stu.s.math+stu.s.english;
 
-    printf("?? : %d \n",stu.no);
-    printf("?? : lf \n",stu.s.total);
+    printf("학번 : %d \n",stu.no);
+    printf("총점 : lf \n",stu.s.total);
 
-    return 0;
    
 }
 
@@ -78,7 +119,6 @@ int main(void);
 
     printf("%d %d \n",p3.x,p3.y);
 
-    return 0;
 }
  
 
@@ -93,7 +133,7 @@ int main(void);
     struct point p1={10,20};
 
     printf("%d %d \n",p1.x,p1.y);
-    return 0;
+
 }
 
 
@@ -112,7 +152,6 @@ int main (void);
     printf("g1.a의 값: %d \n",g1.a);
     printf("g1.b의 값 : %d \n",g1.b);
 
-    return 0;
 }
 
 void ex1___1()
@@ -126,7 +165,6 @@ void ex1___1()
     printf("g1.a의 값 : %d \n",g1.a);
     printf("g1.b의 값 : %if \n",g1.b);
 
-    return 0;
 }
 
 //////////////////////////// part 3 
