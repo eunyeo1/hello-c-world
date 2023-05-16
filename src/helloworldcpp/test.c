@@ -8,6 +8,40 @@
 #define CODE 
 int num;
 
+
+
+void ex1___19()
+struct student
+{
+    char no[10];
+    char name[20];
+    double total;
+};
+
+int main(void)
+{
+    struct student stu=("201001323","Park",160);
+    struct student* p=NULL;
+    struct student** pp=NULL;
+
+    p=&stu;
+    pp=&p;
+
+    printf("%s %s %lf \n",stu.no, stu.name, stu.total);
+
+    printf("%s %s %lf \n",(*p).no, (*p).name, (*p).total);
+    printf("%s %s %lf \n",p->no, p->name, p->total);
+
+    
+    printf("%s %s %lf \n",(**pp).no, (**pp).name, (**pp).total);
+    printf("%s %s %lf \n",(*pp)->no, (*pp)->name, (*pp)->total);
+
+}
+
+ 
+
+
+
 void ex1___18()
 struct student stu
 {
@@ -32,8 +66,7 @@ void ex1___17()
     struct point p1=(20,30);
     printf("구조체 변수 p1의 주소 : %x \n",&p1);
     printf("멤버 변수 p1.x의 주소 : %x \n",&p1.x);
-
-    return 0;
+ 
 }
 
 
