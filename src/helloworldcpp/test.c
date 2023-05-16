@@ -8,7 +8,22 @@
 #define CODE 
 int num;
 
- 
+
+
+void ex1___22()
+{
+
+    struct student stu1={"kim",90,NULL};
+    struct student stu2={"Lee",80,NULL};
+    struct point p1={30,40};
+    struct point p1={60,80};
+
+    stu1.link=&p1;
+    stu2.link=&p2;
+
+    printf("%s %d \n",stu1.name, stu1.link->x,stu1.link->y);
+    printf("%s %d \n",stu2.name, stu2.link->x,stu2.link->y);
+}
 
 void ex1___21()
 {
