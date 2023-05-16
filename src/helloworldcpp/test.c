@@ -8,17 +8,25 @@
 #define CODE 
 int num;
 
+void ex1___20()
+{
+    
+    struct student stu1={"kim",90,NULL};
+    struct student stu2={"Lee",80,NULL};
+    struct student stu3={"Goo",60,NULL};
+
+    stu1.link=&stu2;
+    stu2.link=&stu3;
+
+    printf("%s %d \n",stu1.name, stu1.money);
+    printf("%s %d \n",stu1.link->name, stu1.link->money);
+    printf("%s %d \n",stu1.link->link->name, stu1.link->link->money);
+
+}
+
 
 
 void ex1___19()
-struct student
-{
-    char no[10];
-    char name[20];
-    double total;
-};
-
-int main(void)
 {
     struct student stu=("201001323","Park",160);
     struct student* p=NULL;
