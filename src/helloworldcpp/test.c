@@ -8,9 +8,27 @@
 #define CODE 
 int num;
 
+ 
+
+void ex1___21()
+{
+    struct student stu1={"kim",90,NULL,NULL};
+    struct student stu2={"Lee",80,NULL,NULL};
+    struct student stu3={"Goo",60,NULL,NULL};
+
+    stu1.left_link=&stu2;
+    stu2.right_link=&stu3;
+
+    printf("%s %d \n",stu1.name, stu1.money);
+    printf("%s %d \n",stu1.left_link->name, stu1.link->money);
+    printf("%s %d \n",stu1.right_link->link->name, stu1.link->link->money);
+
+
+}
+
+
 void ex1___20()
 {
-    
     struct student stu1={"kim",90,NULL};
     struct student stu2={"Lee",80,NULL};
     struct student stu3={"Goo",60,NULL};
