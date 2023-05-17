@@ -8,6 +8,16 @@
 #define CODE 
 int num;
 
+void ex1___23()
+{
+    struct point p={10,20};
+    function(p);
+}
+
+void function (struct point call)
+{
+    printf("%d %d \n",call.x, call.y);
+}
 
 
 void ex1___22()
