@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex2___10()
+{
+    char array1[50]="good-morning,good-afternoon,good-evening";
+    char array2[50]="GOOD-MORNING,GOOD-AFTERNOON,GOOD-EVENING";
+    char* p1=NULL;
+    char* p2=NULL;
+
+    p1=strupr(array1);
+    p2=strlwr(array2);
+
+    puts(p1);
+    puts(p2);
+}
+
 void ex2___9()
 {
     char array1[50]="good-morning,good-afternoon,good-evening";
