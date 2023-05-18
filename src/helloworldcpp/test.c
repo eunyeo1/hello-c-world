@@ -8,6 +8,28 @@
 #define CODE 
 int num;
 
+void ex1___29()
+{
+    enum week p1,p2,p3;
+    enum season s1,s2,s3,s4;
+
+    p1= ONE;
+    p2= TWO;
+    p3= THREE;
+
+    printf("%d %d %d \n",ONE, TWO, THREE);
+    printf("%d %d %d \n", p1, p2, p3);
+
+    s1=SPRING;
+    s2=SUMMER;
+    s3=FALL;
+    s4=WINTER;
+
+    printf("%d %d %d \n",SPRING, SUMMER,FALL,WINTER);
+    printf("%d %d %d \n", s1, s2, s3, s4);
+
+}
+
 void ex1___28()
 {
     union point p;
