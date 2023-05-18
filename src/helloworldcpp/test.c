@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+void ex2___9()
+{
+    char array1[50]="good-morning,good-afternoon,good-evening";
+    char array2[10]="morning";
+    char* p1=NULL;
+    char* p2=NULL;
+
+    p1=strchr(array1, 'a');
+    p2=strchr(array1, array2);
+
+    printf("문자 a의 위치 : %x \n", p1);
+    printf("문자열 : %s \n", p1);
+    printf("--------------------------------\n");
+    printf("문자열의 시작 위치 : %x \n",p2);
+    printf("문자열 : %s \n",p2);
+}
+
 void ex2___8()
 {
     char array1[20]="good-morning";
