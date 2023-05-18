@@ -8,6 +8,17 @@
 #define CODE 
 int num;
 
+void ex2___5()
+{
+    char array1[6]="hello";
+    char array2[3];
+
+    strncpy(array2, array1, 3);
+    array2[2]='\0';
+
+    puts(array2);
+}
+
 void ex2___4()
 {
     char array1[12]="hello world";
