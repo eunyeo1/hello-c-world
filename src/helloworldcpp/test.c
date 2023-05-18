@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex2___8()
+{
+    char array1[20]="good-morning";
+    char array2[20]="good-afternoon";
+    char array3[20]="good-evening";
+    int result1, result2, result3;
+
+    result1=strcmp(array1,array2);
+    result2=strcmp(array1,array2,5);
+    result3=strcmp(array2,array3);
+
+    printf("%d %d %d \n",result1,result2,result3);
+    
+}
+
 void ex2___7()
 {
     char array1[100];
