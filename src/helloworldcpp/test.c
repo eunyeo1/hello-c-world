@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex2___11()
+{
+    char array[50]="*100 3.14 good-morning";
+    int num1;
+    double num2;
+    char str[50];
+
+    sscanf(array, "%d %lf %s",&sum1, &num2, str);
+
+    puts("출력");
+    printf("%d, %lf,%s \n",num1,num2,str);
+
+}
+
+
 void ex2___10()
 {
     char array1[50]="good-morning,good-afternoon,good-evening";
