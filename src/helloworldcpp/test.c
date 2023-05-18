@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex2___1()
+{
+    char array1[10];
+    char array2[10]="GOOD LUCK";
+
+    puts("문자열을 입력하세요");
+    gets(array1);
+    puts(array1);
+
+    puts(array2);
+    puts("GOOD LUCK");
+
+}
+
 void ex1___29()
 {
     enum week p1,p2,p3;
@@ -693,7 +707,7 @@ int funx(int i)
     return i;
 }
 
-void ex4_32()
+void ex4__32()
 {
     char*p="good morning";
     char*q="C-language";
@@ -718,7 +732,7 @@ void ex4_32()
 }
 
 
-void ex4_31()
+void ex4__31()
 {
     char*p=&"ABCD";
 
@@ -733,7 +747,7 @@ void ex4_31()
 
 }
 
-void ex4_29()
+void ex4__29()
 {
     char* p="ABCD";
 
@@ -745,7 +759,7 @@ void ex4_29()
 
 }
 
-void ex4_28()
+void ex4__28()
 {
     char array[]="ABCD";
 
@@ -754,7 +768,7 @@ void ex4_28()
 }
 
 
-void ex4_27()
+void ex4__27()
 {
     char array1[]={'A','B','C','D','\0'};
     char array2[]={'A','B','C','D'};
@@ -764,7 +778,7 @@ void ex4_27()
 }
 
 
-void ex4_26()
+void ex4__26()
 {
     char array[]="ABCD";
 
@@ -775,7 +789,7 @@ void ex4_26()
     
 }
 
-void ex4_25()
+void ex4__25()
 {
     char array[]={'A','B','C','D','\0'};
 
@@ -785,7 +799,7 @@ void ex4_25()
 }
 
 
-void ex4_24()
+void ex4__24()
 {
     char array[]="ABCD";
 
@@ -796,7 +810,7 @@ void ex4_24()
 
 }
 
-void ex4_23()
+void ex4__23()
 {
     char array1[]={'A','B','C','D'};
     char* p=NULL;
@@ -811,7 +825,7 @@ void ex4_23()
 
 }
 
-void ex4_22()
+void ex4__22()
 {
     char array[]={'A','B','C','D'};
 
@@ -828,7 +842,7 @@ void ex4_22()
     printf("臾몄옄 諛곗뿴 array?쓽 ?겕湲? : %d \n",sizeof(array));
 }
 
-void ex4_21()
+void ex4__21()
 {
     int a=10, b=20, c=30;
     int* ap[3]=(NULL,NULL,NULL);
@@ -863,7 +877,7 @@ void ex4_21()
 }
 
 
-void ex4_20()
+void ex4__20()
 {
     int a=10, b=20, c=30;
     int* ap[3]=(NULL,NULL,NULL);
@@ -884,7 +898,7 @@ void ex4_20()
 
 }
 
-void ex4_19()
+void ex4__19()
 {
     int a=10, b=20, c=30;
     int* ap=NULL;
@@ -904,7 +918,7 @@ void ex4_19()
 
 }
 
-void ex4_18()
+void ex4__18()
 {
     int array[2][3] = { {10, 20, 30}, {40, 50, 60} };
     int (*p)[3] = NULL;
@@ -930,7 +944,7 @@ void ex4_18()
 
 }
 
-void ex4_17()
+void ex4__17()
 {
     int array[2][3] = { {10, 20, 30}, {40, 50, 60} };
     int (*p)[3] = NULL;
