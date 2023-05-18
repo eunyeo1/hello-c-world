@@ -8,6 +8,14 @@
 #define CODE 
 int num;
 
+void ex1___28()
+{
+    union point p;
+    p.x=10;
+
+    printf("%d %d \n", p.x, p.y);
+}
+
 void ex1___27()
 {
     printf("%d %d \n",sizeof(union point),sizeof(struct student));
