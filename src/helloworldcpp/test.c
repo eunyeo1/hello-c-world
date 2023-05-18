@@ -8,6 +8,26 @@
 #define CODE 
 int num;
 
+void ex2___6()
+{
+    char array1[100];
+    char array2[50];
+
+    printf("첫 번째 문자열 입력 : ");
+    gets(array1);
+
+    printf("두 번째 문자열 입력 : ");
+    gets(array2);
+
+    strcat (array1,array2, 6);
+
+    printf("전체 문자열 출력: ");
+    puts(array1);
+
+
+
+}
+
 void ex2___5()
 {
     char array1[6]="hello";
