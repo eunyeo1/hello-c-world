@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+void ex2___2()
+{
+    char array1[20];
+    char array2[20];
+
+    gets(array1);
+    puts(array1);
+
+    scanf("%s",array2);
+    printf("%s \n", array2);
+
+}
+
 void ex2___1()
 {
     char array1[10];
