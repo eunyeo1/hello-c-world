@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+void ex2___4()
+{
+    char array1[12]="hello world";
+    char array2[12];
+    char array3[12];
+
+    strcpy(array2,array1);
+    strcpy(array3,array1,12);
+
+    puts(array2);
+    puts(array3);    
+}
+
 void ex2___3()
 {
     char array1[ ]="hello C";
@@ -19,7 +32,6 @@ void ex2___3()
     printf("영문 문자열의 길이 : %d \n",sizeof(array1));
     printf("한글 문자열의 길이 : %d \n",sizeof(array2));
 
-    
 }
 
 void ex2___2()
