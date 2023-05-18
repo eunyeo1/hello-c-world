@@ -8,12 +8,23 @@
 #define CODE 
 int num;
 
+void ex1___25()
+{
+    struct point p
+    p=function();
+    printf("%d %d \n", p.x, p.y);
+
+}
+{
+    struct point call={10,20};
+    return call;
+}
+
 void ex1___24()
 {
     struct point p={10,20};
     function(&p);
 }
-void function(struct point* call)
 {
     printf("%d %d \n", call->x, call->y);
     printf("%d %d \n", (*call).x, (*call).y);
