@@ -8,6 +8,20 @@
 #define CODE 
 int num;
 
+void ex2___3()
+{
+    char array1[ ]="hello C";
+    char array2[ ]="안녕하세요";
+
+    printf("영문 문자열의 길이 : %d \n",strlen(array1));
+    printf("한글 문자열의 길이 : %d \n",strlen(array2));
+
+    printf("영문 문자열의 길이 : %d \n",sizeof(array1));
+    printf("한글 문자열의 길이 : %d \n",sizeof(array2));
+
+    
+}
+
 void ex2___2()
 {
     char array1[20];
