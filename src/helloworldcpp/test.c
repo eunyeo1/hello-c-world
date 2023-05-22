@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+void ex3___1()
+{
+    char ch=0;
+
+    while (ch != EOF)
+    {
+        ch=getchar();
+        putchar(ch);
+        
+    }
+    
+}
+
 void ex2___17()
 {
     int i=0;
