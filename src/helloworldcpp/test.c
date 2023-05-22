@@ -8,6 +8,18 @@
 #define CODE 
 int num;
 
+void ex2___16()
+{
+    int i=0;
+    puts("10개의 난수를 발생시킵니다.");
+
+    while(i<10)
+    {
+        printf("%d \t",rand());
+        i=i+1;
+    }
+}
+
 void ex2___15()
 {
     double a1=3.14;
