@@ -8,6 +8,16 @@
 #define CODE 
 int num;
 
+void ex2___14()
+{
+    char a1='A';
+    char a2='a';
+
+    printf("아스키 코드 : %d \n",toascii(a1));
+    printf("소문자 : %c \n",tolower(a2));
+    printf("대문자 : %c \n",toupper(a2));
+}
+
 void ex2___13()
 {
     char* str1="3.14";
