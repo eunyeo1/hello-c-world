@@ -8,6 +8,29 @@
 #define CODE 
 int num;
 
+void ex3___5()
+{
+    FILE* stream1;
+    FILE* stream2;
+    int input=0;
+
+    stream1=fopen("datal.txt","r");
+    stream1=fopen("datal.txt","w");
+
+    puts("파일로부터 데이터를 입력");
+    while(input != EOF)
+    {
+        input=fgetc(stream1);
+        fputc(input,stdout);
+    }
+
+    fclose(stream1);
+    fclose(stream2);
+    
+
+
+}
+
 void ex3___4()
 {
     FULE* stream;
