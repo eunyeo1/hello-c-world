@@ -8,6 +8,22 @@
 #define CODE 
 int num;
 
+
+
+void ex2___12()
+{
+    char array[50];
+    int num1=100;
+    double num2=3.14;
+    chat str[50]="good-morning";
+    printf("%d, %lf, %s \n",num1,num2,str);
+    sprintf(array,"%d,%lf,%s \n",num1,num2,str);
+    printf("%s \n",array);
+
+}
+
+
+
 void ex2___11()
 {
     char array[50]="*100 3.14 good-morning";
@@ -47,11 +63,11 @@ void ex2___9()
     p1=strchr(array1, 'a');
     p2=strchr(array1, array2);
 
-    printf("문자 a의 위치 : %x \n", p1);
-    printf("문자열 : %s \n", p1);
+    printf("문자 a?�� ?���? : %x \n", p1);
+    printf("문자?�� : %s \n", p1);
     printf("--------------------------------\n");
-    printf("문자열의 시작 위치 : %x \n",p2);
-    printf("문자열 : %s \n",p2);
+    printf("문자?��?�� ?��?�� ?���? : %x \n",p2);
+    printf("문자?�� : %s \n",p2);
 }
 
 void ex2___8()
@@ -74,15 +90,15 @@ void ex2___7()
     char array1[100];
     char array2[50];
 
-    printf("첫 번째 문자열 입력 : ");
+    printf("�? 번째 문자?�� ?��?�� : ");
     gets(array1);
 
-    printf("두 번째 문자열 입력 : ");
+    printf("?�� 번째 문자?�� ?��?�� : ");
     gets(array2);
 
     strcat (array1,array2);
 
-    printf("결합된 문자열 출력: ");
+    printf("결합?�� 문자?�� 출력: ");
     puts(array1);
 
 }
@@ -92,15 +108,15 @@ void ex2___6()
     char array1[100];
     char array2[50];
 
-    printf("첫 번째 문자열 입력 : ");
+    printf("�? 번째 문자?�� ?��?�� : ");
     gets(array1);
 
-    printf("두 번째 문자열 입력 : ");
+    printf("?�� 번째 문자?�� ?��?�� : ");
     gets(array2);
 
     strcat (array1,array2, 6);
 
-    printf("전체 문자열 출력: ");
+    printf("?���? 문자?�� 출력: ");
     puts(array1);
 
 }
@@ -132,13 +148,13 @@ void ex2___4()
 void ex2___3()
 {
     char array1[ ]="hello C";
-    char array2[ ]="안녕하세요";
+    char array2[ ]="?��?��?��?��?��";
 
-    printf("영문 문자열의 길이 : %d \n",strlen(array1));
-    printf("한글 문자열의 길이 : %d \n",strlen(array2));
+    printf("?���? 문자?��?�� 길이 : %d \n",strlen(array1));
+    printf("?���? 문자?��?�� 길이 : %d \n",strlen(array2));
 
-    printf("영문 문자열의 길이 : %d \n",sizeof(array1));
-    printf("한글 문자열의 길이 : %d \n",sizeof(array2));
+    printf("?���? 문자?��?�� 길이 : %d \n",sizeof(array1));
+    printf("?���? 문자?��?�� 길이 : %d \n",sizeof(array2));
 
 }
 
@@ -160,7 +176,7 @@ void ex2___1()
     char array1[10];
     char array2[10]="GOOD LUCK";
 
-    puts("문자열을 입력하세요");
+    puts("문자?��?�� ?��?��?��?��?��");
     gets(array1);
     puts(array1);
 
@@ -345,8 +361,8 @@ int main(void)
 void ex1___17()
 {
     struct point p1=(20,30);
-    printf("구조체 변수 p1의 주소 : %x \n",&p1);
-    printf("멤버 변수 p1.x의 주소 : %x \n",&p1.x);
+    printf("구조�? �??�� p1?�� 주소 : %x \n",&p1);
+    printf("멤버 �??�� p1.x?�� 주소 : %x \n",&p1.x);
  
 }
 
@@ -385,7 +401,7 @@ void ex1___14()
 j
     strcpy(stu.no,"20101323");
     strcpy(stu.name,"park");
-    printf("학번 : %s, 아름 : %s \n",stu.no, stu.name);
+    printf("?���? : %s, ?���? : %s \n",stu.no, stu.name);
 
     return 0;
 }
@@ -398,12 +414,12 @@ void ex1___12()
 
   for(i=0; i<3; i++)
   {
-    printf("학번 이름 총점 순으로 입력하세요 : ");
+    printf("?���? ?���? 총점 ?��?���? ?��?��?��?��?�� : ");
     scanf("%s %s %lf",stu[i].no,stu[i].name,&stu[i].total);
   }
   printf("\n");
 
-  printf("학생 정보를 출력합니다. \n");
+  printf("?��?�� ?��보�?? 출력?��?��?��. \n");
   for(i=0; i<3; i++)
   {
     printf("%s %s %lf",stu[i].no,stu[i].name,stu[i].total);
@@ -424,7 +440,7 @@ void ex1___11()
 
     for (i = 0; i < 3; i++) {
         stu[i].total = stu[i].math + stu[i].english;
-        printf("학번 : %s, 이름 : %s \n", stu[i].no, stu[i].name);
+        printf("?���? : %s, ?���? : %s \n", stu[i].no, stu[i].name);
         printf("총점 : %d \n", stu[i].total);
         printf("\n");
     }
@@ -439,17 +455,17 @@ void ex1___10()
     struct student stu3 = {"20101325", "lee", 100, 90, 0};
 
     stu1.total = stu1.math + stu1.english;
-    printf("학번 : %s, 이름 : %s \n", stu1.no, stu1.name);
+    printf("?���? : %s, ?���? : %s \n", stu1.no, stu1.name);
     printf("총점 : %lf\n", stu1.total);
 
     printf("\n");
     stu2.total = stu2.math + stu2.english;
-    printf("학번 : %s, 이름 : %s\n", stu2.no, stu2.name);
+    printf("?���? : %s, ?���? : %s\n", stu2.no, stu2.name);
     printf("총점 : %lf\n", stu2.total);
 
     printf("\n");
     stu3.total = stu3.math + stu3.english;
-    printf("학번 : %s, 이름: %s\n", stu3.no, stu3.name);
+    printf("?���? : %s, ?���?: %s\n", stu3.no, stu3.name);
     printf("총점 : %lf\n", stu3.total);
 
     return 0;
@@ -477,8 +493,8 @@ int main(void)
 {
     STUDENT stu = {2022088359, {90, 80, 0}};
     stu.s.average = (stu.s.math + stu.s.english) / 2.0;
-    printf("학번 : %d\n", stu.no);
-    printf("평균 점수 : %lf\n", stu.s.average);
+    printf("?���? : %d\n", stu.no);
+    printf("?���? ?��?�� : %lf\n", stu.s.average);
 }
  
 
@@ -504,7 +520,7 @@ int main(void);
     stu.s.english=80;
     stu.s.total=stu.s.math+stu.s.english;
 
-    printf("학번 : %d \n",stu.no);
+    printf("?���? : %d \n",stu.no);
     printf("총점 : lf \n",stu.s.total);
 
    
@@ -572,8 +588,8 @@ int main (void);
 
     scanf("%d %lf",&g1.b);
     
-    printf("g1.a의 값: %d \n",g1.a);
-    printf("g1.b의 값 : %d \n",g1.b);
+    printf("g1.a?�� �?: %d \n",g1.a);
+    printf("g1.b?�� �? : %d \n",g1.b);
 
 }
 
@@ -585,8 +601,8 @@ void ex1___1()
     g1.a=10;
     g1.b=1.1234;
 
-    printf("g1.a의 값 : %d \n",g1.a);
-    printf("g1.b의 값 : %if \n",g1.b);
+    printf("g1.a?�� �? : %d \n",g1.a);
+    printf("g1.b?�� �? : %if \n",g1.b);
 
 }
 
@@ -600,23 +616,23 @@ void ex5___16()
     void* vx=NULL;
 
     vx=&c;
-    printf("vx가 저장한 주소 : %x \n",vx);
-    printf("vx의 값 : %d \n",*(char*)vx);
+    printf("vx�? ????��?�� 주소 : %x \n",vx);
+    printf("vx?�� �? : %d \n",*(char*)vx);
     
     
     vx=&d;
-    printf("vx기 저장한 주소 : %x \n",vx);
-    printf("vx의 값 : %if \n",*(double*)vx);
+    printf("vx�? ????��?�� 주소 : %x \n",vx);
+    printf("vx?�� �? : %if \n",*(double*)vx);
 
     vx=&c;
     *(char*)vx=5;
-    printf("c가 저장한 값 : %x \n",c);
-    printf("vx의 값 : %d \n",*(char*)vx);
+    printf("c�? ????��?�� �? : %x \n",c);
+    printf("vx?�� �? : %d \n",*(char*)vx);
 
     vx=&d;
     *(double*)vx=5;
-    printf("d가 저장한 값 : %x \n",d);
-    printf("vx의 값 : %lf \n",*(double*)vx);
+    printf("d�? ????��?�� �? : %x \n",d);
+    printf("vx?�� �? : %lf \n",*(double*)vx);
 }
 
 void ex5___15()
@@ -627,12 +643,12 @@ void ex5___15()
     void* vx=NULL;
 
     vx=&c;
-    printf("vx가 저장한 값 : %x \n",vx);
-    printf("*vx의 값 : %d \n", *(char*)vx);
+    printf("vx�? ????��?�� �? : %x \n",vx);
+    printf("*vx?�� �? : %d \n", *(char*)vx);
 
     vx=&d;
-    printf("vx가 저장한 값 : %x \n",vx);
-    printf("vx의 값 : %lf \n",*(double*)vx);
+    printf("vx�? ????��?�� �? : %x \n",vx);
+    printf("vx?�� �? : %lf \n",*(double*)vx);
 }
 
 
@@ -644,10 +660,10 @@ void ex5___14()
     void* vx=NULL;
     
     vx=&c;
-    printf("vx의 주소 값 : %x \n", vx);
+    printf("vx?�� 주소 �? : %x \n", vx);
 
     vx=&d;
-    printf("vx의 값 : %if \n",vx);
+    printf("vx?�� �? : %if \n",vx);
 
     return 0;
 
@@ -659,15 +675,15 @@ void ex5___13()
     int i=0;
     if(argc>4)
     {
-        printf("문자열의 수가 너무 많습니다.\n");
-        printf("프로그램을 종료합니다.\n");
+        printf("문자?��?�� ?���? ?���? 많습?��?��.\n");
+        printf("?��로그?��?�� 종료?��?��?��.\n");
         return 1;
     }
 
-    printf("0번째 문자열 : %s \n",argv[0]);
-    printf("1번째 문자열  : %s \n",argv[1]);
-    printf("2번째 문자열 : %s \n",argv[2]);
-    printf("3번째 문자열 : %s \n",argv[3]);
+    printf("0번째 문자?�� : %s \n",argv[0]);
+    printf("1번째 문자?��  : %s \n",argv[1]);
+    printf("2번째 문자?�� : %s \n",argv[2]);
+    printf("3번째 문자?�� : %s \n",argv[3]);
 
     return 0;
 }
@@ -677,7 +693,7 @@ void ex5___12()
 {
     
     int i=0;
-    printf("문자열의 수 : %d \n", argc);
+    printf("문자?��?�� ?�� : %d \n", argc);
 
     for(i=0; i<argc; i++)
     {
@@ -690,11 +706,11 @@ void ex5___12()
 void ex5___11()
 {
     int i=0;
-    printf("문자열의 수 : %d \n",argc);
+    printf("문자?��?�� ?�� : %d \n",argc);
 
     for(i=0; i<argc; i++)
     {
-        printf("%d반째 문자열 : %s \n",i,argc[i]);
+        printf("%d반째 문자?�� : %s \n",i,argc[i]);
     }
     return 0;
 }
@@ -976,17 +992,17 @@ void ex4__22()
 {
     char array[]={'A','B','C','D'};
 
-    printf("臾몄옄 ?긽?닔 : %c %c %c %c \n",'A','B','C','D');
-    printf("臾몄옄 諛곗뿴 蹂?寃? ?쟾 : %c %c %c %c \n",array[0],array[1],array[2],array[3]);
+    printf("?��몄옄 ?�???�� : %c %c %c %c \n",'A','B','C','D');
+    printf("?��몄옄 諛곗�? �??�?? ??�� : %c %c %c %c \n",array[0],array[1],array[2],array[3]);
 
     array[0]='D';
     array[1]='C';
     array[2]='B';   
     array[3]='A';
 
-    printf("臾몄옄 諛곗뿴 蹂?寃? ?썑 : %c %c %c %c \n",array[1],array[2],array[3]);
+    printf("?��몄옄 諛곗�? �??�?? ??�� : %c %c %c %c \n",array[1],array[2],array[3]);
     
-    printf("臾몄옄 諛곗뿴 array?쓽 ?겕湲? : %d \n",sizeof(array));
+    printf("?��몄옄 諛곗�? array??�� ?겕湲? : %d \n",sizeof(array));
 }
 
 void ex4__21()
@@ -1307,7 +1323,7 @@ void ex4__7()
     printf("&d %d %d \n",p[0],p[1],p[2]);
     printf("&d %d %d \n",*(p+0),*(p+1),*(p+2));
 
-    printf("諛곗뿴?쓽 ?겕湲? : %d ?룷?씤?꽣?쓽 ?겕湲? : %d \n", sizeof(array),sizeof(p));
+    printf("諛곗�???�� ?겕湲? : %d ?�???��?�???�� ?겕湲? : %d \n", sizeof(array),sizeof(p));
 }
 
 void ex4__6()
@@ -1393,8 +1409,8 @@ void ex3__15()
     double x=3.1, y=5.1;
     void (*pointer)(double, double);
 
-    printf("add ?븿?닔?쓽 二쇱냼 : %p \n", add);
-    printf("?븿?닔 ?룷?씤?꽣?쓽 二쇱냼 : %p \n",&pointer);
+    printf("add ?�???��??�� 二쇱?�� : %p \n", add);
+    printf("?�???�� ?�???��?�???�� 二쇱?�� : %p \n",&pointer);
 
     pointer=add;
     pointer(x,y);
@@ -1407,7 +1423,7 @@ void add(double num1, double num2)
 {
     double result;
     result=num1 + num2;
-    printf("%.1f + %.1f = %.1f?엯?땲?떎. \n ", num1, num2, result);
+    printf("%.1f + %.1f = %.1f??��??��??��. \n ", num1, num2, result);
 }
 
 
@@ -1593,7 +1609,7 @@ void ex3__3()
 
 void ex3__2()
 {
-    // ?룷?씤?꽣 蹂??닔 ?꽑?뼵 
+    // ?�???��?�? �????�� ?�??�? 
     char*cp=NULL;
     int*ip=NULL;
 
@@ -1610,8 +1626,8 @@ void ex3__1()
     int num1=3;
     char num2='A';
 
-    printf("二쇱냼 : %x, 媛? : %d, 媛?: %d \n",&num1,num1,*&num1);
-    printf("二쇱냼 : %x, 媛? : %d, 媛?: %d \n",&num2,num2,*&num2);
+    printf("二쇱?�� : %x, �?? : %d, �??: %d \n",&num1,num1,*&num1);
+    printf("二쇱?�� : %x, �?? : %d, �??: %d \n",&num2,num2,*&num2);
 
     printf("%d %d \n",sizeof(int), sizeof(char));
     printf("%d %d \n",sizeof(num1), sizeof(num2));
@@ -1736,7 +1752,7 @@ void ex2__4()
     {
         for(j=0; j<2; j++)
         {
-           printf("?젙?닔瑜? ?엯?젰?븯?꽭?슂 : ");
+           printf("??��??��?��? ??��??��?�??�???�� : ");
            scanf("%d, &array[i][j]");
         }
     }
@@ -1797,7 +1813,7 @@ void ex2__2()
 
 void ex2__1()
 {
-    //2李⑥썝 諛곗뿴 ?꽑?뼵 
+    //2李⑥?�� 諛곗�? ?�??�? 
     int array[4][3];
 
     array[0][0]=1; array[0][1]=2; array[0][2]=3; 
@@ -1805,9 +1821,9 @@ void ex2__1()
     array[2][0]=7; array[2][1]=8; array[2][2]=9;
     array[3][0]=10; array[3][1]=11; array[3][2]=12;
 
-    printf("?닽?옄瑜? ?엯?젰?븯?꽭?슂: ");
+    printf("??��??��?��? ??��??��?�??�???��: ");
     scanf("%d", &num);
-    printf("?엯?젰?븳 ?닽?옄?뒗 %d?엯?땲?떎.\n", num);
+    printf("??��??��?�? ??��??��??�� %d??��??��??��.\n", num);
 
     printf("%d %d %d \n",array[0][0],array[0][1],array[0][2] );  
     printf("%d %d %d \n",array[1][0],array[1][1],array[1][2] );    
@@ -1873,11 +1889,11 @@ void ex1__4()
     for (i=0; i<3; i++)
     {
         total=total + array[i];
-        printf("諛곗뿴?쓽 ?슂?냼 array[%d]?쓽 媛? : %d \n",i,array[i]);
+        printf("諛곗�???�� ??��??�� array[%d]??�� �?? : %d \n",i,array[i]);
     }
 
-    printf("珥앹젏?씠 %d?씠怨?", total);
-    printf("?룊洹좎?? %.21f?엯?땲?떎. \n",(double)total/3);
+    printf("?��?��?��??�� %d??��????", total);
+    printf("?룊洹�??? %.21f??��??��??��. \n",(double)total/3);
  
 }
 
@@ -1887,8 +1903,8 @@ void ex1__3()
     int total=0;
 
     total=array[0]+array[1]+array[2];
-    printf("珥앹젏??? %d?씠怨?", total);
-    printf("?룊洹좎?? %.21f?엯?땲?떎. \n",(double)total/3);
+    printf("?��?��?��??? %d??��????", total);
+    printf("?룊洹�??? %.21f??��??��??��. \n",(double)total/3);
  
 
 }
@@ -1914,11 +1930,11 @@ void ex1__1()
     student[1]=80;
     student[2]=70;
 
-    printf("泥? 踰덉?? ?븰?깮?쓽 ?젏?닔 : %d \n", student[0]);
-    printf("?몢 踰덉?? ?븰?깮?쓽 ?젏?닔 : %d \n", student[1]);
-    printf("?꽭 踰덉?? ?븰?깮?쓽 ?젏?닔 : %d \n", student[2]);
-    printf("?꽕 踰덉?? ?븰?깮?쓽 ?젏?닔 : %d \n", student[3]);
-    printf("?떎?꽢 踰덉?? ?븰?깮?쓽 ?젏?닔 : %d \n", student[4]);
+    printf("�?? 踰덉?? ?�??�???�� ??��??�� : %d \n", student[0]);
+    printf("?�? 踰덉?? ?�??�???�� ??��??�� : %d \n", student[1]);
+    printf("?�? 踰덉?? ?�??�???�� ??��??�� : %d \n", student[2]);
+    printf("?�? 踰덉?? ?�??�???�� ??��??�� : %d \n", student[3]);
+    printf("??��?�? 踰덉?? ?�??�???�� ??��??�� : %d \n", student[4]);
  
 
 }
@@ -1932,11 +1948,11 @@ void ex9_14()
     int a;
     int result;
 
-    printf("?젙?닔 ?엯?젰 : ");
+    printf("??��??�� ??��??�� : ");
     scanf ("%d",&a);
 
     result=factorial(a);
-    printf("%d ?럺?넗由ъ뼹??? %d ?엯?땲?떎 : \n",a,result);
+    printf("%d ??��??��?��?�뼹??? %d ??��??��??�� : \n",a,result);
   
 }
 int factorial(int n)
@@ -1959,7 +1975,7 @@ void _C(void)
     int n = 1;
     while(n <= 5)
     {
-        printf("????봽 ?꽌鍮꾩뒪 %d?쉶 \n", n);
+        printf("????�? ?꽌鍮꾩뒪 %d??�� \n", n);
         n++;
     }
 }
@@ -1973,7 +1989,7 @@ void _B(void)
 {
     static int i=1;
     if (i>5)
-    printf("????봽 ?꽌鍮꾩뒪 %d?쉶 \n",i);
+    printf("????�? ?꽌鍮꾩뒪 %d??�� \n",i);
     i=i+1;
     _B();
 }
@@ -1988,7 +2004,7 @@ void ex9_11()
 
 void _A(void)
 {
-    printf("????봽 ?꽌鍮꾩뒪 \n");
+    printf("????�? ?꽌鍮꾩뒪 \n");
     _A();
 }
 
@@ -2006,7 +2022,7 @@ void ex9_10()
     endTime=clock();
 
     result=endTime-startTime;
-    printf("?젅吏??뒪?꽣?쓽 蹂??닔 ?냽?룄 : %lf珥? \n", (double)result/1000);
+    printf("??���????��?�???�� �????�� ??��?�? : %lf?��? \n", (double)result/1000);
  
     
 }
@@ -2028,14 +2044,14 @@ void count(void)
     x = x + 1;
     y = y + 1;
 
-    printf("x?쓽 媛?: %d, y?쓽 媛?: %d\n", x, y);
+    printf("x??�� �??: %d, y??�� �??: %d\n", x, y);
 }
 
 void ex9_8()
 {
-    printf("?븿?닔 ?샇異? ?쟾 num : %d \n", num);
+    printf("?�???�� ??��?��? ??�� num : %d \n", num);
     grow();
-    printf("?븿?닔 ?샇異? ?썑 num : %d \n", num);
+    printf("?�???�� ??��?��? ??�� num : %d \n", num);
 }
 
 void grow(void)
@@ -2050,7 +2066,7 @@ void ex9_7()
     int result = 0;
 
     result = subtract(a, b);
-    printf("類꾩뀍 寃곌낵 : %d \n", result);
+    printf("類꾩??? 寃곌?�� : %d \n", result);
     
     return 0;
 }
@@ -2063,7 +2079,7 @@ int subtract(int x, int y)
 void ex9_5()
 {
     int aaa = 10;
-    printf("func_A() ?븿?닔?쓽 aaa 媛?: %d \n", aaa);
+    printf("func_A() ?�???��??�� aaa �??: %d \n", aaa);
 
     func_A();
 
@@ -2074,16 +2090,16 @@ void func_A(void)
     int aaa = 20;
     int bbb = 30;
 
-    printf("func_A() ?븿?닔?쓽 aaa 媛?: %d \n", aaa);
-    printf("func_A() ?븿?닔?쓽 bbb 媛?: %d \n", bbb); 
+    printf("func_A() ?�???��??�� aaa �??: %d \n", aaa);
+    printf("func_A() ?�???��??�� bbb �??: %d \n", bbb); 
 }
 
 
 void ex9_4()
 {
     int result;
-    printf("---?봽濡쒓렇?옩 ?떆?옉---\n");
-    printf("?젙?닔 ?븳 媛쒕?? ?엯?젰?븯?꽭?슂 : ");
+    printf("---?봽濡?��?��??�� ??��??��---\n");
+    printf("??��??�� ?�? 媛쒕?? ??��??��?�??�???�� : ");
 
     result=sum();
     output(result);
@@ -2110,7 +2126,7 @@ int input(void)
 }
 void output(int x)
 {
-    printf("寃곌낵 : %d \n", x);
+    printf("寃곌?�� : %d \n", x);
  
 }
 
@@ -2120,11 +2136,11 @@ void ex9_2()
     int k;
     
 
-    printf("?닽?옄 ?몢媛쒕?? ?엯?젰?븯?꽭?슂 : ");
+    printf("??��??�� ?몢媛?��?? ??��??��?�??�???�� : ");
     scanf("%d %d", &i, &j);
 
     k = max(i, j);
-    printf("%d??? %d 以? ?겙 ?닔?뒗 %d?엯?땲?떎.\n", i, j, k);
+    printf("%d??? %d �?? ?�? ??��??�� %d??��??��??��.\n", i, j, k);
 }
 
 
@@ -2145,14 +2161,14 @@ void ex8_12()
 {
     char ch;
 
-    printf("臾몄옄瑜? ?엯?젰?븯?꽭?슂(q瑜? ?엯?젰?븯硫? 醫낅즺) : ");
+    printf("?��몄옄?��? ??��??��?�??�???��(q?��? ??��??��?�?�?? ?��?���?) : ");
     for( ;  ; )
     {
         scanf("%c",&ch);
         if(ch=='q')
             break;
     }
-    printf("諛섎났臾몄쓣 醫낅즺?빀?땲?떎. \n");
+    printf("諛섎?��?��몄쓣 ?��?���??�???��??��. \n");
 
 }
 
@@ -2161,7 +2177,7 @@ void ex8_11()
     char ch;
 
     printf("(T)hursday,(F)riday,(S)aturday \n");
-    printf("臾몄옄 ?엯?젰(T,F,S) : ");
+    printf("?��몄옄 ??��??��(T,F,S) : ");
 
     scanf("%c", &ch);
 
@@ -2182,7 +2198,7 @@ void ex8_11()
             break;
 
         default:
-            printf("?옒紐? ?엯?젰?릺?뿀?뒿?땲?떎. \n");
+            printf("??���?? ??��??��?�??�???��??��??��. \n");
     }
 }
 
@@ -2190,25 +2206,25 @@ void ex8_11()
 void ex8_10()
 { 
     
-    printf("紐뉖쾲?쓽 ?뒪?쐞移섎?? ?늻瑜댁떆寃좎뒿?땲源??");
+    printf("紐뉖�???�� ??��??��移섎?? ??��?��?��?��寃좎?��??���???");
     scanf("%d",&num);
 
     switch (num)
     {
         case 1:
-            printf("?쟾?벑?씠 耳쒖쭚 \n");
+            printf("??��?�???�� ??�쒖�? \n");
             break;
 
         case 2:
-            printf("?쟾?벑?씠 爰쇱쭚 \n");
+            printf("??��?�???�� ?��?���? \n");
             break;
 
         case 3:
-            printf("怨좎옣 \n");
+            printf("??�좎?�� \n");
             break; 
 
         default:
-            printf("?뒪?쐞移? ?삤瑜? : ?슦由ъ쭛 ?뒪?쐞移섎뒗 1踰? ~ 3踰덇퉴吏?留? ?엳?뒿?땲?떎. \n");       
+            printf("??��??���?? ??��?��? : ??��?��?�쭛 ??��??��移섎?�� 1�?? ~ 3踰덇?���??�?? ??��??��??��??��. \n");       
     }
 }
 
@@ -2216,68 +2232,68 @@ void ex8_10()
 
 void ex8_8()
 {
-    printf("C ?뼵?뼱 ?꽦?쟻 ?엯?젰 : ");
+    printf("C ?�??�? ?�???�� ??��??�� : ");
     scanf("%d,&num");
 
     if(num>=95)
-        printf("A+?엯?땲?떎. \n");
+        printf("A+??��??��??��. \n");
     else if(num>=90)
-        printf("A?엯?땲?떎. \n");
+        printf("A??��??��??��. \n");
     
     else if(num>=85)
-        printf("B+?엯?땲?떎. \n");
+        printf("B+??��??��??��. \n");
     else if(num>=80)
-        print("B?엯?땲?떎. \n");
+        print("B??��??��??��. \n");
     else
-        printf("F?엯?땲?떎.\n");
+        printf("F??��??��??��.\n");
  
 } 
 
 void ex8_7()
 {
-    printf("c?뼵?뼱 ?꽦?쟻 ?엯?젰 : ");
+    printf("c?�??�? ?�???�� ??��??�� : ");
     scanf("%d",&num);
 
     if(num>=95)
-        printf("A+?엯?땲?떎. \n");
+        printf("A+??��??��??��. \n");
     else if(num>=90)
-        printf("A?엯?땲?떎. \n");
+        printf("A??��??��??��. \n");
     else if(num>=85)
-        printf("B+?엯?땲?떎. \n");
+        printf("B+??��??��??��. \n");
     else if(num>=80)
-        printf("B?엯?땲?떎. \n");
+        printf("B??��??��??��. \n");
     else
-        printf("F?엯?땲?떎.\n");
+        printf("F??��??��??��.\n");
  
 }
 
 void ex8_6()
 {
-    printf("?닽?옄 ?엯?젰: ");
+    printf("??��??�� ??��??��: ");
     scanf("%d", &num);
 
     if (num > 0) {
-        printf("0蹂대떎 ?겙 ?닔媛? num?뿉 ????옣\n");
+        printf("0蹂�???�� ?�? ??���?? num?�? ?????��\n");
     } else if (num == 0) {
-        printf("0?쓣 num?뿉 ????옣\n");
+        printf("0??�� num?�? ?????��\n");
     } else {
-        printf("0蹂대떎 ?옉??? ?닔媛? num?뿉 ????옣\n");
+        printf("0蹂�???�� ??��??? ??���?? num?�? ?????��\n");
     }
 }
 
 void ex8_5()
 {
-    printf("?닽?옄 ?엯?젰 : ");
+    printf("??��??�� ??��??�� : ");
     scanf("%d,&num");
 
     if(num>0)
-        printf("0蹂대떎 ?겙 ?닔媛? num?뿉 ????옣 \n");
+        printf("0蹂�???�� ?�? ??���?? num?�? ?????�� \n");
     else
     {
         if(num==0)
-            printf("0?씠 num?뿉 ????옣 \n");
+            printf("0??�� num?�? ?????�� \n");
         else
-            printf("0蹂대떎 ?옉??? ?닔媛? num?뿉 ????옣 \n");
+            printf("0蹂�???�� ??��??? ??���?? num?�? ?????�� \n");
 
     }
 
@@ -2286,14 +2302,14 @@ void ex8_5()
 void ex8_4()
 {
   
-    printf("?닽?옄 ?엯?젰 : ");
+    printf("??��??�� ??��??�� : ");
     scanf("%d",&num);
 
     if(num>0)
-        printf("0蹂대떎 ?겙 ?닔媛? num?뿉 ????옣 \n");
+        printf("0蹂�???�� ?�? ??���?? num?�? ?????�� \n");
     
     else
-        printf("0 ?삉?뒗 0蹂대떎 ?옉??? ?닔媛? num?뿉 ????옣 \n");
+        printf("0 ??��??�� 0蹂�???�� ??��??? ??���?? num?�? ?????�� \n");
 
 }
 
@@ -2301,20 +2317,20 @@ void ex8_3()
 {
     int age;
 
-    printf("?굹?씠 ?엯?젰 : ");
+    printf("?�???�� ??��??�� : ");
     scanf("$d",&age);
 
     if(age>=15 && age<=100)
-        printf("?쉶?썝 媛??엯?씠 媛??뒫?빀?땲?떎 \n");
+        printf("??��??�� �????��??�� �????��?�???��??�� \n");
 
     else 
-        printf("?쉶?썝 媛??엯?씠 媛??뒫?빀?땲?떎 \n ");
+        printf("??��??�� �????��??�� �????��?�???��??�� \n ");
 }
 
 
 void ex8_2()
 {
-    printf("5?쓽 諛곗닔 : ");
+    printf("5??�� 諛곗?�� : ");
     for(num=1; num<=100; num++)
     {
         if(num%5==0)
@@ -2325,14 +2341,14 @@ void ex8_2()
 
 void ex8_1()
 {
-    printf("?닽?옄瑜? ?엯?젰?븯?꽭?슂 : *");
+    printf("??��??��?��? ??��??��?�??�???�� : *");
     scanf("%d",&num);
 
     if(num>=0)
-        printf("?뼇?닔?엯?땲?떎. \n");
+        printf("?�???��??��??��??��. \n");
     
     if(num<0)
-        printf("?쓬?닔?엯?땲?떎. \n");
+        printf("??��??��??��??��??��. \n");
 
 }
 
@@ -2347,7 +2363,7 @@ void ex7_16()
         
     } while (num<10);
 
-    printf("\n **while 臾몄쓣 醫낅즺?빀?땲?떎.** \n");
+    printf("\n **while ?��몄쓣 ?��?���??�???��??��.** \n");
         
 }
     
@@ -2361,7 +2377,7 @@ void ex7_15()
         i++;
 
     }
-    printf("1遺??꽣 10源뚯???쓽 怨? :  %d \n", factorial);
+    printf("1?��??�? 10源뚯????�� ???? :  %d \n", factorial);
 
 }
 
@@ -2373,7 +2389,7 @@ void ex7_14()
     {
         factorial *= i;
     }
-    printf("1遺??꽣 10源뚯???쓽 怨? : %d\n", factorial);
+    printf("1?��??�? 10源뚯????�� ???? : %d\n", factorial);
 }
 
 void ex7_13()
@@ -2383,7 +2399,7 @@ void ex7_13()
     {
         factorial=factorial+i;
     }
-    printf("1遺??꽣 10源뚯???쓽 怨? : %d \n",factorial);
+    printf("1?��??�? 10源뚯????�� ???? : %d \n",factorial);
  
 }
 
@@ -2397,7 +2413,7 @@ void ex7_12()
     {
         factorial=factorial+i;
     }
-    printf("1遺??꽣 10源뚯???쓽 怨?: %d \n",factorial);
+    printf("1?��??�? 10源뚯????�� ????: %d \n",factorial);
  
 }
 
@@ -2406,7 +2422,7 @@ void ex7_12()
 void ex7_11()
 {
     int num,j=9,result=0;
-    printf("?닽?옄瑜? ?엯?젰?븯?꽭?슂 : ");
+    printf("??��??��?��? ??��??��?�??�???�� : ");
     scanf("%d",&num);
 
     for (; num>0; num--)
@@ -2447,7 +2463,7 @@ void ex7_9()
     int i;
     for(i=0; 1; i++)
     {
-        printf("諛섎났 ?슏?닔 : %d \n",i);
+        printf("諛섎?�� ??��??�� : %d \n",i);
 
     }
    
@@ -2458,13 +2474,13 @@ void ex7_8()
 {
     int num=0, i, result=0;
 
-    printf("?닽?옄瑜? ?엯?젰?븯?꽭?슂 :");
+    printf("??��??��?��? ??��??��?�??�???�� :");
     scanf("%d",&num);
 
     for(i=1; i<10; i=i+2)
     {
         result=num*1;
-        printf("%d*%d=%d?엯?땲?떎. \n",num,i,result);
+        printf("%d*%d=%d??��??��??��. \n",num,i,result);
 
     }
 
@@ -2479,7 +2495,7 @@ void ex7_7()
         printf("i=%d,sum=%d \n", i, sum);
 
     }
-    printf("-------諛섎났臾? 醫낅즺------\n");
+    printf("-------諛섎?��?��? ?��?���?------\n");
 
 }
 
@@ -2489,10 +2505,10 @@ void ex7_6()
 {
     for(num=0; num<5; num++)
     {
-        printf("諛섎났 ?궡?슜 : %d \n",num);
+        printf("諛섎?�� ?�???�� : %d \n",num);
 
     }
-    printf("諛섎났臾몄쓣 醫낅즺?븳 ?썑 : %d \n",num);
+    printf("諛섎?��?��몄쓣 ?��?���??�? ??�� : %d \n",num);
 
  
 }
@@ -2500,7 +2516,7 @@ void ex7_6()
 void ex7_5()
 {
     int num=0, j=9, result=0;
-    printf("?닽?옄瑜? ?엯?젰?븯?꽭?슂 : ");
+    printf("??��??��?��? ??��??��?�??�???�� : ");
     scanf("%d", &num);
 
     while (num>0)
@@ -2543,7 +2559,7 @@ void ex7_3()
     int i=0;
     while(1)
     {
-        printf("諛섎났 ?슏?닔 : %d \n", i);
+        printf("諛섎?�� ??��??�� : %d \n", i);
         i++;
 
         //if 
@@ -2564,7 +2580,7 @@ void ex7_2()
         printf("i=%d,sum=%d \n",i,sum);
 
     }
-    primtf("-----諛섎났臾? 醫낅즺-----\n");
+    primtf("-----諛섎?��?��? ?��?���?-----\n");
 
 }
 
@@ -2574,11 +2590,11 @@ void ex7_1()
     int num=0;
     while(num<5)
     {
-        printf("諛섎났 ?궡?슜: %d \n",num);
+        printf("諛섎?�� ?�???��: %d \n",num);
         num++;
     }
 
-    printf("諛섎났臾? 醫낅쪟?븳 ?썑 : %d \n",num);
+    printf("諛섎?��?��? ?��?���??�? ??�� : %d \n",num);
 
 }
 
@@ -2607,16 +2623,16 @@ void ex6_13()
     double result;
 
     result=num1/num2;
-    printf("寃곌낵 : %lf \n",result);
+    printf("寃곌?�� : %lf \n",result);
     
     result=(double)num1/num2;
-    printf("寃곌낵 : %lf \n",result);
+    printf("寃곌?�� : %lf \n",result);
 
     result=num1/(double)num2;
-    printf("寃곌낵 : %lf \n",result);
+    printf("寃곌?�� : %lf \n",result);
 
     result=(double)num1/(double)num2;
-    printf("寃곌낵 : %lf \n",result);
+    printf("寃곌?�� : %lf \n",result);
 
 }
 
@@ -2647,13 +2663,13 @@ void ex6_10()
     char val1;
     int val2;
 
-    printf("臾몄옄 ?엯?젰 : ");
+    printf("?��몄옄 ??��??�� : ");
     printf("%c",&val1);
-    printf("ASCII 肄붾뱶 媛? %d?엯?땲?떎. \n",val1);
+    printf("ASCII ?��붾뱶 �?? %d??��??��??��. \n",val1);
     
-    printf("ASCII 肄붾뱶 媛? ?엯?젰 : ");
+    printf("ASCII ?��붾뱶 �?? ??��??�� : ");
     scanf("%d",&val2);
-    printf("臾몄옄濡? %c?엯?땲?떎. \n", val2);
+    printf("?��몄옄�?? %c??��??��??��. \n", val2);
 
 }
 
@@ -2677,8 +2693,8 @@ void ex6_9()
 void ex6_8()
 {
     float num1=0.123456;
-    printf("float?삎: %f \n",num1);
-    printf("float?삎: %.2f",num1);
+    printf("float??��: %f \n",num1);
+    printf("float??��: %.2f",num1);
 
 }
 
@@ -2689,11 +2705,11 @@ void ex6_7()
     float num1=0.123456789012345;
     float num2=0.123456789012345;
 
-    printf ("float?삎 : %f \n", num1);
-    printf ("double?삎 : %f \n", num2);
+    printf ("float??�� : %f \n", num1);
+    printf ("double??�� : %f \n", num2);
 
-    printf ("float?삎 : %.15f \n", num1);
-    printf ("double?삎 : %.15lf \n", num2);
+    printf ("float??�� : %.15f \n", num1);
+    printf ("double??�� : %.15lf \n", num2);
 
 }
 
@@ -2711,9 +2727,9 @@ void ex6_6()
 
 void ex6_5()
 {
-    printf("float?쓽 理쒖넖媛? %e, 理쒕뙎媛? %e \n", FLT_MIN, FLT_MAX);
-    printf("double?삎?쓽 理쒖넖媛? %e, 理쒕뙎媛? %e \n", DBL_MIN, DBL_MAX);
-    printf("long doublee?삎?쓽 理쒖넖媛? %e, 理쒕뙎媛? %e \n", LDBL_MIN, LDBL_MAX);
+    printf("float??�� 理쒖?���?? %e, 理쒕?���?? %e \n", FLT_MIN, FLT_MAX);
+    printf("double??��??�� 理쒖?���?? %e, 理쒕?���?? %e \n", DBL_MIN, DBL_MAX);
+    printf("long doublee??��??�� 理쒖?���?? %e, 理쒕?���?? %e \n", LDBL_MIN, LDBL_MAX);
 
 }
 
@@ -2750,10 +2766,10 @@ void ex6_3()
 
 void ex6_2()
 {
-     printf("char?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", CHAR_MIN, CHAR_MAX);
-     printf("short?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", SHRT_MIN, SHRT_MAX);
-     printf("int?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", INT_MIN, INT_MAX);
-     printf("long?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", LONG_MIN, LONG_MAX);
+     printf("char??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", CHAR_MIN, CHAR_MAX);
+     printf("short??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", SHRT_MIN, SHRT_MAX);
+     printf("int??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", INT_MIN, INT_MAX);
+     printf("long??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", LONG_MIN, LONG_MAX);
 
 } 
 
@@ -2761,27 +2777,27 @@ void ex6_2()
 
 void ex6_1() 
 {
-    //?젙?닔?삎
+    //??��??��??��
     char num1=10;
     short num2=20;
     int num3=30;
     long num4=40;
 
-    //?떎?닔?삎 
+    //??��??��??�� 
     float num5=3.14;
     double num6=3.15;
     long double num7=3.17;
 
-    printf("\n------?젙?닔?삎 ?옄猷뚰삎怨? 蹂??닔?쓽 硫붾え由? ?겕湲?------\n");
-    printf("char?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(char), sizeof(num1));
-    printf("short?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(short), sizeof(num1));
-    printf("int?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(int), sizeof(num1));
-    printf("long?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(long), sizeof(num1));
+    printf("\n------??��??��??�� ??��?��?��?��???? �????��??�� 硫붾?��?��? ?겕湲?------\n");
+    printf("char??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(char), sizeof(num1));
+    printf("short??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(short), sizeof(num1));
+    printf("int??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(int), sizeof(num1));
+    printf("long??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(long), sizeof(num1));
 
-    printf("\n------?떎?닔?삎 ?옄猷뚰삎怨? 蹂??닔?쓽 硫붾え由? ?겕湲?------\n");
-    printf("float?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(float), sizeof(num1));
-    printf("double?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(double), sizeof(num1));
-    printf("long double?삎?쓽 ?겕湲? %d 諛붿씠?듃, %d諛붿씠?듃 \n", sizeof(long double), sizeof(num1));
+    printf("\n------??��??��??�� ??��?��?��?��???? �????��??�� 硫붾?��?��? ?겕湲?------\n");
+    printf("float??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(float), sizeof(num1));
+    printf("double??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(double), sizeof(num1));
+    printf("long double??��??�� ?겕湲? %d 諛붿?��??��, %d諛붿?��??�� \n", sizeof(long double), sizeof(num1));
 }
 
 
@@ -2798,8 +2814,8 @@ void ex5_18()
     result1= num1 >> 1;
     result2= num1 >> 1;
 
-    printf("鍮꾪듃 ?떒?쐞>> ?뿰?궛?쓽 寃곌낵 %d \n",result1);
-    printf("鍮꾪듃 ?떒?쐞>> ?뿰?궛?쓽 寃곌낵 %d \n",result2);
+    printf("?��꾪듃 ??��??��>> ?�??�???�� 寃곌?�� %d \n",result1);
+    printf("?��꾪듃 ??��??��>> ?�??�???�� 寃곌?�� %d \n",result2);
 }
 
 
@@ -2810,7 +2826,7 @@ void ex5_17()
     int result1;
     
     result1 = num1 << 2;
-    printf("鍮꾪듃 ?떒?쐞 << ?뿰?궛?쓽 寃곌낵 %d \n",result1);
+    printf("?��꾪듃 ??��??�� << ?�??�???�� 寃곌?�� %d \n",result1);
 }
 
 
@@ -2820,7 +2836,7 @@ void ex5_16()
     int result1;
 
     result1 =~num1;
-    printf("鍮꾪듃 ?떒?쐞 ~ ?뿰?궛?쓽 寃곌낵 %d \n", result1);
+    printf("?��꾪듃 ??��??�� ~ ?�??�???�� 寃곌?�� %d \n", result1);
 
 }
 
@@ -2830,7 +2846,7 @@ void ex5_15()
     int result1;
 
     result1=num1^num2;
-    printf("鍮꾪듃?떒?쐞 ^ ?뿰?궛?쓽 寃곌낵 %d \n", result1);
+    printf("?��꾪듃??��??�� ^ ?�??�???�� 寃곌?�� %d \n", result1);
 }
 
 
@@ -2840,7 +2856,7 @@ void ex5_14()
     int result1;
 
     result1=num1 | num2;
-    printf("鍮꾪듃 ?떒?쐞 | ?뿰?궛?쓽 寃곌낵 %d \n", result1);
+    printf("?��꾪듃 ??��??�� | ?�??�???�� 寃곌?�� %d \n", result1);
 
 }
 
@@ -2850,7 +2866,7 @@ void ex5_13()
     int result1;
 
     result1=num1 & num2;
-    printf("鍮꾪듃?떒?쐞 & ?뿰?궛?쓽 寃곌낵 %d \n", result1);
+    printf("?��꾪듃??��??�� & ?�??�???�� 寃곌?�� %d \n", result1);
 }
 
 void ex5_12()
@@ -2859,7 +2875,7 @@ void ex5_12()
     int result1;
 
     result1=(num1>num2) ? num1:num2;
-    printf("result1?뿉 ????옣?맂 媛? %d \n", result1);
+    printf("result1?�? ?????��?�? �?? %d \n", result1);
  
 }
 
@@ -2872,9 +2888,9 @@ void ex5_11()
     result2=(num2<=2) || (num3>5);
     result3=!num3;
 
-    printf("result1?뿉 ????옣?맂 媛? %d \n", result1);
-    printf("result2?뿉 ????옣?맂 媛? %d \n", result2);
-    printf("result3?뿉 ????옣?맂 媛? %d \n", result3);
+    printf("result1?�? ?????��?�? �?? %d \n", result1);
+    printf("result2?�? ?????��?�? �?? %d \n", result2);
+    printf("result3?�? ?????��?�? �?? %d \n", result3);
  
 }
 
@@ -2889,10 +2905,10 @@ void ex5_10()
     result3=(num1==num2);
     result4=(num1!=num2);
 
-    printf("result1?뿉 ????옣?맂 媛? %d \n", result1);
-    printf("result2?뿉 ????옣?맂 媛? %d \n", result2);
-    printf("result3?뿉 ????옣?맂 媛? %d \n", result3);
-    printf("result4?뿉 ????옣?맂 媛? %d \n", result4);
+    printf("result1?�? ?????��?�? �?? %d \n", result1);
+    printf("result2?�? ?????��?�? �?? %d \n", result2);
+    printf("result3?�? ?????��?�? �?? %d \n", result3);
+    printf("result4?�? ?????��?�? �?? %d \n", result4);
  
 }
 
@@ -2961,19 +2977,19 @@ void ex5_5()
     int num1=1, num2=2, num3=3, num4=4, num5=5;
 
     num1=num1 + num2;
-    printf("蹂듯빀 ?뜤?뀍 ?뿰?궛 寃곌낵 : num1?쓽 理쒖쥌媛? : %d \n", num1);
+    printf("蹂듯�? ??��???? ?�??�? 寃곌?�� : num1??�� 理쒖쥌媛? : %d \n", num1);
 
     num2=num2-2;
-    printf("蹂듯빀 類꾩뀍 ?뿰?궛 寃곌낵 : num2?쓽 理쒖쥌媛? : %d \n", num2);
+    printf("蹂듯�? 類꾩??? ?�??�? 寃곌?�� : num2??�� 理쒖쥌媛? : %d \n", num2);
 
     num3=num3*2;
-    printf("蹂듯빀 怨깆뀍 ?뿰?궛 寃곌낵 : num3?쓽 理쒖쥌媛? : %d \n", num3);
+    printf("蹂듯�? ??�깆??? ?�??�? 寃곌?�� : num3??�� 理쒖쥌媛? : %d \n", num3);
 
     num4=num4/2;
-    printf("蹂듯빀 ?굹?닓?뀍 ?뿰?궛 寃곌낵 : num4?쓽 理쒖쥌媛? : %d \n", num4);
+    printf("蹂듯�? ?�???��???? ?�??�? 寃곌?�� : num4??�� 理쒖쥌媛? : %d \n", num4);
 
     num5=num5%2;
-    printf("蹂듯빀 ?굹癒몄?? ?뿰?궛 寃곌낵 : num5?쓽 理쒖쥌媛? : %d \n", num5);
+    printf("蹂듯�? ?굹癒�??? ?�??�? 寃곌?�� : num5??�� 理쒖쥌媛? : %d \n", num5);
 
     printf("%d, %d, %d, %d, %d \n", num1, num2, num3, num4, num5);
 
@@ -2986,8 +3002,8 @@ void ex5_4()
     num1=10/3;
     num2=10%3;
 
-    printf("紐? : %d \n",num1);
-    printf("?굹癒몄?? : %d \n",num2);
+    printf("�?? : %d \n",num1);
+    printf("?굹癒�??? : %d \n",num2);
  
 }
 
@@ -2997,11 +3013,11 @@ void ex5_3()
     a=6;
     b=2;
 
-    printf("?뜤?뀍 ?뿰?궛 寃곌낵 : %d \n", a+b);
-    printf("類꾩뀍 ?뿰?궛 寃곌낵 : %d \n", a-b);
-    printf("怨깆뀍 ?뿰?궛 寃곌낵 : %d \n", a*b);
-    printf("?굹?늻湲? ?뿰?궛 寃곌낵 : %d \n", a/b);
-    printf("?굹癒몄?? ?뿰?궛 寃곌낵 : %d \n", a%b);
+    printf("??��???? ?�??�? 寃곌?�� : %d \n", a+b);
+    printf("類꾩??? ?�??�? 寃곌?�� : %d \n", a-b);
+    printf("??�깆??? ?�??�? 寃곌?�� : %d \n", a*b);
+    printf("?�???���?? ?�??�? 寃곌?�� : %d \n", a/b);
+    printf("?굹癒�??? ?�??�? 寃곌?�� : %d \n", a%b);
 
   
 }
@@ -3029,11 +3045,11 @@ void ex5_1()
     a=3;
     b=a+5;
 
-    printf("a?쓽 媛? : %d \n",a);
-    printf("b?쓽 媛? : %d \n",b);
+    printf("a??�� �?? : %d \n",a);
+    printf("b??�� �?? : %d \n",b);
 
-    printf("蹂??닔 a?쓽 二쇱냼 : %x \n", &a);
-    printf("蹂??닔 b?쓽 二쇱냼 : %x \n", &b);
+    printf("�????�� a??�� 二쇱?�� : %x \n", &a);
+    printf("�????�� b??�� 二쇱?�� : %x \n", &b);
 
 
 }
@@ -3074,38 +3090,38 @@ void ex4_6()
 
 void ex4_5()
 {
-    printf("臾몄옄?뿴 ?긽?닔?뒗 %s?엯?땲?떎. \n","A");
-    printf("臾몄옄?뿴 ?긽?닔?뒗 %s?엯?땲?떎. \n","10+10");
-    printf("臾몄옄?뿴 ?긽?닔?뒗 %s?엯?땲?떎. \n","Hi, everyone");
+    printf("?��몄옄?�? ?�???��??�� %s??��??��??��. \n","A");
+    printf("?��몄옄?�? ?�???��??�� %s??��??��??��. \n","10+10");
+    printf("?��몄옄?�? ?�???��??�� %s??��??��??��. \n","Hi, everyone");
     
 }
 
 void ex4_4()
 {
-    printf("臾몄옄 ?긽?닔 %c %c %c?뒗 \n",'a','b','c');
-    printf("ASCII 肄붾뱶 10吏꾩닔濡? %d %d %d \n",'a','b','c');
-    printf("ASCII 肄붾뱶 16吏꾩닔濡? %x %x %x \n",'a','b','c');
+    printf("?��몄옄 ?�???�� %c %c %c??�� \n",'a','b','c');
+    printf("ASCII ?��붾뱶 10吏꾩?���?? %d %d %d \n",'a','b','c');
+    printf("ASCII ?��붾뱶 16吏꾩?���?? %x %x %x \n",'a','b','c');
 
     printf("\n--------------------\n");
 
-    printf("臾몄옄 ?긽?닔 %c %c %c?뒗 \n",'!','@','#');
-    printf("ASCII 肄붾뱶 10吏꾩닔濡? %d %d %d \n",'!','@','#');
-    printf("ASCII 肄붾뱶 16吏꾩닔濡? %x %x %x \n",'!','@','#');
+    printf("?��몄옄 ?�???�� %c %c %c??�� \n",'!','@','#');
+    printf("ASCII ?��붾뱶 10吏꾩?���?? %d %d %d \n",'!','@','#');
+    printf("ASCII ?��붾뱶 16吏꾩?���?? %x %x %x \n",'!','@','#');
  
 
 }
 
 void ex4_3()
 {
-    printf("臾몄옄 ?긽?닔 %c %c %c?엯?땲?떎. \n",'a','b','c');
-    printf("臾몄옄 ?긽?닔 %c %c %c?엯?땲?떎. \n", '!','@','#');
+    printf("?��몄옄 ?�???�� %c %c %c??��??��??��. \n",'a','b','c');
+    printf("?��몄옄 ?�???�� %c %c %c??��??��??��. \n", '!','@','#');
  
 }
 
 
 void ex4_2()
 {
-    printf("?떎?닔?삎 ?긽?닔 %1f + %1f = %1f =?엯?땲?떎. \n", 3.1, 4.1, 3.1+4.1);
+    printf("??��??��??�� ?�???�� %1f + %1f = %1f =??��??��??��. \n", 3.1, 4.1, 3.1+4.1);
 
   
 }
@@ -3113,9 +3129,9 @@ void ex4_2()
 
 void ex4_1()
 {
-    printf("10吏꾩닔 ?젙?닔?삎 ?긽?닔 %d+%d=%d?엯?땲?떎. \n",10,20,10+20);
-    printf("16吏꾩닔 ?젙?닔?삎 ?긽?닔 %x+%x=%x?엯?땲?떎. \n",0x10,0x20,0x10+0x20);
-    printf("8吏꾩닔 ?젙?닔?삎 ?긽?닔 %o+%o=%o?엯?땲?떎. \n", 010,020, 010+020);
+    printf("10吏꾩?�� ??��??��??�� ?�???�� %d+%d=%d??��??��??��. \n",10,20,10+20);
+    printf("16吏꾩?�� ??��??��??�� ?�???�� %x+%x=%x??��??��??��. \n",0x10,0x20,0x10+0x20);
+    printf("8吏꾩?�� ??��??��??�� ?�???�� %o+%o=%o??��??��??��. \n", 010,020, 010+020);
 
     
 }
@@ -3125,11 +3141,11 @@ void ex3_9()
     int a=3;
     int b=4;
 
-    printf("a?쓽 媛? : %d \n",a);
-    printf("b?쓽 媛? : %d \n",b);
+    printf("a??�� �?? : %d \n",a);
+    printf("b??�� �?? : %d \n",b);
 
-    printf("蹂??닔 a?쓽 ?떆?옉 二쇱냼 : %x \n", &a);
-    printf("蹂??닔 b?쓽 ?떆?옉 二쇱냼 : %x \n", &b);
+    printf("�????�� a??�� ??��??�� 二쇱?�� : %x \n", &a);
+    printf("�????�� b??�� ??��??�� 二쇱?�� : %x \n", &b);
  
 }
 
@@ -3141,7 +3157,7 @@ void ex3_8()
     int total;
 
     total=appleBox + grapeBox;
-    printf("珥? %d諛뺤뒪媛? ?엳?뒿?땲?떎. \n", total);
+    printf("?��? %d諛뺤?���?? ??��??��??��??��. \n", total);
 
      
 }  
@@ -3158,9 +3174,9 @@ void ex3_7()
     int c;
     c=3; 
     
-    printf("a?쓽 媛? : %d \n", a);
-    printf("b?쓽 媛? : %d \n", b);
-    printf("c?쓽 媛? : %d \n", c);
+    printf("a??�� �?? : %d \n", a);
+    printf("b??�� �?? : %d \n", b);
+    printf("c??�� �?? : %d \n", c);
  
 }
 
@@ -3170,14 +3186,14 @@ void ex3_6()
     int a=0;
     int b=1;
 
-    printf("a?쓽 媛믪?? %d?엯?땲?떎.\n",a);
-    printf("b?쓽 媛믪?? %d?엯?땲?떎.\n",b);
+    printf("a??�� 媛�???? %d??��??��??��.\n",a);
+    printf("b??�� 媛�???? %d??��??��??��.\n",b);
 
     a=a+10;
     b=b+10;
 
-    printf("蹂?寃쎈맂 a?쓽 媛믪?? %d?엯?땲?떎. \n",a);
-    printf("蹂?寃쎈맂 b?쓽 媛믪?? %d?엯?땲?떎.\n",b);
+    printf("�??寃쎈�? a??�� 媛�???? %d??��??��??��. \n",a);
+    printf("�??寃쎈�? b??�� 媛�???? %d??��??��??��.\n",b);
  
 }
 
@@ -3186,8 +3202,8 @@ void ex3_5()
     int a=0;
     int b=1;
 
-    printf("a?쓽 媛믪?? %d?엯?땲?떎. \n",a);
-    printf("b?쓽 媛믪?? %d?엯?땲?떎. \n",b);
+    printf("a??�� 媛�???? %d??��??��??��. \n",a);
+    printf("b??�� 媛�???? %d??��??��??��. \n",b);
  
 }
 
@@ -3228,13 +3244,13 @@ void ex2_13(){
     float f1,f2;
     double d1,d2;
 
-    printf("float?삎 ?떎?닔 ?몢 媛? ?엯?젰: ");
+    printf("float??�� ??��??�� ?�? �?? ??��??��: ");
     scanf("%f %e", &f1, &f2);
-    printf("float?삎 ?떎?닔 ?몢 媛? ?엯?젰 : f1=%f, f2=%e \n", f1,f2);
+    printf("float??�� ??��??�� ?�? �?? ??��??�� : f1=%f, f2=%e \n", f1,f2);
 
-    printf("double?삎 ?떎?닔 ?몢 媛? ?엯?젰 : ");
+    printf("double??�� ??��??�� ?�? �?? ??��??�� : ");
     scanf("%1f %1e", &d1, &d2);
-    printf("double?삎 ?떎?닔 異쒕젰 : d1=%1f, d2=%1e \n", d1, d2);
+    printf("double??�� ??��??�� ?��?��?�� : d1=%1f, d2=%1e \n", d1, d2);
  
 }
 
@@ -3242,17 +3258,17 @@ void ex2_12()
 {
     int a,b,c;
 
-    printf("10吏꾩닔 ?젙?닔 1媛? ?엯?젰: ");
+    printf("10吏꾩?�� ??��??�� 1�?? ??��??��: ");
     scanf("&d",&a);
-    printf("10吏꾩닔 : %d,16吏꾩닔 : %x,8吏꾩닔 : %o \n",a,a,a);
+    printf("10吏꾩?�� : %d,16吏꾩?�� : %x,8吏꾩?�� : %o \n",a,a,a);
 
-    printf("16吏꾩닔 ?젙?닔 1媛? ?엯?젰 : ");
+    printf("16吏꾩?�� ??��??�� 1�?? ??��??�� : ");
     scanf("&x",&b);
-    printf("10吏꾩닔 : %d,16吏꾩닔 : %x,8吏꾩닔 : %o \n",b,b,b);
+    printf("10吏꾩?�� : %d,16吏꾩?�� : %x,8吏꾩?�� : %o \n",b,b,b);
 
-    printf("8吏꾩닔 ?젙?닔  1媛? ?엯?젰 : ");
+    printf("8吏꾩?�� ??��??��  1�?? ??��??�� : ");
     scanf("&o",&c);
-    printf("10吏꾩닔 : %d,16吏꾩닔 : %x,8吏꾩닔 : %o \n",c,c,c);
+    printf("10吏꾩?�� : %d,16吏꾩?�� : %x,8吏꾩?�� : %o \n",c,c,c);
 
   
 }
@@ -3290,7 +3306,7 @@ void ex2_9()
     printf("%g \n", 0.000123);
     printf("%G \n", 0.0000123456);
 
-    printf("?삱?빐 ?슦由щ굹?씪 寃쎌젣 ?꽦?옣瑜좎쓣 5%% ?엯?땲?떎.\n");
+    printf("??��?�? ??��?��?�굹??�� 寃쎌?�� ?�???��?��좎쓣 5%% ??��??��??��.\n");
  
 }
 
@@ -3305,9 +3321,9 @@ void ex2_8()
 
 void ex2_7()
 {
-    printf("a瑜? ???臾몄옄濡? ?몴?쁽?븯硫? %c?엯?땲?떎.\n",'A');
-    printf("%s %c?엯?땲?떎. \n", "a瑜? ???臾몄옄濡? ?몴?쁽?븯硫?", 'A');
-    printf("%s %d \n","2怨깊븯湲? 3????",2*3);
+    printf("a?��? ????��몄옄�?? ?�???��?�?�?? %c??��??��??��.\n",'A');
+    printf("%s %c??��??��??��. \n", "a?��? ????��몄옄�?? ?�???��?�?�??", 'A');
+    printf("%s %d \n","2??�깊�?�?? 3????",2*3);
  
 }
 
@@ -3315,12 +3331,12 @@ void ex2_7()
 
 void ex2_6()
 {  
-   printf("10吏꾩닔 ?젙?닔: %d \n",0.5);
-   printf("10吏꾩닔 ?떎?닔: %f \n",0.5);
-   printf("10吏꾩닔 ?떎?닔: %1f \n",0.5);
+   printf("10吏꾩?�� ??��??��: %d \n",0.5);
+   printf("10吏꾩?�� ??��??��: %f \n",0.5);
+   printf("10吏꾩?�� ??��??��: %1f \n",0.5);
 
-   printf("?냼?닔?젏 ?씠?븯 6?옄由? ?씠?긽 : %f \n, 0.5655678");
-   printf("?냼?닔?젏 ?씠?븯 6?옄由? ?씠?긽 : %lf \n, 0.5667784");
+   printf("??��??��??�� ??��?�? 6??��?��? ??��?�? : %f \n, 0.5655678");
+   printf("??��??��??�� ??��?�? 6??��?��? ??��?�? : %lf \n, 0.5667784");
 
 }
 
@@ -3328,27 +3344,27 @@ void ex2_6()
 
 void ex2_5()
 {
-   printf("10吏꾩닔 : %d?뒗 16吏꾩닔 : %x, 8吏꾩닔 : %o?엯?땲?떎. /n" , 50,50,50);
-   printf("10吏꾩닔 : %d?뒗 16吏꾩닔 : %x, 8吏꾩닔 : %o?엯?땲?떎. /n" , -50,-50,-50);    
-    // 16吏꾩닔??? 8吏꾩닔?뒗 ?쓬?닔 ?몴?쁽 遺덇??
+   printf("10吏꾩?�� : %d??�� 16吏꾩?�� : %x, 8吏꾩?�� : %o??��??��??��. /n" , 50,50,50);
+   printf("10吏꾩?�� : %d??�� 16吏꾩?�� : %x, 8吏꾩?�� : %o??��??��??��. /n" , -50,-50,-50);    
+    // 16吏꾩?��??? 8吏꾩?��??�� ??��??�� ?�???�� ?��?��??
    
 }
 
 void ex2_4()
 {
-    printf("%d ?뜑?븯湲? %d?뒗 %d?엯?땲?떎.\n",3,5,3+5);
-    printf("%i ?뜑?븯湲? %i?뒗 %i?엯?땲?떎.\n",3,5,3+5);
-    printf("%d-%d = %d?엯?땲?떎.\n",3,5,3-5);
-    printf("%i-%i = %i?엯?땲?떎.\n",3,5,3-5);
+    printf("%d ??��?�?�?? %d??�� %d??��??��??��.\n",3,5,3+5);
+    printf("%i ??��?�?�?? %i??�� %i??��??��??��.\n",3,5,3+5);
+    printf("%d-%d = %d??��??��??��.\n",3,5,3-5);
+    printf("%i-%i = %i??��??��??��.\n",3,5,3-5);
    
 }
 
 void ex2_3()
 {  
     printf("\t Hello C! \n Hello world! \n");
-    printf("?겙?뵲?샂?몴 : \" \" \n");
-    printf("?옉????뵲?샂?몴 : \' \' \n");
-    printf("?뿭?뒳?옒?떆 : \\ \n");
+    printf("?�??�???��?�? : \" \" \n");
+    printf("??��????�???��?�? : \' \' \n");
+    printf("?�???��??��??�� : \\ \n");
  
 }
 
