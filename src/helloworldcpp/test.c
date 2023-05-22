@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex3___2()
+{
+    char ch=0;
+    printf("키 입력:");
+
+    while(ch != 'q')
+    {
+        if(kbhit())
+        {
+            ch=getche();
+            putch(ch);
+        }
+    }
+}
+
+
 void ex3___1()
 {
     char ch=0;
