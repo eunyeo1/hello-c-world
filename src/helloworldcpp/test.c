@@ -8,6 +8,27 @@
 #define CODE 
 int num;
 
+void ex3___14()
+{
+    FILE* stream;
+    long distance;
+
+    stream=fopen("ftell.txt","w");
+    fputs("ABCDEFGHIJ",stream);
+    fclose(stream);
+
+    stream=fopen("ftell.txt","r");
+
+    fseek(stream, -8, SEEK_END);
+    fprintf(stdout, "%c \n", fgetc(stream));
+
+    distance=ftell(stream);
+    printf("거리 : %ld \n", distance);
+    fclose(stream);
+
+}
+
+
 void ex3___13()
 {
     FILE* stream;
