@@ -8,6 +8,15 @@
 #define CODE 
 int num;
 
+void ex3___15()
+{
+    FILE* stream=fopen("ftell.txt","rb");
+    fseek(stream,0,SEEK_END);
+    printf("ftell.txt 파일의 크기 : %d바이트\n",ftell(stream));
+    fclose(stream);
+}
+
+
 void ex3___14()
 {
     FILE* stream;
