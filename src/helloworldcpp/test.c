@@ -8,6 +8,23 @@
 #define CODE 
 int num;
 
+
+void ex3___6()
+{
+    FILE* stream;
+    char buffer[50];
+
+    stream=fopen("data3.txt","w");
+    if(stream=NULL)
+        puts("파일 열기 오류");
+    
+    fgets(buffer,sizeof(buffer),stdin);
+    fputs(buffer,stream);
+
+    fclose(stream);
+
+}
+
 void ex3___5()
 {
     FILE* stream1;
@@ -26,8 +43,6 @@ void ex3___5()
 
     fclose(stream1);
     fclose(stream2);
-    
-
 
 }
 
