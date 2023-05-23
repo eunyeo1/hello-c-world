@@ -8,6 +8,19 @@
 #define CODE 
 int num;
 
+
+void ex4___1()
+{
+    int num1=10;, num2=20;
+    static int s=20;
+
+    printf("데이터 출력 : %d %d %d %d \n",a , num1, num2, s);
+    printf("코드 영역 : %x %x \n",main , printf);
+    printf("스택 출력 : %x %x \n",&num1 , &num2);
+    printf("데이터 출력 : %x %x \n", &a, &s);
+}
+
+
 void ex3___15()
 {
     FILE* stream=fopen("ftell.txt","rb");
