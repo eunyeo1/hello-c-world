@@ -8,6 +8,31 @@
 #define CODE 
 int num;
 
+void ex3___12()
+{
+    STUDENT s,ss;
+    FILE* stream;
+
+    printf("1. 이름 입력 : ");
+    fscanf(stdin,"%s",s.name);
+
+    printf("2. 국어 점수, 영어 점수 입력 " );
+    fscanf(stdin,"%lf %lf",&s.kor, &s.eng);
+    s.total=s.kor + s.eng;
+
+    stream=fopen("student.dat","wb");
+    fwrite(&s, sizeof(s),1,stream);
+    fclose(stream);
+
+    stream=fopen("student.dat","rb");
+    fread(&ss,sizeof(s),1,stream);
+    fprintf(stdout,"%s %.2lf %.2lf %.2lf \n", ss.name, ss.kor, ss.eng, ss,total);
+
+    fclose(stream);
+    
+}
+
+
 
 void ex3___11()
 {
@@ -23,8 +48,9 @@ void ex3___11()
     fread(buffer2,sizeof(int),5,stream);
     printf("%x %x %x %x %x \n", buffer2[0], buffer2[1], buffer2[2],buffer2[3],buffer2[4]);
     fclose(scream);
-
 }
+
+
 
 void ex3___10()
 {
