@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex3___10()
+{
+    int age;
+    char name[20];
+
+    printf("나이를 입력 : ");
+    scanf("%d",&age);
+
+    printf("이름을 입력 : ");
+    fgets(name,sizeof(name),stdin);
+
+    printf("%d \n",age);
+    printf("$s \n",name);
+}
+
 void ex3___8()
 {
     FILE* stream1;
