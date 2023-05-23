@@ -8,6 +8,30 @@
 #define CODE 
 int num;
 
+void ex3___13()
+{
+    FILE* stream;
+    stream=fopen("seek.txt","w");
+    fputs("ABCDEFGHIJ",stream);
+    fclose(stream);
+
+    stream=fopen("seek.txt","r");
+
+    fseek(stream,0,SEEK_SET);
+    fprintf(stdout,"%c \n",fgetc(stream));
+
+    fseek(stream,2,SEEK_SET);
+    fprintf(stdout,"%c \n",fgetc(stream));
+
+    fseek(stream,-1,SEEK_END);
+    fprintf(stdout,"%c \n",fgetc(stream));
+
+    fseek(stream,-2,SEEK_CUR);
+    fprintf(stdout,"%c \n",fgetc(stream));
+    fclose(stream);
+
+}
+
 void ex3___12()
 {
     STUDENT s,ss;
