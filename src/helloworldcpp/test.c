@@ -21,6 +21,30 @@
 #define CODE 3
 int num;
 
+void ex5___14()
+{
+    double num1=3.3,num2=1.1;
+    double result=0.0;
+
+    #if(CODE<0)
+        result=num1+num2;
+        printf("덧셈 결과 : %d \n", result);
+    #elif(CODE==1)
+        result=num1/num2;
+        printf("나눗셈 결과 : %lf \n", result);
+    #elif(CODE==2)
+        result=num1*num2;
+        printf("곱셈 결과 : %lf \n", result);
+    #elif(CODE==3)
+        result=num1-num2;
+        printf("뺄셈 결과 : %lf \n", result);
+    
+    #else 
+        printf("프로그램 종료 \n");
+
+    #endif
+}
+
 void ex5___13()
 {
     #if(CODE==1)
