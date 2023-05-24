@@ -8,6 +8,24 @@
 #define CODE 
 int num;
 
+void ex4___7()
+{
+    int i=0;
+
+    int* p=(int*) malloc(sizeof(int)*2);
+    p[0]=10;
+    p[1]=20;
+
+    p=(int*) realloc(p, sizeof(int)*1);
+    p[0]=30;
+
+    for(i=0; i<2; i++)
+        printf("p[%d] : %d \n", i, p[i]);
+    free(p);
+    p=NULL;
+
+}
+
 void ex4___6()
 {
     int i=0;
