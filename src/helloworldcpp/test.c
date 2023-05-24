@@ -8,6 +8,21 @@
 #define CODE 
 int num;
 
+void ex4___5()
+{
+    int* p1=(int*)calloc(1,sizeof(int));
+    int* p2=(int*)malloc(4);   
+
+    printf("p1 값 : %d \n",*p1);
+    printf("p2 값 : %d \n",*p2);
+
+    free(p1);
+    p1=NULL;
+
+    free(p2);
+    p2=NULL;
+}
+
 void ex4___4()
 {
     int i=0;
