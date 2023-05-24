@@ -14,13 +14,20 @@
 #define MUL(x,y) x*y // 매크로 함수 정의
 #define OUTPUT1(a) a 
 #define OUTPUT2(a) #a
+#define OUTPUT1(a,b) a+b 
+#define OUTPUT2(a,b) #a "+" #b
 int num;
 
+void ex5___8()
+{
+    printf("%d \n", OUTPUT1(11,22));
+    printf("%s \n", OUTPUT2(11,22));    
+}
 
 void ex5___7()
 {
     printf("%d \n", OUTPUT1(1234));
-    printf("%D \n", OUTPUT2(1234));    
+    printf("%s \n", OUTPUT2(1234));    
 }
 
 
