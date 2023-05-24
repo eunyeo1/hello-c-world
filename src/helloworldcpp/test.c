@@ -16,7 +16,17 @@
 #define OUTPUT2(a) #a
 #define OUTPUT1(a,b) a+b 
 #define OUTPUT2(a,b) #a "+" #b
+#define OUTPUT2(a,b,c) a ## b ## c
 int num;
+
+void ex5___9()
+{
+    int a=3;
+
+    printf("%d \n",a);
+    printf("%d \n",OUTPUT(A,=,5));
+    printf("%d \n",a);
+}
 
 void ex5___8()
 {
