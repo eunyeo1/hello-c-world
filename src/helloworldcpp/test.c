@@ -12,7 +12,17 @@
 #define OUTPUT printf //함수 이름 매크로 상수
 #define DATA int //자료형 매크로 상수
 #define MUL(x,y) x*y // 매크로 함수 정의
+#define OUTPUT1(a) a 
+#define OUTPUT2(a) #a
 int num;
+
+
+void ex5___7()
+{
+    printf("%d \n", OUTPUT1(1234));
+    printf("%D \n", OUTPUT2(1234));    
+}
+
 
 void ex5___6()
 {
