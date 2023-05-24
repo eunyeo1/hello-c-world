@@ -21,6 +21,14 @@
 #define CODE 3
 int num;
 
+
+void ex5___17()
+{
+    int result=0;
+    result=a+b;
+    printf("덧셈 결과 : %d \n",result);
+}
+
 void ex5___16()
 {
     double num1=3.3,num2=1.1;
