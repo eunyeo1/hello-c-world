@@ -21,6 +21,22 @@
 #define CODE 3
 int num;
 
+void ex5___16()
+{
+    double num1=3.3,num2=1.1;
+    double result=0.0;
+
+    #ifdef ADD
+        result=num1 + num2;
+        printf("ADD(덧셈) 결과 : %lf \n",result);
+    #endif
+
+    #ifdef MUL
+        result=num1*num2;
+        printf("NUL(곱셈) 결과 : %lf \n", result);
+    #endif
+}
+
 void ex5___15()
 {
     double num1=3.3,num2=1.1;
