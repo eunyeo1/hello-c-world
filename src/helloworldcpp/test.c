@@ -6,7 +6,22 @@
 #include "test.h"
 #define MAX 1000000
 #define CODE 
+#define PI 3.14
 int num;
+
+void ex5___2()
+{
+    double area, circum, radius;
+
+    fputs("반지름을 입력하세요 : ",stdout);
+    scanf("%lf",&radius);
+
+    area=PI * radius * radius;
+    circum=2 * PI * radius;
+
+    printf("원의 넓이 : %lf \n",area);
+    printf("원의 둘레 : %lf \n",circum);
+}
 
 void ex5___1()
 {
