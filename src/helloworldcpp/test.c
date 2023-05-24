@@ -11,7 +11,22 @@
 #define SPRING "Hello C" // 문자열 매크로 상수
 #define OUTPUT printf //함수 이름 매크로 상수
 #define DATA int //자료형 매크로 상수
+#define MUL(x,y) x*y // 매크로 함수 정의
 int num;
+
+void ex5___5()
+{
+    int a, b;
+    double c,d;
+
+    printf("두 개의 정수를 입력하세요 : ");
+    scanf("%d %d", &a, &b);
+    printf("%d*%d = %d \n",a,b,MUL(a,b));
+
+    printf("두 개의 실수를 입력하세요 : ");
+    scanf("%lf %lf", &c, &d);
+    printf("%lf*%lf = %lf \n",c,d,MUL(c,d));
+}
 
 void ex5___4()
 {
