@@ -21,6 +21,10 @@
 #define CODE 3
 int num;
 
+void ex5___18()
+{
+    add(num1,num2);
+}
 
 void ex5___17()
 {
