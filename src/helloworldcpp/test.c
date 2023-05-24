@@ -6,8 +6,20 @@
 #include "test.h"
 #define MAX 1000000
 #define CODE 
-#define PI 3.14
+#define PI 3.14 //실수형 매크로 상수
+#define MAX 100 //정수형 매크로 상수
+#define SPRING "Hello C" // 문자열 매크로 상수
+#define OUTPUT printf //함수 이름 매크로 상수
+#define DATA int //자료형 매크로 상수
 int num;
+
+void ex5___3()
+{
+    DATA a=3;
+
+    OUTPUT("%d, %lf,%s,%d \n",MAX,PI,SPRING,a);
+}
+
 
 void ex5___2()
 {
