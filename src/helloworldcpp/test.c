@@ -13,6 +13,20 @@
 #define DATA int //자료형 매크로 상수
 int num;
 
+void ex5___4()
+{
+    int a=3
+    printf("변경 전 : %d,%lf \n",MAX,PI);
+
+    #undef MAX // 매크로 해제
+    #undef PI // 매크로 해제
+
+    #define MAX 1000 //매크로 상수 재정의
+    #define PI 3.141592
+    printf("변경 후 : %d, %lf \n", MAX, PI);
+
+}
+
 void ex5___3()
 {
     DATA a=3;
