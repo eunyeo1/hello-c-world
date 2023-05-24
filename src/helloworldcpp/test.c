@@ -17,7 +17,37 @@
 #define OUTPUT1(a,b) a+b 
 #define OUTPUT2(a,b) #a "+" #b
 #define OUTPUT2(a,b,c) a ## b ## c
+#define CODE 2
 int num;
+
+void ex5___12()
+{
+    double num1=0, num2=0, result=0;
+
+    printf("실수 두 개를 입력하세요");
+    scanf("%lf %lf", &num1, &num2);
+
+    #if(CODE==1)
+        result=num1/num2;
+        printf("나눗셈 결과 : %lf \n", result);
+    #endif
+
+    #if(CODE==2)
+        result=num1+num2;
+        printf("덧셈 결과 : %lf \n", result);
+    #endif
+
+    #if(CODE==3)
+        result=num1*num2;
+        printf("곱셈 결과 : %lf \n", result);
+    #endif
+
+    #if(CODE==4)
+        result=num1-num2;
+        printf("뺄셈 결과 : %lf \n", result);
+    #endif
+}
+
 
 void ex5___11()
 {
