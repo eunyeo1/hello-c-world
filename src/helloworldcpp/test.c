@@ -21,6 +21,11 @@
 #define CODE 3
 int num;
 
+void ex5___20-2()
+{
+    printf("반지름 3의 원의 둘레 : %lf \n",circle(3));
+    printf("반지름 3의 원의 넓이 : %lf \n",area(3));
+}
 
 void ex5___20-1()
 {
