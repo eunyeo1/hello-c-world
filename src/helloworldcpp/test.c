@@ -21,6 +21,18 @@
 #define CODE 3
 int num;
 
+void ex5___21()
+double circle(int radius)
+{
+    double result=2 * PI * radius;
+}
+double area(int radius)
+{
+    double result=PI * radius * radius;
+    return result
+}
+
+
 void ex5___20-2()
 {
     printf("반지름 3의 원의 둘레 : %lf \n",circle(3));
