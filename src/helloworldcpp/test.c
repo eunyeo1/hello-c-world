@@ -4,24 +4,32 @@
 #include <limits.h>
 #include <time.h>
 #include "test.h"
-#define MAX 1000000
-#define CODE 
+
+#undef MAX
+
+#define CODE1
+#define CODE2
 #define PI 3.14 //실수형 매크로 상수
-#define MAX 100 //정수형 매크로 상수
+#define MAX_VALUE 100 //정수형 매크로 상수
 #define SPRING "Hello C" // 문자열 매크로 상수
 #define OUTPUT printf //함수 이름 매크로 상수
 #define DATA int //자료형 매크로 상수
-#define MUL(x,y) x*y // 매크로 함수 정의
-#define OUTPUT1(a) a 
+#define MUL(x,y) ((x)*(y)) // 매크로 함수 정의
+#define OUTPUT1(a) a
 #define OUTPUT2(a) #a
-#define OUTPUT1(a,b) a+b 
-#define OUTPUT2(a,b) #a "+" #b
-#define OUTPUT2(a,b,c) a ## b ## c
-#define CODE 2
-#define CODE 3
+#define OUTPUT3(a,b) a+b
+#define OUTPUT4(a,b) #a "+" #b
+#define OUTPUT5(a,b,c) a##b##c
+#define BUFFER_SIZE 200
+
+
 int num;
 
-void ex5___21()
+void ex5____24()
+
+void ex5____22()
+
+void ex5____21()
 double circle(int radius)
 {
     double result=2 * PI * radius;
@@ -33,13 +41,13 @@ double area(int radius)
 }
 
 
-void ex5___20-2()
+void ex5____20-2()
 {
     printf("반지름 3의 원의 둘레 : %lf \n",circle(3));
     printf("반지름 3의 원의 넓이 : %lf \n",area(3));
 }
 
-void ex5___20-1()
+void ex5____20-1()
 {
     double result=2*PI*radius;
 }
@@ -49,7 +57,7 @@ void ex5___20-1()
 }
 
 
-void ex5___20()
+void ex5____20()
 {
     printf("반지름 3의 원의 둘레 : %lf \n",circle(3));
     printf("반지름 3의 원의 넓이 : %lf \n",area(3));
@@ -64,18 +72,18 @@ void ex5___20()
 }
 
 
-void ex5___19-2()
+void ex5____19-2()
 {
     add(num1,num2);
 }
 
-void ex5___19-1()
+void ex5____19-1()
 {
     printf("덧셈 연산 : %d \n",num1+num2);
 }
 
 
-void ex5___18()
+void ex5____18()
 {
     printf("덧셈 연산 : %d \n",num1+num2);
 }
@@ -83,14 +91,14 @@ void ex5___18()
     add(num1,num2);
 }
 
-void ex5___17()
+void ex5____17()
 {
     int result=0;
     result=a+b;
     printf("덧셈 결과 : %d \n",result);
 }
 
-void ex5___16()
+void ex5____16()
 {
     double num1=3.3,num2=1.1;
     double result=0.0;
@@ -106,7 +114,7 @@ void ex5___16()
     #endif
 }
 
-void ex5___15()
+void ex5____15()
 {
     double num1=3.3,num2=1.1;
     double result=0.0;
@@ -226,23 +234,17 @@ void ex5___10()
 
 void ex5___9()
 {
-    int a=3;
 
-    printf("%d \n",a);
-    printf("%d \n",OUTPUT(A,=,5));
-    printf("%d \n",a);
 }
 
 void ex5___8()
 {
-    printf("%d \n", OUTPUT1(11,22));
-    printf("%s \n", OUTPUT2(11,22));    
+  
 }
 
 void ex5___7()
 {
-    printf("%d \n", OUTPUT1(1234));
-    printf("%s \n", OUTPUT2(1234));    
+
 }
 
 
@@ -3877,10 +3879,6 @@ void ex5_1()
 
 }
 
-
-#define PI 3.14
-#define NUM 100
-#define BUFFER_SIZE 200
 
 void ex4_8()
 {

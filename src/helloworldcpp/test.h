@@ -1,3 +1,10 @@
+void ex5____24()
+#ifndef HEADER_H
+    #define HEADER_H
+    {
+        printf("Hello C \n");
+#endif
+
 void ex5___22()
     { 
         printf("Hello C \n");
@@ -5,51 +12,35 @@ void ex5___22()
     return 0;
 }
 
-
-
-
 void ex5___21()
 extern double circle(int radius);
 extern double area(int radius);
-
-
 
 void ex5___20-2()
 extern double circle(int radius)
 extern double area(int radius)
 
-
 void ex5___20-1()
 double circle(int radius)
-
 double area(int radius)
-
 
 void ex5___20()
 double circle(int radius);
 double area(int radius);
-
 double circle(int radius)
-
 double area(int radius)
-
 
 void ex5___19-2()
 extern int num1,num2;
 extern void add(int num1,int num2);
 
-
 void ex5___19-1()
 static int num1=10;, num2=20;
-
 static void add(num1,num2);
-
-
 
 void ex5___18()
 int num1=10, num2=20;
 void add(num1,num2)
-
 
 void ex5___17()
 int a=6,b=3;
@@ -63,23 +54,43 @@ void ex5___16()
     #define MUL
 #endif
 
-
-
-
+void ex5___15()
+void ex5___14()
+void ex5___13()
+void ex5___12()
+void ex5___11()
+void ex5___10()
+void ex5___9()
+void ex5___8()
+void ex5___7()
 void ex5___6()
 int mul(x,y);
 int mulx*y;
+void ex5___5()
+void ex5___4()
+void ex5___3()
+void ex5___2()
+void ex5___1()
+
 
 void ex4___9()
 int* a(int num, ...);
 
-
 void ex4___8()
 void add(int num, ...);
-
+void ex4___7()
+void ex4___6()
+void ex4___5()
+void ex4___4()
+void ex4___3()
+void ex4___2()
 void ex4___1()
 int a=10;
 
+
+void ex3___15();
+void ex3___14();
+void ex3___13();
 void ex3___12();
 struct score
 {
@@ -87,6 +98,38 @@ struct score
     double kor,eng,total;
 };
 typedef struct score STUDENT;
+ 
+void ex3___11();
+void ex3___10();
+void ex3___9();
+void ex3___8();
+void ex3___7();
+void ex3___6();
+void ex3___5();
+void ex3___4();
+void ex3___3();
+void ex3___2();
+void ex3___1();
+
+
+
+void ex2___17();
+void ex2___16();
+void ex2___15();
+void ex2___14();
+void ex2___13();
+void ex2___12();
+void ex2___11();
+void ex2___10();
+void ex2___9();
+void ex2___8();
+void ex2___7();
+void ex2___6();
+void ex2___5();
+void ex2___4();
+void ex2___3();
+void ex2___2();
+void ex2___1();
 
 
 void ex1___29();
@@ -126,21 +169,11 @@ struct point* function(void)
 
 void ex1___25();
 struct point
-{
-    int x;
-    int y;
-};
-
 struct point function(void);
 struct point function(void)
 
 void ex1___24();
 struct point
-{
-    int x;
-    int y;
-};
-
 void function(struct point call);
 
 
@@ -232,11 +265,11 @@ void ex1___6();
 void ex1___5();
 
 void ex1___4();
-struct 
+struct MyStruct
 {
     int x;
     int y;
-};
+} variable;
 
 void ex1___3();
 void ex1___2();
