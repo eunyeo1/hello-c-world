@@ -1,5 +1,4 @@
 #include <stdio.h>
+int main(void) 
 #include "test.h"
-
-int main() 
-
+#include "test2.h"
